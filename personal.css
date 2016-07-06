@@ -13,6 +13,11 @@ html, body{
   height: 100%;
 }
 
+body{
+  background: #F2F7F9;
+  font-family: 'calibreregular', sans-serif;
+}
+
 @font-face {
     font-family: 'calibreregular';
     src: url('fonts/calibreregular.eot');
@@ -45,7 +50,7 @@ p{
 }
 
 a{
-  color: #153B50;
+  color: #3C474B;
   text-decoration: none;
   transition: all .1s ease-out;
   -moz-transition: all .1s ease-out;
@@ -55,12 +60,6 @@ a{
 a:hover{
   color: #EF233C;
 }
-
-body{
-  background: #EDF2F4;
-  font-family: 'calibreregular', sans-serif;
-}
-
 
 
 /*Header*/
@@ -101,7 +100,7 @@ a.nav-link{
 h1.name{
   display: block;
   font-weight: 600;
-  color: #153B50;
+  color: #3C474B;
   text-align: center;
   line-height: 110px;
 }
@@ -109,7 +108,7 @@ h1.name{
 h3.intro{
   display: block;
   font-weight: 400;
-  color: #153B50;
+  color: #3C474B;
   text-align: center;
   opacity: .8;
 }
@@ -184,7 +183,7 @@ h4.description{
 
 #vumble-web{
   position: relative;
-  background: url('images/vumble_nofilter.png');
+  background: url('images/vumble_1.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -194,15 +193,21 @@ h4.description{
   z-index: 2;
 }
 
-a.vumble-link{
+.vumble-link-container{
   display: inline-block;
   position: relative;
-  margin: 30px auto 0 auto;
-  color: white;
+  margin-top: 10px;
   left: 50%;
   transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+}
+
+a.vumble-link{
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  color: white;
 }
 
 a.vumble-link:hover{
@@ -315,3 +320,13 @@ a.vumble-link:hover{
     font-size: 24px;
   }
 }
+
+
+
+
+
+/*DARK BLUE Hex - #153B50 */
+/*LIGHT GRAY HEX - #EDF2F4 */
+
+
+
