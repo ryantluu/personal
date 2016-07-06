@@ -1,0 +1,317 @@
+/*Universal*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html, body{
+  height: 100%;
+}
+
+@font-face {
+    font-family: 'calibreregular';
+    src: url('fonts/calibreregular.eot');
+    src: url('fonts/calibreregular.eot') format('embedded-opentype'),
+         url('fonts/calibreregular.woff2') format('woff2'),
+         url('fonts/calibreregular.woff') format('woff'),
+         url('fonts/calibreregular.ttf') format('truetype'),
+         url('fonts/calibreregular.svg#calibreregular') format('svg');
+}
+
+
+h1{
+  font-size: 124px;
+}
+
+h2{
+  font-size: 66px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+h4{
+  font-size: 18px;
+}
+
+p{
+  font-size: 16px;
+}
+
+a{
+  color: #153B50;
+  text-decoration: none;
+  transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+  -webkit-transition: all .1s ease-out;
+}
+
+a:hover{
+  color: #EF233C;
+}
+
+body{
+  background: #EDF2F4;
+  font-family: 'calibreregular', sans-serif;
+}
+
+
+
+/*Header*/
+header{
+  height: 90vh;
+}
+
+.navigation{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: auto;
+  overflow: auto;
+}
+
+.nav-box{
+  display: inline-block;
+  float: right;
+  padding: 30px 0;
+}
+
+a.nav-link{
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.intro-block{
+  position: relative;
+  display: table;
+  max-width: 900px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-100%);
+  -moz-transition: translate(-50%,-100%);
+  -webkit-transition: translate(-50%,-100%);
+}
+
+h1.name{
+  display: block;
+  font-weight: 600;
+  color: #153B50;
+  text-align: center;
+  line-height: 110px;
+}
+
+h3.intro{
+  display: block;
+  font-weight: 400;
+  color: #153B50;
+  text-align: center;
+  opacity: .8;
+}
+
+
+/*Work Section*/
+#work{
+  background: rgba(98, 144, 195, .8);
+  padding-bottom: 60px;
+}
+
+.work-container{
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.content{
+  position: relative;
+  width: 100%;
+}
+
+.beehive{
+  position: absolute;
+  background: url('images/beehive.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  width: 5%;
+  min-width: 40px;
+  height: 0;
+  padding-top: 81.67%;
+  z-index: 1;
+}
+
+.vumble-header{
+  padding-top: 80px;
+  font-family: 'Karla', sans-serif;
+}
+
+.bee{
+  position: absolute;
+  background: url('images/bee.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 300px;
+  min-width: 192px;
+  width: 30%;
+  height: 0;
+  padding-top: 27.45%;
+  margin: 30px 0 0 50px;
+  z-index: 1;
+}
+
+h2.title{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  z-index: 2;
+  letter-spacing: -1px;
+}
+
+h4.description{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  z-index: 2;
+}
+
+#vumble-web{
+  position: relative;
+  background: url('images/vumble_nofilter.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 67.18%;
+  margin-top: 40px;
+  z-index: 2;
+}
+
+a.vumble-link{
+  display: inline-block;
+  position: relative;
+  margin: 30px auto 0 auto;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+a.vumble-link:hover{
+  text-decoration: underline;
+}
+
+
+
+/*Contact Section*/
+#contact{
+  padding-top: 60px;
+  font-size: 0;
+}
+
+.contact-container{
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.inner{
+  left: 50%;
+}
+
+.headshot{
+  display: inline-block;
+  position: relative;
+  background: url('images/headshot.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 35%;
+  height: 0;
+  padding-top: 52.5%;
+  bottom: 0;
+  margin-right: 5%;
+}
+
+.link-box{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  text-align: left;
+  height: 100%;
+  padding-right: 25px;
+  margin-top: 10%;
+}
+
+.link-inner{
+  display: inline-block;
+  position: relative;
+}
+
+.link{
+  font-size: 36px;
+  list-style-type: none;
+}
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+  .bee{
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bee{
+    margin-left: 10px;
+  }
+  .link{
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .bee{
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .bee{
+    right: 90px;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .link{
+    font-size: 28px;
+  }
+  #contact{
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #contact{
+    padding-top: 30px;
+  }
+  .link-box{
+    margin-top: 7%;
+  }
+  .link{
+    font-size: 24px;
+  }
+}

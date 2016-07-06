@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Ryan Luu</title>
+  <meta name="description" content="Ryan Luu's Website">
+  <meta name="author" content="Ryan Luu">
+
+  <link rel="stylesheet" href="personal.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,600" rel="stylesheet">
+  <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+</head>
+
+<body>
+  <div id='page'>
+
+    <header>
+      <nav class="navigation">
+         <div class="nav-box">
+          <a href='#work' class="nav-link">Work</a>
+          <a href='#contact' class="nav-link">Contact</a>
+        </div>
+      </nav>
+      <div class="intro-block">
+        <h1 class="name">Ryan Luu</h1>
+        <h3 class="intro">I'm a front-end developer & entrepreneur</h3>
+      </div>
+    </header>
+
+
+    <div id='work'>
+      <div class="work-container">
+        <div class="content">
+          <div class="beehive"></div>
+          <div class="vumble-header">
+            <div class="bee"></div>
+            <h2 class="title">Vumble</h2>
+            <h4 class="description">The leaderboard for online video</h4>
+          </div>
+          <a class="fancybox" href="images/vumble_nofilter.png">
+            <img id="vumble-web" src="images/vumble_nofilter.png" alt=""/>
+          </a>
+          <a href="http://www.vumble.com" class="vumble-link">www.vumble.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="contact-container">
+        <div class="headshot"></div>
+        <div class="link-box">
+          <ul class="link-inner">
+            <li class="link"><a class="social-link" href="http://twitter.com/rtluu">Twitter</a></li>
+            <li class="link"><a class="social-link" href="http://linkedin.com/in/ryanluu">LinkedIn</a></li>
+            <li class="link"><a class="social-link" href="http://github.com/ryanluu-vumble">GitHub</a></li>
+            <li class="link"><a class="social-link" href="mailto:ryan@vumble.com">Email</a></li>
+            <li class="link"><a class="social-link" href="mailto:ryan@vumble.com">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!--End 'page'-->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
+</body>
+</html>
