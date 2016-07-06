@@ -50,7 +50,7 @@ p{
 }
 
 a{
-  color: #3C474B;
+  color: #393E41;
   text-decoration: none;
   transition: all .1s ease-out;
   -moz-transition: all .1s ease-out;
@@ -100,7 +100,7 @@ a.nav-link{
 h1.name{
   display: block;
   font-weight: 600;
-  color: #3C474B;
+  color: #393E41;
   text-align: center;
   line-height: 110px;
 }
@@ -108,7 +108,7 @@ h1.name{
 h3.intro{
   display: block;
   font-weight: 400;
-  color: #3C474B;
+  color: #393E41;
   text-align: center;
   opacity: .8;
 }
@@ -183,7 +183,7 @@ h4.description{
 
 #vumble-web{
   position: relative;
-  background: url('images/vumble_1.png');
+  background: url('images/vumble_main.png');
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
