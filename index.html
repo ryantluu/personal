@@ -12,8 +12,12 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,600" rel="stylesheet">
   <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!--FancyBox-->
   <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
   <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 
 </head>
@@ -36,24 +40,18 @@
 
 
     <div id='work'>
-      <div class="work-container">
+      <div class="vumble-container">
         <div class="content">
           <div class="beehive"></div>
           <div class="vumble-header">
             <div class="bee"></div>
-            <h2 class="title">Vumble</h2>
+            <a class="project-link" href="http://www.vumble.com" target="blank">
+              <h2 class="title-text">Vumble</h2>
+            </a>
             <h4 class="description">The leaderboard for online video</h4>
           </div>
-          <a rel='vumble-evolution' title"" class="fancybox" href="images/vumble_1.png">
-            <img id="vumble-web" src="images/vumble_main.png" alt=""/>
-          </a>
-          <a rel="vumble-evolution" class="fancybox" title="" href="images/vumble_2.png" style="display:none;"></a>
-          <a rel="vumble-evolution" class="fancybox" title="" href="images/vumble_3.png" style="display:none;"></a>
-          <a rel="vumble-evolution" class="fancybox" title="" href="images/vumble_4.png" style="display:none;"></a>
-          <a rel="vumble-evolution" class="fancybox" title="" href="images/vumble_5.png" style="display:none;"></a>
-          <a rel="vumble-evolution" class="fancybox" title="" href="images/vumble_6.png" style="display:none;"></a>
           <div class="vumble-link-container">
-            <a href="http://www.vumble.com" class="vumble-link" target="blank">Vumble.com</a>
+            <a rel='vumble-evolution' title"" class="fancybox-thumb vumble-link" href="images/vumble_main.png">Design</a>
             <a class="fancybox fancybox.iframe vumble-link" href="http://www.youtube.com/embed/YFgvAKNbJRo?autoplay=1&wmode=opaque">Video</a>
             <a href="http://imgur.com/a/bgzFy" class="vumble-link" target="blank">Backstory</a>
           </div>
@@ -79,15 +77,38 @@
       </div>
     </div>
 
+  <!--Vumble Evolution Fancybox-->
+    <a href="images/vumble_1.png" rel='vumble-evolution' class="fancybox-thumb" title=""></a>
+    <a href="images/vumble_2.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
+    <a href="images/vumble_3.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
+    <a href="images/vumble_4.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
+    <a href="images/vumble_5.png" rel="vumble-evolution" class="fancybox-thumb" title="" ></a>
+    <a href="images/vumble_6.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
+
   </div><!--End 'page'-->
 
   <script type="text/javascript">
     $(document).ready(function() {
+      $(".fancybox-thumb").fancybox({
+        prevEffect  : 'none',
+        nextEffect  : 'none',
+        helpers : {
+          title : {
+            type: 'outside'
+          },
+          thumbs  : {
+            width : 50,
+            height  : 50
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
       $(".fancybox").fancybox({
         helpers : {
-        title: {
+          title : {
             type: 'outside'
-          }
+          },
         }
       });
     });
