@@ -272,6 +272,24 @@ a.vumble-link:hover{
 
 
 /* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .navigation{
+    max-width: 800px;
+  }
+  .intro-block{
+    max-width: 800px;
+  }
+  .work-container{
+    max-width: 800px;
+  }
+  .contact-container{
+    max-width: 800px;
+  }
+  .bee{
+    margin-left: 35px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .bee{
     margin-left: 30px;
