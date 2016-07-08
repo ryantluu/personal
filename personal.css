@@ -13,6 +13,11 @@ html, body{
   height: 100%;
 }
 
+body{
+  background: #F2F7F9;
+  font-family: 'calibreregular', sans-serif;
+}
+
 @font-face {
     font-family: 'calibreregular';
     src: url('fonts/calibreregular.eot');
@@ -22,6 +27,17 @@ html, body{
          url('fonts/calibreregular.ttf') format('truetype'),
          url('fonts/calibreregular.svg#calibreregular') format('svg');
 }
+
+@font-face {
+    font-family: 'proximanovaregularwebfont';
+    src: url('fonts/proximanovaregularwebfont.eot');
+    src: url('fonts/proximanovaregularwebfont.eot') format('embedded-opentype'),
+         url('fonts/proximanovaregularwebfont.woff2') format('woff2'),
+         url('fonts/proximanovaregularwebfont.woff') format('woff'),
+         url('fonts/proximanovaregularwebfont.ttf') format('truetype'),
+         url('fonts/proximanovaregularwebfont.svg#proximanovaregularwebfont') format('svg');
+}
+
 
 
 h1{
@@ -33,10 +49,14 @@ h2{
 }
 
 h3{
-  font-size: 22px;
+  font-size: 40px;
 }
 
 h4{
+  font-size: 28px;
+}
+
+h5{
   font-size: 18px;
 }
 
@@ -45,7 +65,7 @@ p{
 }
 
 a{
-  color: #153B50;
+  color: #393E41;
   text-decoration: none;
   transition: all .1s ease-out;
   -moz-transition: all .1s ease-out;
@@ -56,16 +76,10 @@ a:hover{
   color: #EF233C;
 }
 
-body{
-  background: #EDF2F4;
-  font-family: 'calibreregular', sans-serif;
-}
-
-
 
 /*Header*/
 header{
-  height: 90vh;
+  margin-bottom: 100px;
 }
 
 .navigation{
@@ -87,146 +101,12 @@ a.nav-link{
   font-size: 20px;
 }
 
-.intro-block{
+.headline-container{
   position: relative;
-  display: table;
-  max-width: 900px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-100%);
-  -moz-transition: translate(-50%,-100%);
-  -webkit-transition: translate(-50%,-100%);
-}
-
-h1.name{
-  display: block;
-  font-weight: 600;
-  color: #153B50;
-  text-align: center;
-  line-height: 110px;
-}
-
-h3.intro{
-  display: block;
-  font-weight: 400;
-  color: #153B50;
-  text-align: center;
-  opacity: .8;
-}
-
-
-/*Work Section*/
-#work{
-  background: rgba(98, 144, 195, .8);
-  padding-bottom: 60px;
-}
-
-.work-container{
-  position: relative;
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 30px;
-}
-
-.content{
-  position: relative;
-  width: 100%;
-}
-
-.beehive{
-  position: absolute;
-  background: url('images/beehive.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  right: 0;
-  width: 5%;
-  min-width: 40px;
-  height: 0;
-  padding-top: 81.67%;
-  z-index: 1;
-}
-
-.vumble-header{
-  padding-top: 80px;
-  font-family: 'Karla', sans-serif;
-}
-
-.bee{
-  position: absolute;
-  background: url('images/bee.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  max-width: 300px;
-  min-width: 192px;
-  width: 30%;
-  height: 0;
-  padding-top: 27.45%;
-  margin: 30px 0 0 50px;
-  z-index: 1;
-}
-
-h2.title{
-  position: relative;
-  text-align: center;
-  color: white;
-  font-weight: 600;
-  z-index: 2;
-  letter-spacing: -1px;
-}
-
-h4.description{
-  position: relative;
-  text-align: center;
-  color: white;
-  font-weight: 400;
-  z-index: 2;
-}
-
-#vumble-web{
-  position: relative;
-  background: url('images/vumble_nofilter.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 0;
-  padding-top: 67.18%;
-  margin-top: 40px;
-  z-index: 2;
-}
-
-a.vumble-link{
-  display: inline-block;
-  position: relative;
-  margin: 30px auto 0 auto;
-  color: white;
-  left: 50%;
-  transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-}
-
-a.vumble-link:hover{
-  text-decoration: underline;
-}
-
-
-
-/*Contact Section*/
-#contact{
-  padding-top: 60px;
+  max-width: 800px;
   font-size: 0;
-}
-
-.contact-container{
-  position: relative;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 30px;
-  text-align: center;
-}
-
-.inner{
-  left: 50%;
 }
 
 .headshot{
@@ -242,14 +122,261 @@ a.vumble-link:hover{
   margin-right: 5%;
 }
 
+.info{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  text-align: left;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+h1.name{
+  display: block;
+  font-weight: 600;
+  color: #393E41;
+}
+
+h4.intro{
+  display: block;
+  font-weight: 400;
+  color: #393E41;
+  opacity: .8;
+  margin-top: -10px;
+}
+
+
+/******** Work Section ********/
+
+#work{
+  position: relative;
+  margin: 0 auto;
+  background: #d1d2d9;
+}
+
+.work-inner{
+  width: 90%;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-bottom: 110px;
+}
+
+h3.projects{
+  font-weight: 400;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 0 30px 0;
+  color: #393E41;
+}
+
+/******** Vumble ********/
+.vumble-container{
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 800px;
+  background: #81a6cf;
+}
+
+.content{
+  position: relative;
+  width: 100%;
+}
+
+.vumble-header{
+  padding: 80px 0;
+  font-family: 'Karla', sans-serif;
+}
+
+.bee{
+  position: absolute;
+  background: url('images/bee.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 300px;
+  min-width: 192px;
+  width: 30%;
+  height: 0;
+  padding-top: 27.45%;
+  margin: 30px 0 0 35px;
+  z-index: 1;
+}
+
+.beehive{
+  position: absolute;
+  background: url('images/beehive.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0;
+  width: 5%;
+  min-width: 40px;
+  height: 0;
+  padding-top: 81.67%;
+  z-index: 1;
+}
+
+a.project-link{
+  
+}
+
+h2.title-text{
+  position: relative;
+  z-index: 2;
+  display: table;
+  left: 50%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+h2.title-text:after{
+  content: '';
+  position: absolute;
+  display: none;
+  height: 3px;
+  width: 100%;
+  background: white;
+  bottom: 6px;
+}
+
+h2.title-text:hover:after{
+  display: block;
+}
+
+h5.description{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  z-index: 2;
+}
+
+.link-container{
+  display: block;
+  position: relative;
+  padding: 8px 0;
+  margin: 0 auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+a.vumble-link{
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  color: white;
+}
+
+a.vumble-link:hover{
+  text-decoration: underline;
+}
+
+
+
+/******** Stash ********/
+.stash-container{
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 800px;
+  background: #FCFCF6;
+  margin-top: 30px;
+}
+
+.stash-header{
+  padding: 50px 0 45px 0;
+}
+
+.stash-logo{
+  background: url('images/stash_logo.png');
+  background-size: 64px 24.25px;
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 24.25px;
+  margin: 16px auto 0 auto;
+}
+
+.stash-text{
+  background: url('images/stash_word.png');
+  background-size: 210px 64.78px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 64.78px;
+  width: 210px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.stash-text:after{
+  content: '';
+  position: relative;
+  display: none;
+  height: 3px;
+  width: 100%;
+  background: #AE847E;
+  top: 63px;
+}
+
+.stash-text:hover:after{
+  display: inline-block;
+}
+
+h5.stash-description{
+  color: #AE847E;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'proximanovaregularwebfont', sans-serif;
+}
+
+a.stash-link{
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  color: #AE847E;
+  font-family: 'proximanovaregularwebfont', sans-serif;
+  font-size: 14px;
+}
+
+a.stash-link:hover{
+  text-decoration: underline;
+}
+
+p.coming-soon{
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  color: #AE847E;
+  font-family: 'proximanovaregularwebfont', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+/******** Contact Section ********/
+#contact{
+  padding: 100px 0;
+  font-size: 0;
+}
+
+.contact-container{
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+}
+
 .link-box{
   display: inline-block;
   position: relative;
   vertical-align: top;
   text-align: left;
   height: 100%;
-  padding-right: 25px;
-  margin-top: 10%;
 }
 
 .link-inner{
@@ -258,7 +385,9 @@ a.vumble-link:hover{
 }
 
 .link{
-  font-size: 36px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 10px;
   list-style-type: none;
 }
 
@@ -266,52 +395,136 @@ a.vumble-link:hover{
 
 
 
-/* Media Queries */
-@media only screen and (max-width: 1000px) {
+/******** Media Queries ********/
+@media only screen and (max-width: 1200px) {
+  .navigation{
+    max-width: 800px;
+  }
+  .intro-block{
+    max-width: 800px;
+  }
+  .work-container{
+    max-width: 800px;
+  }
+  .contact-container{
+    max-width: 800px;
+  }
   .bee{
     margin-left: 30px;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .bee{
-    margin-left: 10px;
-  }
-  .link{
-    font-size: 32px;
+    margin-left: 20px;
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 900px) {
+  h1{
+    font-size: 110px;
+  }
+  h3{
+    font-size: 36px;
+  }
+  h4{
+    font-size: 26px;
+  }
+  .bee{
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
   .bee{
     margin-left: 0px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+  h1{
+    font-size: 100px;
+  }
+  h3{
+    font-size: 34px;
+  }
+  h4{
+    font-size: 24px;
+  }
   .bee{
     right: 90px;
     top: 0;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .link{
-    font-size: 28px;
+@media only screen and (max-width: 750px) {
+  h1{
+    font-size: 90px;
   }
-  #contact{
-    padding-top: 40px;
+  h3{
+    font-size: 32px;
+  }
+  h4{
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h1{
+    font-size: 84px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  h4{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header{
+    margin-bottom: 80px;
+  }
+  .headshot{
+    margin-right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 250px;
+    height: 375px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .info{
+    display: block;
+    top: auto;
+    position: relative;
+    text-align: center;
+    transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
   }
 }
 
 @media only screen and (max-width: 480px) {
   #contact{
-    padding-top: 30px;
-  }
-  .link-box{
-    margin-top: 7%;
+    padding: 50px 0;
   }
   .link{
-    font-size: 24px;
+    display: block;
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 30px;
   }
 }
+
+
+
+
+
+/*DARK BLUE Hex - #153B50 */
+/*LIGHT GRAY HEX - #EDF2F4 */
+
+
+

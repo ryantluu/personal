@@ -12,8 +12,12 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,600" rel="stylesheet">
   <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!--FancyBox-->
   <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
   <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 
 </head>
@@ -28,50 +32,104 @@
           <a href='#contact' class="nav-link">Contact</a>
         </div>
       </nav>
-      <div class="intro-block">
-        <h1 class="name">Ryan Luu</h1>
-        <h3 class="intro">I'm a front-end developer & entrepreneur</h3>
+      <div class="headline-container">
+        <div class="headshot"></div>
+          <div class="info">
+            <h1 class="name">Ryan Luu</h1>
+            <h4 class="intro">I'm a front-end developer & entrepreneur</h4>
+        </div>
       </div>
     </header>
 
-
     <div id='work'>
-      <div class="work-container">
-        <div class="content">
-          <div class="beehive"></div>
-          <div class="vumble-header">
-            <div class="bee"></div>
-            <h2 class="title">Vumble</h2>
-            <h4 class="description">The leaderboard for online video</h4>
+      <div class="work-inner">
+        <h3 class="projects">Recent Projects</h3>
+        <div class="vumble-container">
+          <div class="content">
+            <div class="beehive"></div>
+            <div class="vumble-header">
+              <div class="bee"></div>
+              <a class="project-link" href="http://www.vumble.com" target="blank">
+                <h2 class="title-text">Vumble</h2>
+              </a>
+              <h5 class="description">The leaderboard for online video</h5>
+            </div>
+            <div class="link-container">
+              <a rel='vumble-evolution' title"" class="fancybox-thumb vumble-link" href="images/vumble_main.png">Design</a>
+              <a class="fancybox fancybox.iframe vumble-link" href="http://www.youtube.com/embed/YFgvAKNbJRo?autoplay=1&wmode=opaque">Video</a>
+              <a href="http://imgur.com/a/bgzFy" class="vumble-link" target="blank">Backstory</a>
+            </div>
           </div>
-          <a class="fancybox" href="images/vumble_nofilter.png">
-            <img id="vumble-web" src="images/vumble_nofilter.png" alt=""/>
-          </a>
-          <a href="http://www.vumble.com" class="vumble-link">www.vumble.com</a>
+        </div>
+        <div class="stash-container">
+          <div class="content">
+            <div class="stash-header">
+              <a class="project-link" href="http://muststash.io" target="blank">
+                <div class="stash-text"></div>
+              </a>
+              <h5 class="stash-description">An asset collection tool for creators</h5>
+              <div class="stash-logo"></div>
+            </div>
+            <div class="link-container">
+              <a rel='stash-evolution' title"" class="fancybox-thumb stash-link" href="images/vumble_main.png">Design</a>
+              <p class="coming-soon">(Coming Soon)</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div id="contact">
       <div class="contact-container">
-        <div class="headshot"></div>
         <div class="link-box">
           <ul class="link-inner">
-            <li class="link"><a class="social-link" href="http://twitter.com/rtluu">Twitter</a></li>
-            <li class="link"><a class="social-link" href="http://linkedin.com/in/ryanluu">LinkedIn</a></li>
-            <li class="link"><a class="social-link" href="http://github.com/ryanluu-vumble">GitHub</a></li>
             <li class="link"><a class="social-link" href="mailto:ryan@vumble.com">Email</a></li>
-            <li class="link"><a class="social-link" href="mailto:ryan@vumble.com">Resume</a></li>
+            <li class="link"><a class="social-link" href="http://twitter.com/rtluu" target="blank">Twitter</a></li>
+            <li class="link"><a class="social-link" href="http://linkedin.com/in/ryanluu" target="blank">LinkedIn</a></li>
+            <li class="link"><a class="social-link" href="http://github.com/rtluu" target="blank">GitHub</a></li>
+            <li class="link">
+              <a class="fancybox social-link" href="images/resume.png">Resume
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
 
+  <!--Vumble Evolution Fancybox-->
+    <a href="images/vumble_1.png" rel='vumble-evolution' class="fancybox-thumb" title=""></a>
+    <a href="images/vumble_2.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
+    <a href="images/vumble_3.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
+    <a href="images/vumble_4.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
+    <a href="images/vumble_5.png" rel="vumble-evolution" class="fancybox-thumb" title="" ></a>
+    <a href="images/vumble_6.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
+
   </div><!--End 'page'-->
 
   <script type="text/javascript">
     $(document).ready(function() {
-      $(".fancybox").fancybox();
+      $(".fancybox-thumb").fancybox({
+        prevEffect  : 'none',
+        nextEffect  : 'none',
+        helpers : {
+          title : {
+            type: 'outside'
+          },
+          thumbs  : {
+            width : 50,
+            height  : 50
+          }
+        }
+      });
+    });
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        helpers : {
+          title : {
+            type: 'outside'
+          },
+        }
+      });
     });
   </script>
 </body>
