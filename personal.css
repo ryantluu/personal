@@ -563,7 +563,7 @@ p.coming-soon{
   }
   a.nav-link{
     font-size: 18px;
-    padding: 4px 5px;
+    padding: 3px 5px;
   }
 
   .headline-container{
@@ -586,6 +586,7 @@ p.coming-soon{
   }
   h4.intro{
     font-size: 18px;
+    margin-top: 0;
   }
   h5.description{
     font-size: 17px;
