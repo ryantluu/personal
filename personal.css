@@ -563,6 +563,7 @@ p.coming-soon{
   }
   a.nav-link{
     font-size: 18px;
+    padding: 4px 5px;
   }
 
   .headline-container{
@@ -587,7 +588,7 @@ p.coming-soon{
     font-size: 18px;
   }
   h5.description{
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .work-inner{
@@ -599,7 +600,7 @@ p.coming-soon{
   }
 
   .vumble-link{
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .stash-header {
@@ -614,11 +615,15 @@ p.coming-soon{
   }
 
   .stash-description{
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .stash-logo{
     margin-top: 10px;
+  }
+
+  .stash-link{
+    font-size: 15px;
   }
 }
 
