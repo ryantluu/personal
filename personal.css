@@ -558,13 +558,72 @@ p.coming-soon{
 }
 
 @media only screen and (max-width: 480px) {
-  .link{
-    display: block;
-    margin: 20px 0px;
-    text-align: center;
-    font-size: 30px;
+  header{
+    margin-bottom: 50px;
+  }
+  a.nav-link{
+    font-size: 18px;
+  }
+
+  .headline-container{
+    margin-top: 0px;
+  }
+  .headshot{
+    width: 220px;
+    height: 330px;
+    padding-bottom: 15px;
+  }
+  h1{
+    font-size: 64px;
+  }
+  h2.title-text{
+    font-size: 52px;
+  }
+  h3{
+    font-size: 25px;
+    padding: 25px 0 20px 0;
+  }
+  h4.intro{
+    font-size: 18px;
+  }
+  h5.description{
+    font-size: 16px;
+  }
+
+  .work-inner{
+    padding-bottom: 75px;
+  }
+
+  .vumble-header{
+    padding-bottom: 40px;
+  }
+
+  .vumble-link{
+    font-size: 16px;
+  }
+
+  .stash-header {
+    padding: 35px 0 33px 0;
+  }
+
+  .stash-text{
+    background-size: 162px 50px;
+    height: 50px;
+    width: 162px;
+    padding: 15px 0;
+  }
+
+  .stash-description{
+    font-size: 15px;
+  }
+
+  .stash-logo{
+    margin-top: 10px;
   }
 }
+
+
+
 
 
 /*DARK BLUE Hex - #153B50 */
