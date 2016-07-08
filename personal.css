@@ -438,6 +438,26 @@ p.coming-soon{
 }
 
 
+.footer{
+  display: block;
+  padding: 30px;
+}
+
+p.created_by{
+  text-align: center;
+  margin: 5px 0;
+}
+
+.r_logo{
+  background: url('images/r_logo.png');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+
 
 
 
