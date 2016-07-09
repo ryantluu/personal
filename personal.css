@@ -213,6 +213,9 @@ a.nav-link{
   transition: all .1s ease-out;
   -moz-transition: all .1s ease-out;
   -webkit-transition: all .1s ease-out;
+  transform: translateX( calc(-100% + 30px));
+  -moz-transform: translateX( calc(-100% + 30px));
+  -webkit-transform: translateX( calc(-100% + 30px));
 }
 
 .menu-dropdown:before{
