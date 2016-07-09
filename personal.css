@@ -94,6 +94,7 @@ header{
 
 .nav-box{
   display: table;
+  position: relative;
   float: right;
   padding: 30px 0;
 }
@@ -576,6 +577,14 @@ p.created_by{
   header{
     margin-bottom: 80px;
   }
+  .nav-box{
+    float: none;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+
   .headshot{
     margin-right: 0;
     left: 50%;
