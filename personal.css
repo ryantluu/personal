@@ -618,8 +618,11 @@ p.created_by{
     margin-bottom: 50px;
   }
   a.nav-link{
-    font-size: 18px;
     padding: 3px 5px;
+  }
+
+  a.nav-link h5{
+    font-size: 18px;
   }
 
   .headline-container{
