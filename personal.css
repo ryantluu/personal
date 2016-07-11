@@ -642,6 +642,19 @@ p.created_by{
   header{
     margin-bottom: 50px;
   }
+
+  .navigation{
+    height: 76px;
+  }
+
+  .nav-box{
+    padding: 20px 0;
+  }
+
+  .menu{
+    margin: 20px 0 20px 5px;
+  }
+
   a.nav-link{
     padding: 3px 5px;
   }
@@ -710,7 +723,7 @@ p.created_by{
   }
 
   .stash-link{
-    font-size: 18px;
+    font-size: 16px !important;
   }
 }
 
