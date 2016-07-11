@@ -644,11 +644,11 @@ p.created_by{
   }
 
   .navigation{
-    height: 56px;
+    height: 66px;
   }
 
   .nav-box{
-    padding: 20px 0 0 0;
+    padding: 20px 0 10px 0;
   }
 
   .menu{
