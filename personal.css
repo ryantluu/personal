@@ -644,15 +644,15 @@ p.created_by{
   }
 
   .navigation{
-    height: 76px;
+    height: 56px;
   }
 
   .nav-box{
-    padding: 20px 0;
+    padding: 20px 0 0 0;
   }
 
   .menu{
-    margin: 20px 0 20px 5px;
+    margin: 20px 0 0px 5px;
   }
 
   a.nav-link{
