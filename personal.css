@@ -315,6 +315,15 @@ h3.projects{
   padding: 0 30px;
   max-width: 800px;
   background: #81a6cf;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(118, 129, 135, .5);
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+
+.vumble-container:hover{
+  box-shadow: 1.5px 1.5px 2.5px rgba(118, 129, 135, .7);
 }
 
 .content{
@@ -408,10 +417,19 @@ a.vumble-link:hover{
   max-width: 800px;
   background: #FCFCF6;
   margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(118, 129, 135, .3);
+  transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+}
+
+.stash-container:hover{
+  box-shadow: 2px 2px 3px rgba(118, 129, 135, .5);
 }
 
 .stash-header{
-  padding: 47px 0 45px 0;
+  padding: 36px 0 34px 0;
 }
 
 .stash-logo{
@@ -425,11 +443,11 @@ a.vumble-link:hover{
 
 .stash-text{
   background: url('images/stash_word.png');
-  background-size: 210px 64.78px;
+  background-size: 195px 60.15px;
   background-repeat: no-repeat;
   background-position: center;
-  height: 64.78px;
-  width: 210px;
+  height: 60.15px;
+  width: 195px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -438,7 +456,7 @@ h5.stash-description{
   color: #AE847E;
   text-align: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'proximanovaregularwebfont', sans-serif;
 }
 
@@ -461,7 +479,7 @@ p.coming-soon{
   margin: 0 10px;
   color: #AE847E;
   font-family: 'proximanovaregularwebfont', sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-style: italic;
 }
 
@@ -565,7 +583,7 @@ p.created_by{
 
 @media only screen and (max-width: 700px) {
   h1{
-    font-size: 84px;
+    font-size: 80px;
   }
   h3{
     font-size: 30px;
@@ -579,6 +597,9 @@ p.created_by{
 @media only screen and (max-width: 650px) {
   header{
     margin-bottom: 80px;
+  }
+  .headline-container{
+    margin-top: 15px;
   }
   .nav-box{
     float: none;
@@ -594,8 +615,8 @@ p.created_by{
     transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
-    width: 250px;
-    height: 375px;
+    width: 270px;
+    height: 405px;
     padding-top: 0;
     padding-bottom: 20px;
   }
@@ -608,8 +629,12 @@ p.created_by{
     -moz-transform: translateY(0%);
     -webkit-transform: translateY(0%);
   }
+  h1{
+    font-size: 75px;
+  }
   h4.intro{
     margin-left: auto !important;
+    margin-top: 0;
   }
 }
 
@@ -629,12 +654,12 @@ p.created_by{
     margin-top: 0px;
   }
   .headshot{
-    width: 220px;
-    height: 330px;
+    width: 250px;
+    height: 375px;
     padding-bottom: 15px;
   }
   h1{
-    font-size: 64px;
+    font-size: 60px;
   }
   h2.title-text{
     font-size: 52px;
@@ -674,7 +699,7 @@ p.created_by{
   }
 
   .stash-description{
-    font-size: 16px;
+    font-size: 16px !important; 
   }
 
   .stash-logo{
