@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'calibreregular';
-    src: url('fonts/calibreregular.eot');
-    src: url('fonts/calibreregular.eot') format('embedded-opentype'),
-         url('fonts/calibreregular.woff2') format('woff2'),
-         url('fonts/calibreregular.woff') format('woff'),
-         url('fonts/calibreregular.ttf') format('truetype'),
-         url('fonts/calibreregular.svg#calibreregular') format('svg');
-}
