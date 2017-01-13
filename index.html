@@ -3,10 +3,31 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Ryan Luu</title>
   <meta name="description" content="Ryan Luu's Website">
   <meta name="author" content="Ryan Luu">
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
   <link rel="stylesheet" href="personal.css">
   <link href="https://fonts.googleapis.com/css?family=Karla:400,600" rel="stylesheet">
@@ -27,16 +48,25 @@
 
     <header>
       <nav class="navigation">
+        <div class="menu">
+          <div class="hamburger"></div>
+          <div class="menu-dropdown">
+            <a class="menu-link" href="http://linkedin.com/in/ryanluu"><p>LinkedIn</p></a>
+            <a class="menu-link" href="http://twitter.com/rtluu"><p>Twitter</p></a>
+            <a class="menu-link" href="http://github.com/rtluu"><p>GitHub</p></a>
+          </div>
+        </div>
          <div class="nav-box">
-          <a href='#work' class="nav-link">Work</a>
-          <a href='#contact' class="nav-link">Contact</a>
+          <a href='#work' class="nav-link"><h5>Work</h5></a>
+          <a class="nav-link fancybox" href="images/resume.png"><h5>Resume</h5></a>
+          <a class="nav-link" href="mailto:ryan@vumble.com"><h5>Email</h5></a>
         </div>
       </nav>
       <div class="headline-container">
         <div class="headshot"></div>
           <div class="info">
             <h1 class="name">Ryan Luu</h1>
-            <h4 class="intro">I'm a front-end developer & entrepreneur</h4>
+            <h4 class="intro">Front-end developer & entrepreneur</h4>
         </div>
       </div>
     </header>
@@ -44,93 +74,55 @@
     <div id='work'>
       <div class="work-inner">
         <h3 class="projects">Recent Projects</h3>
-        <div class="vumble-container">
-          <div class="content">
-            <div class="beehive"></div>
-            <div class="vumble-header">
-              <div class="bee"></div>
-              <a class="project-link" href="http://www.vumble.com" target="blank">
+        <a href="http://www.vumble.com">
+          <div class="vumble-container">
+            <div class="content">
+              <div class="beehive"></div>
+              <div class="vumble-header">
+                <div class="bee"></div>
                 <h2 class="title-text">Vumble</h2>
-              </a>
-              <h5 class="description">The leaderboard for online video</h5>
-            </div>
-            <div class="link-container">
-              <a rel='vumble-evolution' title"" class="fancybox-thumb vumble-link" href="images/vumble_main.png">Design</a>
-              <a class="fancybox fancybox.iframe vumble-link" href="http://www.youtube.com/embed/YFgvAKNbJRo?autoplay=1&wmode=opaque">Video</a>
-              <a href="http://imgur.com/a/bgzFy" class="vumble-link" target="blank">Backstory</a>
-            </div>
-          </div>
-        </div>
-        <div class="stash-container">
-          <div class="content">
-            <div class="stash-header">
-              <a class="project-link" href="http://muststash.io" target="blank">
-                <div class="stash-text"></div>
-              </a>
-              <h5 class="stash-description">An asset collection tool for creators</h5>
-              <div class="stash-logo"></div>
-            </div>
-            <div class="link-container">
-              <a rel='stash-evolution' title"" class="fancybox-thumb stash-link" href="images/vumble_main.png">Design</a>
-              <p class="coming-soon">(Coming Soon)</p>
+                <h5 class="description">The leaderboard for online video</h5>
+              </div>
+              <div class="link-container">
+                <a class="fancybox fancybox.iframe vumble-link" href="http://www.youtube.com/embed/vbyj9DzMpCQ?autoplay=1&wmode=opaque">Video</a>
+                <a href="http://imgur.com/a/bgzFy" class="vumble-link">Backstory</a>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
+        <a href="http://muststash.io">
+          <div class="stash-container">
+            <div class="content">
+              <div class="stash-header">
+                  <div class="stash-text"></div>
+                  <div class="stash-logo"></div>
+                <h5 class="stash-description">The saving tool for creators</h5>
+              </div>
+              <div class="link-container">
+                <a href="images/stash/stash_1.png" rel='stash-design' class="fancybox-thumb stash-link" title="First Stash">Design</a>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
 
-    <div id="contact">
-      <div class="contact-container">
-        <div class="link-box">
-          <ul class="link-inner">
-            <li class="link"><a class="social-link" href="mailto:ryan@vumble.com">Email</a></li>
-            <li class="link"><a class="social-link" href="http://twitter.com/rtluu" target="blank">Twitter</a></li>
-            <li class="link"><a class="social-link" href="http://linkedin.com/in/ryanluu" target="blank">LinkedIn</a></li>
-            <li class="link"><a class="social-link" href="http://github.com/rtluu" target="blank">GitHub</a></li>
-            <li class="link">
-              <a class="fancybox social-link" href="images/resume.png">Resume
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="footer">
+      <p class="created_by">Created by Ryan</p>
+      <div class="r_logo"></div>
     </div>
 
-  <!--Vumble Evolution Fancybox-->
-    <a href="images/vumble_1.png" rel='vumble-evolution' class="fancybox-thumb" title=""></a>
-    <a href="images/vumble_2.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
-    <a href="images/vumble_3.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
-    <a href="images/vumble_4.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
-    <a href="images/vumble_5.png" rel="vumble-evolution" class="fancybox-thumb" title="" ></a>
-    <a href="images/vumble_6.png" rel="vumble-evolution" class="fancybox-thumb" title=""></a>
-
+  <!--Stash Design Fancybox-->
+    <a href="images/stash/stash_2.png" rel="stash-design" class="fancybox-thumb" title="Multiple Stashes"></a>
+    <a href="images/stash/stash_3.png" rel="stash-design" class="fancybox-thumb" title="Chrome Extension - Image"></a>
+    <a href="images/stash/stash_4.png" rel="stash-design" class="fancybox-thumb" title="Chrome Extension - Code"></a>
+    
   </div><!--End 'page'-->
 
+  <script src="personal.js"></script>
+
   <script type="text/javascript">
-    $(document).ready(function() {
-      $(".fancybox-thumb").fancybox({
-        prevEffect  : 'none',
-        nextEffect  : 'none',
-        helpers : {
-          title : {
-            type: 'outside'
-          },
-          thumbs  : {
-            width : 50,
-            height  : 50
-          }
-        }
-      });
-    });
-    $(document).ready(function() {
-      $(".fancybox").fancybox({
-        helpers : {
-          title : {
-            type: 'outside'
-          },
-        }
-      });
-    });
+  
   </script>
 </body>
 </html>
