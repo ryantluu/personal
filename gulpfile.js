@@ -1,105 +1,66 @@
-var gulp = require('gulp');
+'use strict';
 
-var clean = require('gulp-clean');
-var jshint = require('gulp-jshint');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemin');
-var pages = require('gulp-gh-pages');
-var build = require('gulp-build');
+var gulp = require('gulp'),
+  uglify = require('gulp-uglify'),
+  rename = require('gulp-rename'),
+    sass = require('gulp-sass'),
+    maps = require('gulp-sourcemaps'),
+     del = require('del'),
+  useref = require('gulp-useref'),
+     iff = require('gulp-if'),
+    csso = require('gulp-csso'),
+   pages = require('gulp-gh-pages');
 
-var dest = require('gulp-dest');
-
-var sass = require('gulp-sass');
-var gulpIf = require('gulp-if');
-var cssnano = require('gulp-cssnano');
-var cache = require('gulp-cache');
-var browserSync = require('browser-sync').create();
-
-var bases = {
- app: 'app/',
- dist: 'dist/',
-};
+var options = {
+  src: './src/',
+  dist: './dist/'
+}
 
 
-/*
-
-ADD RYAN's STUFF */
-gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
+gulp.task('compileSass', function() {
+  return gulp.src(options.src + 'scss/**/*.scss')
+    .pipe(maps.init())
     .pipe(sass())
-    .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(maps.write('./'))
+    .pipe(gulp.dest(options.src + 'css/'));
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  // Other watchers
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+gulp.task('html', ['compileSass'], function() {
+  var assets = useref.assets();
+  return gulp.src(options.src + 'index.html')
+              .pipe(assets)
+              .pipe(iff('*.css', csso()))
+              .pipe(assets.restore())
+              .pipe(useref())
+              .pipe(gulp.dest(options.dist));
 });
 
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: 'app'
-    },
-  });
+gulp.task('watchFiles', function() {
+  gulp.watch(options.src + 'scss/**/*.scss', ['compileSass']);
 });
 
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    .pipe(gulp.dest('dist'))
+gulp.task('assets', function(){
+  return gulp.src([options.src + 'img/**/*',
+                   options.src + 'fonts/**/*'], {base: options.src})
+          .pipe(gulp.dest(options.dist));
+})
+
+// watch sass
+gulp.task('serve', ['compileSass', 'watchFiles']);
+
+gulp.task('clean', function() {
+  del([options.dist]);
+  // delete compiles css and map
+  del([options.src + 'css/main.css*']);
 });
 
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    // Minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulp.dest('dist'))
-});
-
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
-    .pipe(gulpIf('*.js', uglify()))
-    // Minifies only if it's a CSS file
-    .pipe(gulpIf('*.css', cssnano()))
-    .pipe(gulp.dest('dist'))
-});
-
-gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
-  .pipe(imagemin({
-      // Setting interlaced to true
-      interlaced: true
-    }))
-  .pipe(gulp.dest('dist/images'))
-});
-
-gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  // Caching images that ran through imagemin
-  .pipe(cache(imagemin({
-      interlaced: true
-    })))
-  .pipe(gulp.dest('dist/images'))
-});
-
-
-// A development task to run anytime a file changes
-gulp.task('watch', function() {
- gulp.watch('app/**/*');
-});
+gulp.task('build', ['html', 'assets'])
 
 gulp.task('deploy', function(){
-  return gulp.src('dist' + '**/*')
+  return gulp.src(options.dist + '**/*')
     .pipe(pages());
 });
 
-// Define the default task as a sequence of the above tasks
-gulp.task('default', ['sass', 'watch', 'browserSync', 'useref', 'images']);
+gulp.task('default', ['clean'], function(){
+  gulp.start('build');
+});
