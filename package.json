@@ -12,9 +12,12 @@
     "browser-sync": "^2.18.6",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.5",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.4",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.0",
-    "gulp-useref": "^3.1.2"
+    "gulp-useref": "^3.1.2",
+    "jshint": "^2.9.4"
   }
 }

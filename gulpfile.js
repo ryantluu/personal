@@ -1,12 +1,30 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+
+var clean = require('gulp-clean');
+var jshint = require('gulp-jshint');
+var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var imagemin = require('gulp-imagemin');
+var pages = require('gulp-gh-pages');
+var build = require('gulp-build');
+
+var dest = require('gulp-dest');
+
+var sass = require('gulp-sass');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var browserSync = require('browser-sync').create();
 
+var bases = {
+ app: 'app/',
+ dist: 'dist/',
+};
+
+
+/*
+
+ADD RYAN's STUFF */
 gulp.task('sass', function() {
   return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass())
@@ -71,3 +89,17 @@ gulp.task('images', function(){
     })))
   .pipe(gulp.dest('dist/images'))
 });
+
+
+// A development task to run anytime a file changes
+gulp.task('watch', function() {
+ gulp.watch('app/**/*');
+});
+
+gulp.task('deploy', function(){
+  return gulp.src('dist' + '**/*')
+    .pipe(pages());
+});
+
+// Define the default task as a sequence of the above tasks
+gulp.task('default', ['sass', 'watch', 'browserSync', 'useref', 'images']);
