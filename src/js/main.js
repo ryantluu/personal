@@ -1,28 +1,12 @@
-$( document ).ready(function() {
-
-    var menu = $('#hamburger-menu'),
-      p_list = $('#project-list'),
-      footer = $('#footer'),
-     sidebar = menu.parent();
-
-    menu.click(function(){
-      if(sidebar.hasClass('active')){
-        sidebar.removeClass('active');
-      } else{
-        sidebar.addClass('active');
-      }
-    });
-
-    p_list.click(function(){
-      if(sidebar.hasClass('active')){
-        sidebar.removeClass('active');
-      }
-    });
-    footer.click(function(){
-      if(sidebar.hasClass('active')){
-        sidebar.removeClass('active');
-      }
-    });
+document.getElementById("hamburger-menu").onclick = function() {toggleMenu()};
+document.getElementById("project-list").onclick = function() {hideMenu()};
+document.getElementById("footer").onclick = function() {hideMenu()};
 
 
-});
+function toggleMenu() {
+  document.getElementById("sidebar").classList.toggle("active");
+};
+
+function hideMenu() {
+  document.getElementById("sidebar").classList.remove("active");
+};

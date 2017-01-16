@@ -32,12 +32,6 @@ $single-column: 975px;
   }
 }
 
-@mixin single-reverse {
-  @media (max-width: #{$single-column - 1px}) {
-    @content;
-  }
-}
-
 @mixin phone {
   @media (max-width: #{$phone-break}) {
     @content;

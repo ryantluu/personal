@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.sidebar {
+#sidebar {
   background: #2E4052;
   height: calc(100% - 60px);
   left: 0;
@@ -10,34 +10,34 @@
   width: 250px;
   z-index: 5; }
   @media (max-width: 974px) {
-    .sidebar {
+    #sidebar {
       background: rgba(46, 64, 82, 0.99);
       height: 100%;
       left: -100%;
       padding: 0;
       width: 100%; } }
-  .sidebar.active {
+  #sidebar.active {
     left: 0; }
-    .sidebar.active #hamburger-menu {
+    #sidebar.active #hamburger-menu {
       left: 12px;
       right: auto; }
-      .sidebar.active #hamburger-menu span {
+      #sidebar.active #hamburger-menu span {
         background: none; }
-        .sidebar.active #hamburger-menu span:before {
+        #sidebar.active #hamburger-menu span:before {
           top: 1px;
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
           -o-transform: rotate(45deg);
           transform: rotate(45deg); }
-        .sidebar.active #hamburger-menu span:after {
+        #sidebar.active #hamburger-menu span:after {
           top: -1px;
           -webkit-transform: rotate(-45deg);
           -moz-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
           -o-transform: rotate(-45deg);
           transform: rotate(-45deg); }
-  .sidebar #hamburger-menu {
+  #sidebar #hamburger-menu {
     cursor: pointer;
     display: none;
     height: 32px;
@@ -47,9 +47,9 @@
     width: 30px;
     z-index: 2; }
     @media (max-width: 974px) {
-      .sidebar #hamburger-menu {
+      #sidebar #hamburger-menu {
         display: inline-block; } }
-    .sidebar #hamburger-menu span {
+    #sidebar #hamburger-menu span {
       background: white;
       display: block;
       height: 2px;
@@ -63,7 +63,7 @@
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-      .sidebar #hamburger-menu span:before {
+      #sidebar #hamburger-menu span:before {
         background: white;
         content: '';
         display: block;
@@ -71,7 +71,7 @@
         position: relative;
         top: -7px;
         width: 20px; }
-      .sidebar #hamburger-menu span:after {
+      #sidebar #hamburger-menu span:after {
         background: white;
         content: '';
         display: block;
@@ -79,20 +79,20 @@
         position: relative;
         top: 5px;
         width: 20px; }
-  .sidebar .personal-name {
+  #sidebar .personal-name {
     display: block;
     left: -2px;
     font-family: 'Lato', Helvetica, arial, san-serif;
     position: relative;
     text-align: left; }
-    .sidebar .personal-name a {
+    #sidebar .personal-name a {
       color: white;
       font-weight: 300;
       text-decoration: none; }
-      .sidebar .personal-name a b {
+      #sidebar .personal-name a b {
         font-weight: 500; }
     @media (max-width: 974px) {
-      .sidebar .personal-name {
+      #sidebar .personal-name {
         background: #2E4052;
         width: 100%;
         font-size: 2.75rem;
@@ -101,7 +101,7 @@
         top: 0;
         position: fixed;
         text-align: center; } }
-  .sidebar .personal-description {
+  #sidebar .personal-description {
     color: white;
     display: block;
     font-weight: 400;
@@ -109,9 +109,9 @@
     text-align: left;
     width: 100%; }
     @media (max-width: 974px) {
-      .sidebar .personal-description {
+      #sidebar .personal-description {
         display: none; } }
-  .sidebar .divider {
+  #sidebar .divider {
     display: block;
     background: white;
     height: 1px;
@@ -119,79 +119,81 @@
     opacity: 0.5;
     width: 60px; }
     @media (max-width: 974px) {
-      .sidebar .divider {
+      #sidebar .divider {
         margin: 64px 0 0 0;
         opacity: 0.02;
         width: 100%; } }
-  .sidebar .project-header {
+  #sidebar .project-header {
     color: white;
     font-weight: 300;
     font-style: italic;
     padding-bottom: 10px; }
     @media (max-width: 974px) {
-      .sidebar .project-header {
+      #sidebar .project-header {
         display: none; } }
-  .sidebar #project-list {
+  #sidebar #project-list {
     clear: both;
     color: white;
     display: inline-block;
     padding-left: 0px;
     list-style: circle; }
     @media (max-width: 974px) {
-      .sidebar #project-list {
+      #sidebar #project-list {
         display: block;
         list-style: none;
         padding: 0;
         text-align: center; } }
-    .sidebar #project-list a {
+    #sidebar #project-list a {
       color: white;
       text-decoration: none; }
-      .sidebar #project-list a .list-item {
+      #sidebar #project-list a .list-item {
         cursor: pointer;
         font-size: 1.125rem;
         margin: 4px 0;
         padding: 4px 0;
         list-style: none; }
-        .sidebar #project-list a .list-item:hover:after {
+        #sidebar #project-list a .list-item:hover:after {
           display: inline-block; }
-        .sidebar #project-list a .list-item:after {
+        #sidebar #project-list a .list-item:after {
           content: '→';
           display: none;
           position: relative;
           padding-left: 8px; }
         @media (max-width: 974px) {
-          .sidebar #project-list a .list-item {
+          #sidebar #project-list a .list-item {
             border-bottom: 1px solid rgba(255, 255, 255, 0.02);
             font-size: 20px;
             font-weight: 300;
             margin: 0;
             padding: 10px 0; }
-            .sidebar #project-list a .list-item:hover {
+            #sidebar #project-list a .list-item:hover {
               background: white;
               color: #2E4052; } }
-  .sidebar #footer {
+  #sidebar #footer {
     bottom: 30px;
     position: absolute; }
     @media (max-width: 974px) {
-      .sidebar #footer {
+      #sidebar #footer {
         left: 50%;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         transform: translateX(-50%); } }
-    .sidebar #footer a {
+    #sidebar #footer a {
       color: white;
       cursor: pointer;
       display: inline-block;
       text-decoration: none; }
-      .sidebar #footer a:hover p:after {
+      #sidebar #footer a:hover p:after {
         display: inline-block; }
-      .sidebar #footer a p {
+      #sidebar #footer a p {
         font-size: 0.8rem;
         color: white; }
-        .sidebar #footer a p:after {
+        #sidebar #footer a p:after {
           content: '→';
           display: none;
           position: relative;
           padding-left: 8px; }
+
+/*# sourceMappingURL=navbar.css.map */
