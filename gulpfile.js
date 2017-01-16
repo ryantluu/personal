@@ -10,6 +10,7 @@ var gulp = require('gulp'),
      iff = require('gulp-if'),
     csso = require('gulp-csso'),
    pages = require('gulp-gh-pages'),
+   imagemin = require('gulp-imagemin'),
    browserSync = require('browser-sync').create();
 ;
 
@@ -85,7 +86,13 @@ gulp.task('browserSync', function() {
   });
 });
 
-gulp.task('build', ['html', 'assets', 'uglify']);
+gulp.task('imagemin', () =>
+    gulp.src('src/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'))
+);
+
+gulp.task('build', ['html', 'assets', 'uglify', 'imagemin']);
 
 gulp.task('deploy', function(){
   return gulp.src(options.dist + '**/*')

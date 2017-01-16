@@ -1,7 +1,5 @@
 @import 'mixins';
 
-
-
 #sidebar{
   background: #2E4052;
   height: calc(100% - 60px);
@@ -183,6 +181,13 @@
         margin: 4px 0;
         padding: 4px 0;
         list-style: none;
+        @include animation('fadeIn 0.7s 1');
+
+        &.d1{ animation-delay: .1s;}
+        &.d2{ animation-delay: .2s;}
+        &.d3{ animation-delay: .3s;}
+        &.d4{ animation-delay: .4s;}
+        &.d5{ animation-delay: .5s;}
 
         &:hover{
           &:after{
@@ -195,6 +200,7 @@
           display: none;
           position: relative;
           padding-left: 8px;
+          @include animation('fadeIn 0.2s 1');
         }
 
         @include single{
@@ -208,6 +214,10 @@
             color: #2E4052;
           }
         }
+      }
+      @include keyframes(fadeIn) {
+        0% { opacity: 0; @include transform(translate3d(-100%, 0, 0)); }
+        100% { opacity: 1; @include transform(translate3d(0, 0, 0)); }
       }
     }
   }
@@ -244,6 +254,7 @@
           display: none;
           position: relative;
           padding-left: 8px;
+          @include animation('fadeIn 0.2s 1');
         }
       }
     }
