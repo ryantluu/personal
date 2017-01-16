@@ -9,7 +9,9 @@ var gulp = require('gulp'),
   useref = require('gulp-useref'),
      iff = require('gulp-if'),
     csso = require('gulp-csso'),
-   pages = require('gulp-gh-pages');
+   pages = require('gulp-gh-pages'),
+   browserSync = require('browser-sync').create();
+;
 
 var options = {
   src: './src/',
@@ -52,6 +54,29 @@ gulp.task('clean', function() {
   del([options.dist]);
   // delete compiles css and map
   del([options.src + 'css/main.css*']);
+});
+
+gulp.task('sass', function() {
+  return gulp.src('src/scss/**/*.scss') // Gets all files ending with .scss in app/scss
+    .pipe(sass())
+    .pipe(gulp.dest('src/css'))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
+gulp.task('watch', ['browserSync', 'sass'], function (){
+  gulp.watch('src/scss/**/*.scss', ['sass']);
+  gulp.watch('src/*.html', browserSync.reload);
+  gulp.watch('src/js/**/*.js', browserSync.reload);
+});
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'src'
+    },
+  });
 });
 
 gulp.task('build', ['html', 'assets'])

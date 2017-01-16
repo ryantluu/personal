@@ -10,13 +10,23 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-h1{ font-size: 3rem; } //50px
-h2{ font-size: 2rem; } //32px
-h3{ font-size: 1.5rem; } //24px
-h4{ font-size: 1.125rem; } //18px
-h5{ font-size: 1rem; } //16px
-h6{ font-size: 0.8125rem; } //13px
-p{  font-size: 0.875rem; }
+h1{ font-size: 48px; } //48px
+h2{ font-size: 32px; } //32px
+h3{ font-size: 24px; } //24px
+h4{ font-size: 18px; } //18px
+h5{ font-size: 16px; } //16px
+h6{ font-size: 14px; } //13px
+p{  font-size: 13px; }
+
+@include phone{
+  h1{ font-size: 44px; } //48px
+  h2{ font-size: 28px; } //32px
+  h3{ font-size: 20px; } //24px
+  h4{ font-size: 16px; } //18px
+  h5{ font-size: 15px; } //16px
+  h6{ font-size: 13px; } //13px
+  p{  font-size: 12px; }
+}
 
 body{
   background: white;
@@ -47,6 +57,7 @@ body{
           position: relative;
           text-align: center;
           width: 100%;
+          z-index: 1;
         }
       }
 
@@ -79,6 +90,11 @@ body{
             max-width: 300px;
             width: 90%;
             overflow: hidden;
+
+            @include phone{
+              max-width: 220px;
+              margin-bottom: 10px;
+            }
 
             .hero-image{
               margin-left: -3.3%;

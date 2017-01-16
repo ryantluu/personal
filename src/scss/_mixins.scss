@@ -23,7 +23,7 @@
 
 
 //Media Query Mixins
-$phone-break: 665px;
+$phone-break: 600px;
 $single-column: 975px;
 
 @mixin single {
@@ -32,8 +32,14 @@ $single-column: 975px;
   }
 }
 
+@mixin single-reverse {
+  @media (max-width: #{$single-column - 1px}) {
+    @content;
+  }
+}
+
 @mixin phone {
-  @media (min-width: #{$phone-break}) {
+  @media (max-width: #{$phone-break}) {
     @content;
   }
 }

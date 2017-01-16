@@ -14,7 +14,81 @@
   z-index: 5;
 
   @include single{
-    left: -310px;
+    background: rgba(46, 64, 82, 0.99);
+    height: 100%;
+    left: -100%;
+    padding: 0;
+    width: 100%;
+  }
+
+  &.active{
+    left: 0;
+
+    #hamburger-menu{
+      left: 12px;
+      right: auto;
+
+      span{
+        background: none;
+
+        &:before{
+          top: 1px;
+          @include transform( rotate(45deg));
+        }
+
+        &:after{
+          top: -1px;
+          @include transform( rotate(-45deg));
+        }
+      }
+    }
+  }
+
+  #hamburger-menu{
+    cursor: pointer;
+    display: none;
+    height: 32px;
+    position: absolute;
+    right: -42px;
+    top: 17px;
+    width: 30px;
+    z-index: 2;
+
+    @include single{
+      display: inline-block;
+    }
+
+    span{
+      background: white;
+      display: block;
+      height: 2px;
+      left: 50%;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      width: 20px;
+      @include transform( translate(-50%, -50%));
+
+      &:before{
+        background: white;
+        content: '';
+        display: block;
+        height: 2px;
+        position: relative;
+        top: -7px;
+        width: 20px;
+      }
+
+      &:after{
+        background: white;
+        content: '';
+        display: block;
+        height: 2px;
+        position: relative;
+        top: 5px;
+        width: 20px;
+      }
+    }
   }
 
   .personal-name{
@@ -53,6 +127,10 @@
     padding: 5px 0;
     text-align: left;
     width: 100%;
+
+    @include single{
+      display: none;
+    }
   }
 
   .divider{
@@ -62,41 +140,86 @@
     margin: 25px 0 30px 0;
     opacity: 0.5;
     width: 60px;
+
+    @include single{
+      margin: 64px 0 0 0;
+      opacity: 0.02;
+      width: 100%;
+    }
   }
 
   .project-header{
     color: white;
-    font-weight: 400;
+    font-weight: 300;
+    font-style: italic;
     padding-bottom: 10px;
+
+    @include single{
+      display: none;
+    }
   }
 
-  .project-list{
+  #project-list{
     clear: both;
     color: white;
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 0px;
     list-style: circle;
+
+    @include single{
+      display: block;
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
 
     a{
       color: white;
       text-decoration: none;
 
-      &:hover{
-        text-decoration: underline;
-      }
-
       .list-item{
         cursor: pointer;
-        font-size: .9rem;
+        font-size: 1.125rem;
         margin: 4px 0;
         padding: 4px 0;
+        list-style: none;
+
+        &:hover{
+          &:after{
+            display: inline-block;
+          }
+        }
+
+        &:after{
+          content: '→';
+          display: none;
+          position: relative;
+          padding-left: 8px;
+        }
+
+        @include single{
+          border-bottom: 1px solid rgba(255,255,255, 0.02);
+          font-size: 20px;
+          font-weight: 300;
+          margin: 0;
+          padding: 10px 0;
+          &:hover{
+            background: white;
+            color: #2E4052;
+          }
+        }
       }
     }
   }
 
-  .footer{
+  #footer{
     bottom: 30px;
     position: absolute;
+
+    @include single{
+      left: 50%;
+      @include transform( translateX(-50%));
+    }
 
     a{
       color: white;
@@ -104,9 +227,24 @@
       display: inline-block;
       text-decoration: none;
 
+      &:hover{
+        p{
+          &:after{
+            display: inline-block;
+          }
+        }
+      }
+
       p{
         font-size: 0.8rem;
         color: white;
+
+        &:after{
+          content: '→';
+          display: none;
+          position: relative;
+          padding-left: 8px;
+        }
       }
     }
   }
