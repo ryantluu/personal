@@ -1,6 +1,6 @@
 @charset "UTF-8";
 #sidebar {
-  background: #2E4052;
+  background: #1E262D;
   height: calc(100% - 60px);
   left: 0;
   position: fixed;
@@ -81,26 +81,44 @@
         width: 20px; }
   #sidebar .personal-name {
     display: block;
-    left: -2px;
-    font-family: 'Lato', Helvetica, arial, san-serif;
-    position: relative;
-    text-align: left; }
-    #sidebar .personal-name a {
-      color: white;
-      font-weight: 300;
-      text-decoration: none; }
-      #sidebar .personal-name a b {
-        font-weight: 500; }
+    position: relative; }
     @media (max-width: 974px) {
       #sidebar .personal-name {
-        background: #2E4052;
-        width: 100%;
-        font-size: 2.75rem;
+        background: #1E262D;
+        height: 66px;
         left: 0;
-        padding: 6px 0;
-        top: 0;
         position: fixed;
-        text-align: center; } }
+        text-align: center;
+        top: 0;
+        width: 100%; } }
+    #sidebar .personal-name a {
+      color: white;
+      display: inline-block;
+      font-weight: 300;
+      position: relative;
+      text-decoration: none; }
+      @media (max-width: 974px) {
+        #sidebar .personal-name a {
+          top: 50%;
+          -webkit-transform: translateY(calc(-50% + 2px));
+          -moz-transform: translateY(calc(-50% + 2px));
+          -ms-transform: translateY(calc(-50% + 2px));
+          -o-transform: translateY(calc(-50% + 2px));
+          transform: translateY(calc(-50% + 2px)); } }
+      #sidebar .personal-name a .logo {
+        background: url("../img/RyanLuuLogo.svg");
+        background-size: 200px 53px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 53px;
+        width: 200px; }
+        @media (max-width: 974px) {
+          #sidebar .personal-name a .logo {
+            background-size: 150px 40px;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 40px;
+            width: 150px; } }
   #sidebar .personal-description {
     color: white;
     display: block;
@@ -111,32 +129,19 @@
     @media (max-width: 974px) {
       #sidebar .personal-description {
         display: none; } }
-  #sidebar .divider {
-    display: block;
-    background: white;
-    height: 1px;
-    margin: 25px 0 30px 0;
-    opacity: 0.5;
-    width: 60px; }
-    @media (max-width: 974px) {
-      #sidebar .divider {
-        margin: 64px 0 0 0;
-        opacity: 0.02;
-        width: 100%; } }
-  #sidebar .project-header {
-    color: white;
-    font-weight: 300;
-    font-style: italic;
-    padding-bottom: 10px; }
-    @media (max-width: 974px) {
-      #sidebar .project-header {
-        display: none; } }
   #sidebar #project-list {
     clear: both;
     color: white;
     display: inline-block;
-    padding-left: 0px;
-    list-style: circle; }
+    margin: 42px 0;
+    padding-left: 0px; }
+    #sidebar #project-list .project-header {
+      color: white;
+      font-weight: 300;
+      padding-bottom: 20px; }
+      @media (max-width: 974px) {
+        #sidebar #project-list .project-header {
+          display: none; } }
     @media (max-width: 974px) {
       #sidebar #project-list {
         display: block;
@@ -148,7 +153,8 @@
       text-decoration: none; }
       #sidebar #project-list a .list-item {
         cursor: pointer;
-        font-size: 1.125rem;
+        font-size: 0.8rem;
+        font-weight: 300;
         margin: 4px 0;
         padding: 4px 0;
         list-style: none;
@@ -300,5 +306,3 @@
           -ms-animation: fadeIn 0.2s 1;
           -o-animation: fadeIn 0.2s 1;
           animation: fadeIn 0.2s 1; }
-
-/*# sourceMappingURL=navbar.css.map */

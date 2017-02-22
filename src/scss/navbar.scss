@@ -1,7 +1,7 @@
 @import 'mixins';
 
 #sidebar{
-  background: #2E4052;
+  background: #1E262D;
   height: calc(100% - 60px);
   left: 0;
   position: fixed;
@@ -91,30 +91,45 @@
 
   .personal-name{
     display: block;
-    left: -2px;
-    font-family: 'Lato', Helvetica, arial, san-serif;
     position: relative;
-    text-align: left;
-    a{
-      color: white;
-
-      font-weight: 300;
-      text-decoration: none;
-
-      b{
-        font-weight: 500;
-      }
-    }
 
     @include single{
-      background: #2E4052;
-      width: 100%;
-      font-size: 2.75rem;
+      background: #1E262D;
+      height: 66px;
       left: 0;
-      padding: 6px 0;
-      top: 0;
       position: fixed;
       text-align: center;
+      top: 0;
+      width: 100%;
+    }
+
+    a{
+      color: white;
+      display: inline-block;
+      font-weight: 300;
+      position: relative;
+      text-decoration: none;
+      @include single{
+        top: 50%;
+        @include transform( translateY(calc(-50% + 2px)));
+      }
+
+      .logo{
+        background: url('../img/RyanLuuLogo.svg');
+        background-size: 200px 53px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 53px;
+        width: 200px;
+
+        @include single{
+          background-size: 150px 40px;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 40px;
+          width: 150px;
+        }
+      }
     }
   }
 
@@ -131,38 +146,23 @@
     }
   }
 
-  .divider{
-    display: block;
-    background: white;
-    height: 1px;
-    margin: 25px 0 30px 0;
-    opacity: 0.5;
-    width: 60px;
-
-    @include single{
-      margin: 64px 0 0 0;
-      opacity: 0.02;
-      width: 100%;
-    }
-  }
-
-  .project-header{
-    color: white;
-    font-weight: 300;
-    font-style: italic;
-    padding-bottom: 10px;
-
-    @include single{
-      display: none;
-    }
-  }
 
   #project-list{
     clear: both;
     color: white;
     display: inline-block;
+    margin: 42px 0;
     padding-left: 0px;
-    list-style: circle;
+
+    .project-header{
+      color: white;
+      font-weight: 300;
+      padding-bottom: 20px;
+
+      @include single{
+        display: none;
+      }
+    }
 
     @include single{
       display: block;
@@ -177,7 +177,8 @@
 
       .list-item{
         cursor: pointer;
-        font-size: 1.125rem;
+        font-size: 0.8rem;
+        font-weight: 300;
         margin: 4px 0;
         padding: 4px 0;
         list-style: none;
