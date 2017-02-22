@@ -143,7 +143,7 @@ body {
             background-position: center;
             display: block;
             height: 134px;
-            margin: 0 auto 24px auto;
+            margin: 0 auto 22px auto;
             width: 500px;
             -webkit-transition: all 0.2s;
             -moz-transition: all 0.2s;
@@ -155,6 +155,7 @@ body {
                 background-repeat: no-repeat;
                 background-position: center;
                 height: 112px;
+                margin: 0 auto 20px auto;
                 width: 420px; } }
             @media (max-width: 600px) {
               body .main-container .inner-container .hero-block .hero-inner .logo {
@@ -162,6 +163,7 @@ body {
                 background-repeat: no-repeat;
                 background-position: center;
                 height: 85px;
+                margin: 0 auto 18px auto;
                 width: 320px; } }
             @media (max-width: 425px) {
               body .main-container .inner-container .hero-block .hero-inner .logo {
@@ -169,21 +171,8 @@ body {
                 background-repeat: no-repeat;
                 background-position: center;
                 height: 80px;
+                margin: 0 auto 16px auto;
                 width: 300px; } }
-          body .main-container .inner-container .hero-block .hero-inner .hero-image-holder {
-            display: block;
-            left: -2px;
-            margin: 0 auto 20px auto;
-            max-width: 300px;
-            width: 90%;
-            overflow: hidden; }
-            @media (max-width: 600px) {
-              body .main-container .inner-container .hero-block .hero-inner .hero-image-holder {
-                max-width: 220px;
-                margin-bottom: 10px; } }
-            body .main-container .inner-container .hero-block .hero-inner .hero-image-holder .hero-image {
-              margin-left: -3.3%;
-              width: 100%; }
           body .main-container .inner-container .hero-block .hero-inner .hero-headline {
             color: #2E3A44;
             font-weight: 500;
@@ -193,6 +182,15 @@ body {
             -moz-transition: all 0.2s;
             -o-transition: all 0.2s;
             transition: all 0.2s; }
+            @media (max-width: 974px) {
+              body .main-container .inner-container .hero-block .hero-inner .hero-headline {
+                line-height: 38px; } }
+            @media (max-width: 600px) {
+              body .main-container .inner-container .hero-block .hero-inner .hero-headline {
+                line-height: 34px; } }
+            @media (max-width: 425px) {
+              body .main-container .inner-container .hero-block .hero-inner .hero-headline {
+                line-height: 30px; } }
             body .main-container .inner-container .hero-block .hero-inner .hero-headline:before {
               content: "I'm a front-end developer";
               display: inline-block;
@@ -340,11 +338,12 @@ body {
             color: #666;
             cursor: pointer;
             font-size: 1rem;
+            outline: none;
             padding: 15px 30px;
-            -webkit-transition: ease-in-out 0.1s;
-            -moz-transition: ease-in-out 0.1s;
-            -o-transition: ease-in-out 0.1s;
-            transition: ease-in-out 0.1s; }
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s; }
             body .main-container .inner-container .project-block .project-button button#v_button:hover {
               border: 2px solid #2A2B2A;
               background: #2A2B2A;
@@ -365,54 +364,14 @@ body {
               border: 2px solid #666;
               background: #666;
               color: white; }
-      body .main-container .inner-container .skills-block {
-        background: #1E262D;
-        color: white;
-        padding: 120px 0 70px 0;
-        text-align: center; }
-        body .main-container .inner-container .skills-block h3 {
-          letter-spacing: 1px;
-          line-height: 38px; }
-        body .main-container .inner-container .skills-block .skills-list .skill {
-          margin: 50px 0; }
-          body .main-container .inner-container .skills-block .skills-list .skill p {
-            margin-top: 8px; }
-          body .main-container .inner-container .skills-block .skills-list .skill a {
-            color: white;
-            display: inline-block;
-            position: relative;
-            text-decoration: none;
-            -webkit-transition: ease-in-out 0.1s;
-            -moz-transition: ease-in-out 0.1s;
-            -o-transition: ease-in-out 0.1s;
-            transition: ease-in-out 0.1s; }
-            body .main-container .inner-container .skills-block .skills-list .skill a:hover {
-              color: #2E4052; }
-              body .main-container .inner-container .skills-block .skills-list .skill a:hover:after {
-                border-bottom: 1px solid #2E4052; }
-            body .main-container .inner-container .skills-block .skills-list .skill a:after {
-              background: none;
-              border-bottom: 1px solid white;
-              content: "";
-              display: block;
-              height: 4px;
-              left: 0;
-              width: 100%;
-              position: absolute;
-              -webkit-transition: ease-in-out 0.1s;
-              -moz-transition: ease-in-out 0.1s;
-              -o-transition: ease-in-out 0.1s;
-              transition: ease-in-out 0.1s; }
       body .main-container .inner-container .contact-block {
-        height: calc(100vh - 180px);
-        padding: 120px 0 60px;
+        background: #1E262D;
+        height: 100vh;
         position: relative;
         text-align: center; }
-        @media (max-width: 974px) {
-          body .main-container .inner-container .contact-block {
-            height: calc(100vh - 241px); } }
         body .main-container .inner-container .contact-block h3 {
-          color: #666; }
+          padding: 120px 0 0 0;
+          color: white; }
         body .main-container .inner-container .contact-block .social-box {
           left: 50%;
           position: absolute;
@@ -429,32 +388,33 @@ body {
             position: relative; }
             body .main-container .inner-container .contact-block .social-box .email-button button {
               background: transparent;
-              border: 2px solid #666;
-              color: #666;
+              border: 2px solid white;
+              color: white;
               cursor: pointer;
+              outline: none;
               font-size: 1rem;
               padding: 15px 30px;
-              -webkit-transition: ease-in-out 0.1s;
-              -moz-transition: ease-in-out 0.1s;
-              -o-transition: ease-in-out 0.1s;
-              transition: ease-in-out 0.1s; }
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s; }
               body .main-container .inner-container .contact-block .social-box .email-button button:hover {
-                background: #2E4052;
-                border: 2px solid #2E4052;
-                color: white; }
+                background: white;
+                border: 2px solid white;
+                color: #1E262D; }
           body .main-container .inner-container .contact-block .social-box .social-icons li {
             display: inline-block; }
             body .main-container .inner-container .contact-block .social-box .social-icons li a {
-              color: #ccc;
+              color: white;
               font-size: 1.5rem;
               padding: 8px;
               margin: 0 8px;
-              -webkit-transition: ease-in-out 0.1s;
-              -moz-transition: ease-in-out 0.1s;
-              -o-transition: ease-in-out 0.1s;
-              transition: ease-in-out 0.1s; }
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s;
+              -o-transition: all 0.2s;
+              transition: all 0.2s; }
               body .main-container .inner-container .contact-block .social-box .social-icons li a:hover {
-                color: #2E4052; }
+                opacity: 0.6; }
               body .main-container .inner-container .contact-block .social-box .social-icons li a i .fa.fa-twitter:before {
                 content: '\f099';
                 display: inline-block;

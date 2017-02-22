@@ -129,7 +129,7 @@ body{
             background-position: center;
             display: block;
             height: 134px;
-            margin: 0 auto 24px auto;
+            margin: 0 auto 22px auto;
             width: 500px;
             @include transition( all 0.2s);
 
@@ -138,6 +138,7 @@ body{
               background-repeat: no-repeat;
               background-position: center;
               height: 112px;
+							margin: 0 auto 20px auto;
               width: 420px;
             }
 
@@ -146,6 +147,7 @@ body{
               background-repeat: no-repeat;
               background-position: center;
               height: 85px;
+							margin: 0 auto 18px auto;
               width: 320px;
             }
 
@@ -154,26 +156,8 @@ body{
               background-repeat: no-repeat;
               background-position: center;
               height: 80px;
+							margin: 0 auto 16px auto;
               width: 300px;
-            }
-          }
-
-          .hero-image-holder{
-            display: block;
-            left: -2px;
-            margin: 0 auto 20px auto;
-            max-width: 300px;
-            width: 90%;
-            overflow: hidden;
-
-            @include small{
-              max-width: 220px;
-              margin-bottom: 10px;
-            }
-
-            .hero-image{
-              margin-left: -3.3%;
-              width: 100%;
             }
           }
 
@@ -183,13 +167,24 @@ body{
             line-height: 44px;
             margin-bottom: 2px;
             @include transition( all 0.2s);
+
+						@include medium{
+              line-height: 38px;
+            }
+
+            @include small{
+              line-height: 34px;
+            }
+
+            @include phone{
+              line-height: 30px;
+            }
+
             &:before{
               content: "I'm a front-end developer";
               display: inline-block;
               position: relative;
 
-              @include medium{
-              }
               @include small{
                 content: "Front-end dev";
               }
@@ -357,8 +352,9 @@ body{
             color: #666;
             cursor: pointer;
             font-size: 1rem;
+						outline: none;
             padding: 15px 30px;
-            @include transition( ease-in-out 0.1s );
+            @include transition( all 0.2s );
 
             &#v_button{
               &:hover{
@@ -399,69 +395,15 @@ body{
         }
       }
 
-      .skills-block{
-        background: #1E262D;
-        color: white;
-        padding: 120px 0 70px 0;
-        text-align: center;
-
-        h3{
-          letter-spacing: 1px;
-          line-height: 38px;
-        }
-
-        .skills-list{
-
-          .skill{
-
-            margin: 50px 0;
-
-            p{
-              margin-top: 8px;
-            }
-
-            a{
-              color: white;
-              display: inline-block;
-              position: relative;
-              text-decoration: none;
-              @include transition( ease-in-out 0.1s );
-
-              &:hover{
-                color: #2E4052;
-                &:after{
-                  border-bottom: 1px solid #2E4052;
-                }
-              }
-
-              &:after{
-                background: none;
-                border-bottom: 1px solid white;
-                content: "";
-                display: block;
-                height: 4px;
-                left: 0;
-                width: 100%;
-                position: absolute;
-                @include transition( ease-in-out 0.1s );
-              }
-            }
-          }
-        }
-      }
-
       .contact-block{
-        height: calc(100vh - 180px);
-        padding: 120px 0 60px;
+				background: #1E262D;
+        height: 100vh;
         position: relative;
         text-align: center;
 
-        @include medium{
-          height:calc(100vh - 241px);
-        }
-
         h3{
-          color: #666;
+					padding: 120px 0 0 0;
+          color: white;
         }
 
         .social-box{
@@ -478,17 +420,18 @@ body{
 
             button{
               background: transparent;
-              border: 2px solid #666;
-              color: #666;
+              border: 2px solid white;
+              color: white;
               cursor: pointer;
+							outline: none;
               font-size: 1rem;
               padding: 15px 30px;
-              @include transition( ease-in-out 0.1s );
+              @include transition( all 0.2s );
 
               &:hover{
-                background: #2E4052;
-                border: 2px solid #2E4052;
-                color: white;
+                background: white;
+                border: 2px solid white;
+                color: #1E262D;
               }
             }
           }
@@ -498,14 +441,14 @@ body{
               display: inline-block;
 
               a{
-                color: #ccc;
+                color: white;
                 font-size: 1.5rem;
                 padding: 8px;
                 margin: 0 8px;
-                @include transition( ease-in-out 0.1s );
+                @include transition( all 0.2s );
 
                 &:hover{
-                  color: #2E4052;
+                  opacity: 0.6;
                 }
 
                 i{
