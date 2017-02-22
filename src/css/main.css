@@ -56,6 +56,22 @@ h6 {
 p {
   font-size: 13px; }
 
+@media (max-width: 974px) {
+  h1 {
+    font-size: 46px; }
+  h2 {
+    font-size: 30px; }
+  h3 {
+    font-size: 22px; }
+  h4 {
+    font-size: 17px; }
+  h5 {
+    font-size: 15px; }
+  h6 {
+    font-size: 13px; }
+  p {
+    font-size: 12px; } }
+
 @media (max-width: 600px) {
   h1 {
     font-size: 44px; }
@@ -72,6 +88,22 @@ p {
   p {
     font-size: 12px; } }
 
+@media (max-width: 425px) {
+  h1 {
+    font-size: 42px; }
+  h2 {
+    font-size: 26px; }
+  h3 {
+    font-size: 18px; }
+  h4 {
+    font-size: 15px; }
+  h5 {
+    font-size: 14px; }
+  h6 {
+    font-size: 12px; }
+  p {
+    font-size: 11px; } }
+
 body {
   background: white; }
   body .main-container {
@@ -79,10 +111,9 @@ body {
     position: absolute;
     width: calc(100%); }
     body .main-container .inner-container {
-      left: 310px;
       position: absolute;
       top: 0;
-      width: calc(100% - 310px); }
+      width: 100%; }
       @media (max-width: 974px) {
         body .main-container .inner-container {
           left: 0;
@@ -105,6 +136,40 @@ body {
           -ms-transform: translate(-50%, -50%);
           -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+          body .main-container .inner-container .hero-block .hero-inner .logo {
+            background: url("../img/ryanLogoDark.svg");
+            background-size: 500px 134px;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: block;
+            height: 134px;
+            margin: 0 auto 24px auto;
+            width: 500px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s; }
+            @media (max-width: 974px) {
+              body .main-container .inner-container .hero-block .hero-inner .logo {
+                background-size: 420px 112px;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 112px;
+                width: 420px; } }
+            @media (max-width: 600px) {
+              body .main-container .inner-container .hero-block .hero-inner .logo {
+                background-size: 320px 85px;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 85px;
+                width: 320px; } }
+            @media (max-width: 425px) {
+              body .main-container .inner-container .hero-block .hero-inner .logo {
+                background-size: 300px 80px;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 80px;
+                width: 300px; } }
           body .main-container .inner-container .hero-block .hero-inner .hero-image-holder {
             display: block;
             left: -2px;
@@ -123,11 +188,26 @@ body {
             color: #2E3A44;
             font-weight: 500;
             line-height: 44px;
-            margin-bottom: 10px; }
+            margin-bottom: 2px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s; }
+            body .main-container .inner-container .hero-block .hero-inner .hero-headline:before {
+              content: "I'm a front-end developer";
+              display: inline-block;
+              position: relative; }
+              @media (max-width: 600px) {
+                body .main-container .inner-container .hero-block .hero-inner .hero-headline:before {
+                  content: "Front-end dev"; } }
           body .main-container .inner-container .hero-block .hero-inner .hero-description {
             color: #B7B7B7;
             line-height: 1.75rem;
-            font-weight: 400; }
+            font-weight: 400;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s; }
             body .main-container .inner-container .hero-block .hero-inner .hero-description:before {
               content: 'Currently b';
               display: inline-block;
@@ -286,7 +366,7 @@ body {
               background: #666;
               color: white; }
       body .main-container .inner-container .skills-block {
-        background: #8693AB;
+        background: #1E262D;
         color: white;
         padding: 120px 0 70px 0;
         text-align: center; }

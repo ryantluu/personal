@@ -4,9 +4,9 @@ document.getElementById("footer").onclick = function() {hideMenu()};
 
 
 function toggleMenu() {
-  document.getElementById("sidebar").classList.toggle("active");
+  document.getElementById("navbar").classList.toggle("active");
 };
 
 function hideMenu() {
-  document.getElementById("sidebar").classList.remove("active");
+  document.getElementById("navbar").classList.remove("active");
 };

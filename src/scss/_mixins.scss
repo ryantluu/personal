@@ -23,11 +23,18 @@
 
 
 //Media Query Mixins
-$phone-break: 600px;
-$single-column: 975px;
+$phone-break: 425px;
+$small-break: 600px;
+$medium-break: 975px;
 
-@mixin single {
-  @media (max-width: #{$single-column - 1px}) {
+@mixin medium {
+  @media (max-width: #{$medium-break - 1px}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: #{$small-break}) {
     @content;
   }
 }

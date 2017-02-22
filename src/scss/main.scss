@@ -59,7 +59,17 @@ h5{ font-size: 16px; } //16px
 h6{ font-size: 14px; } //13px
 p{  font-size: 13px; }
 
-@include phone{
+@include medium{
+  h1{ font-size: 46px; } //48px
+  h2{ font-size: 30px; } //32px
+  h3{ font-size: 22px; } //24px
+  h4{ font-size: 17px; } //18px
+  h5{ font-size: 15px; } //16px
+  h6{ font-size: 13px; } //13px
+  p{  font-size: 12px; }
+}
+
+@include small{
   h1{ font-size: 44px; } //48px
   h2{ font-size: 28px; } //32px
   h3{ font-size: 20px; } //24px
@@ -67,6 +77,16 @@ p{  font-size: 13px; }
   h5{ font-size: 15px; } //16px
   h6{ font-size: 13px; } //13px
   p{  font-size: 12px; }
+}
+
+@include phone{
+  h1{ font-size: 42px; } //48px
+  h2{ font-size: 26px; } //32px
+  h3{ font-size: 18px; } //24px
+  h4{ font-size: 15px; } //18px
+  h5{ font-size: 14px; } //16px
+  h6{ font-size: 12px; } //13px
+  p{  font-size: 11px; }
 }
 
 body{
@@ -78,11 +98,10 @@ body{
     width: calc(100%);
 
     .inner-container{
-      left: 310px;
       position: absolute;
       top: 0;
-      width: calc(100% - 310px);
-      @include single{
+      width: 100%;
+      @include medium{
         left: 0;
         width: 100%;
       }
@@ -103,6 +122,42 @@ body{
           width: 90%;
           @include transform(translate(-50%,-50%));
 
+          .logo{
+            background: url('../img/ryanLogoDark.svg');
+            background-size: 500px 134px;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: block;
+            height: 134px;
+            margin: 0 auto 24px auto;
+            width: 500px;
+            @include transition( all 0.2s);
+
+            @include medium{
+              background-size: 420px 112px;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 112px;
+              width: 420px;
+            }
+
+            @include small{
+              background-size: 320px 85px;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 85px;
+              width: 320px;
+            }
+
+            @include phone{
+              background-size: 300px 80px;
+              background-repeat: no-repeat;
+              background-position: center;
+              height: 80px;
+              width: 300px;
+            }
+          }
+
           .hero-image-holder{
             display: block;
             left: -2px;
@@ -111,7 +166,7 @@ body{
             width: 90%;
             overflow: hidden;
 
-            @include phone{
+            @include small{
               max-width: 220px;
               margin-bottom: 10px;
             }
@@ -126,34 +181,33 @@ body{
             color: #2E3A44;
             font-weight: 500;
             line-height: 44px;
-            margin-bottom: 10px;
-            // &:after{
-            //   content: 'user experiences.';
-            //   display: inline-block;
-            //   padding-left: 8px;
-            //   position: relative;
-            //
-            //   @include single{
-            //     padding-left: 6px;
-            //   }
-            //   @include phone{
-            //     content: 'UX.';
-            //     padding-left: 5px;
-            //   }
-            // }
+            margin-bottom: 2px;
+            @include transition( all 0.2s);
+            &:before{
+              content: "I'm a front-end developer";
+              display: inline-block;
+              position: relative;
+
+              @include medium{
+              }
+              @include small{
+                content: "Front-end dev";
+              }
+            }
           }
 
           .hero-description{
             color: #B7B7B7;
             line-height: 1.75rem;
             font-weight: 400;
+            @include transition( all 0.2s);
 
             &:before{
               content: 'Currently b';
               display: inline-block;
               position: relative;
 
-              @include phone{
+              @include small{
                 content: 'B';
                 padding-left: 5px;
               }
@@ -165,12 +219,12 @@ body{
               position: relative;
               padding-left: 7px;
 
-              @include phone{
+              @include small{
                 content: 'DC.';
                 padding-left: 5px;
               }
 
-              @include phone{
+              @include small{
                 content: 'DC.';
                 padding-left: 4px;
               }
@@ -196,7 +250,7 @@ body{
           position: absolute;
           width: 60px;
           @include transform( translateX(-50%));
-          @include single{
+          @include medium{
             bottom: 60px;
           }
 
@@ -346,7 +400,7 @@ body{
       }
 
       .skills-block{
-        background: #8693AB;
+        background: #1E262D;
         color: white;
         padding: 120px 0 70px 0;
         text-align: center;
@@ -402,7 +456,7 @@ body{
         position: relative;
         text-align: center;
 
-        @include single{
+        @include medium{
           height:calc(100vh - 241px);
         }
 
