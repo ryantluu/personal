@@ -57,14 +57,28 @@
     </div>
   </nav>
 
-  <div class="main-container">
+  <div class="main-container" id="home">
     <div class="inner-container" id="top">
       <div class="hero-block">
+        <video class="hero-background" id="bgvid" playsinline autoplay muted loop>
+          <source src="/img/ryan-hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-foreground"></div>
         <div class="hero-inner">
           <div class='logo'></div>
+          <h3 class="entered-scroll">Scroll to see work</h3>
           <h3 class="hero-headline"> & product manager.</h3>
           <h5 class="hero-description">uilding <a href="#stash">Stash</a> & freelancing in</h5>
         </div>
+        <div class="explore-door-container">
+          <div class="door-left"></div>
+          <div class="door" id="explore-trigger">
+            <h4 class="explore-word">Explore</h4>
+          </div>
+          <div class="door-right"></div>
+          <div class="door-bottom"></div>
+        </div>
+
         <a href="#vumble"><div class="down-arrow"></div></a>
       </div>
 

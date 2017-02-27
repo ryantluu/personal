@@ -9,6 +9,13 @@
 <meta name='description' content='My personal website'>
 <meta name="author" content="Ryan Luu">
 
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
 
 <title>Ryan Luu</title>
 
@@ -23,21 +30,27 @@
 
 <body>
 
-  <nav id="sidebar">
+  <nav id="navbar">
     <div id="hamburger-menu">
       <span></span>
     </div>
-    <div class="personal-name"><a href="#top"><div class='logo'></div></a><div>
-    <h6 class="project-header">~ Projects ~</h6>
-    <ul id="project-list">
-      <a href="#vumble"><li class="list-item d1">Vumble</li></a>
-      <a href="#stash"><li class="list-item d2">Stash</li></a>
-      <a href="#rainbow"><li class="list-item d3">Rainbow</li></a>
-      <a href="#humble"><li class="list-item d4">Humble Ventures</li></a>
-      <a href="#activity"><li class="list-item d5">Activity Sheet</li></a>
-    </ul>
-    <div id="footer">
-      <a href="#contact"><p>Contact</p></a>
+    <div class="sidebar">
+      <div class="personal-name"><a href="#top"><div class='logo'></div></a></div>
+      <ul id="project-list">
+        <a href="#vumble"><li class="list-item d1">VUMBLE</li></a>
+        <a href="#stash"><li class="list-item d2">STASH</li></a>
+        <a href="#rainbow"><li class="list-item d3">RAINBOW</li></a>
+        <a href="#humble"><li class="list-item d4">HUMBLE VENTURES</li></a>
+        <a href="#activity"><li class="list-item d5">ACTIVITY SHEET</li></a>
+      </ul>
+      <div id="footer">
+        <ul class="contact-icons">
+          <li><a href="mailto:ryan@vumble.com"><i class="fa fa-envelope-o"></i></a></li>
+          <li><a href="http://twitter.com/rtluu" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="http://linkedin.com/in/ryanluu" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="http://github.com/rtluu" target="_blank"><i class="fa fa-github"></i></a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -45,8 +58,9 @@
     <div class="inner-container" id="top">
       <div class="hero-block">
         <div class="hero-inner">
-          <h3 class="hero-headline">I'm a </h3>
-          <h4 class="hero-description">uilding <a href="#stash">Stash</a> & freelancing in</h4>
+          <div class='logo'></div>
+          <h3 class="hero-headline"> & product manager.</h3>
+          <h5 class="hero-description">uilding <a href="#stash">Stash</a> & freelancing in</h5>
         </div>
         <a href="#vumble"><div class="down-arrow"></div></a>
       </div>
@@ -60,7 +74,7 @@
           <p class="project-description">My team and I created the fastest way to enjoy YouTube videos. Every day, users submit clips and vote the best ones to the top. No ads or interruptions. +150,000 users</p>
         </div>
         <img class="project-image" src="img/vumble1.png">
-        <a class="project-button" href="http://www.vumble.com"><button id="v_button">VIEW PROJECT</button></a>
+        <a class="project-button" href="http://www.vumble.com"><button id="v_button">VISIT SITE</button></a>
       </div>
 
       <div class="project-block" id="stash">
@@ -72,7 +86,7 @@
           <p class="project-description">Stash is a visual bookmarking tool that helps people discover and collect valuable web content. Built in React with the ability to embed videos, images, full webpages and more. In beta.</p>
         </div>
         <img class="project-image" src="img/stash.png">
-        <a class="project-button" href="http://www.stash.ag"><button id="s_button">VIEW PROJECT</button></a>
+        <a class="project-button" href="http://www.stash.ag"><button id="s_button">VISIT SITE</button></a>
       </div>
 
       <div class="project-block" id="rainbow">
@@ -96,7 +110,7 @@
           <p class="project-description">Coordinated a new rebrand and website for a venture capital firm with ties to Sony and Ogilvy. Built in wordpress for easy client content management.</p>
         </div>
         <img class="project-image" src="img/humble.png">
-        <a class="project-button" href="http://humble.vc"><button id="h_button">VIEW PROJECT</button></a>
+        <a class="project-button" href="http://humble.vc"><button id="h_button">VISIT SITE</button></a>
       </div>
 
       <div class="project-block" id="activity">
@@ -108,21 +122,7 @@
           <p class="project-description">My friends and I are documenting our daily productivity to hold ourselves accoutable for creating every single day. Purposefully basic and authetic. Join us and build one!</p>
         </div>
         <img class="project-image" src="img/activitysheet.png">
-        <a class="project-button" href="http://rtluu.github.io/activitysheet"><button id="as_button">VIEW PROJECT</button></a>
-      </div>
-
-      <div class="skills-block" id="skills">
-        <h3>WAYS I CAN HELP YOU</h3>
-        <ul class="skills-list">
-          <li class="skill">Product Management</li>
-          <li class="skill">Frontend Development<p>(I've worked w/ React, Ruby, Gulp, Sass, and more)</p></li>
-          <li class="skill">UI/UX Design</li>
-          <li class="skill">Client Coordinating</li>
-          <li class="skill">Creative Strategy</li>
-          <li class="skill">User Research/Testing</li>
-          <li class="skill">Data Analytics</li>
-          <li class="skill"><a href="https://www.youtube.com/watch?v=vbyj9DzMpCQ">Pitching</a> & <a href="http://imgur.com/a/bgzFy" target=blank>Storytelling</a></li>
-        </ul>
+        <a class="project-button" href="http://rtluu.github.io/activitysheet"><button id="as_button">VISIT SITE</button></a>
       </div>
 
       <div class="contact-block" id="contact">
@@ -131,7 +131,7 @@
           <a class="email-button" href="mailto:ryan@vumble.com"><button id="as_button">EMAIL ME</button></a>
           <ul class="social-icons">
             <li><a href="http://twitter.com/rtluu"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="http://linkedin.com/ryanluu"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="http://linkedin.com/in/ryanluu"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="http://github.com/rtluu"><i class="fa fa-github"></i></a></li>
           </ul>
         </div>

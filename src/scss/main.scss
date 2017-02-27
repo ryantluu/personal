@@ -95,7 +95,50 @@ body{
   .main-container{
     right: 0px;
     position: absolute;
+		height: 100vh;
+		overflow: hidden;
     width: calc(100%);
+
+		&.entered{
+			height: 100%;
+			overflow: auto;
+			.inner-container{
+
+				.hero-block{
+					.hero-foreground{
+						display: none;
+					}
+
+					.hero-inner{
+						.logo{
+							-webkit-filter: brightness(0) invert(100%);
+							-moz-filter: brightness(0) invert(100%);
+							-ms-filter: brightness(0) invert(100%);
+							filter: brightness(0) invert(100%);
+						}
+
+						.entered-scroll{
+							display: block;
+						}
+
+						.hero-headline{
+							display: none;
+						}
+
+						.hero-description{
+							display: none;
+						}
+					}
+					.explore-door-container{
+						display: none;
+					}
+
+					.down-arrow{
+						display: inline-block;
+					}
+				}
+			}
+		}
 
     .inner-container{
       position: absolute;
@@ -112,6 +155,27 @@ body{
         height: 100vh;
         position: relative;
         text-align: center;
+
+				.hero-background{
+					position: fixed;
+			    top: 50%;
+			    left: 50%;
+			    min-width: 100%;
+			    min-height: 100%;
+			    width: auto;
+			    height: auto;
+			    z-index: -100;
+					@include transform( translate(-50%, -50%));
+				}
+
+				.hero-foreground{
+					background: white;
+					position: fixed;
+					bottom: 105px;
+					left: 0;
+					right: 0;
+					top: 0;
+				}
 
         .hero-inner{
           display: block;
@@ -160,6 +224,26 @@ body{
               width: 300px;
             }
           }
+
+					.entered-scroll{
+						color: white;
+						display: none;
+            font-weight: 500;
+            line-height: 44px;
+            margin-bottom: 2px;
+            @include transition( all 0.2s);
+						@include medium{
+              line-height: 38px;
+            }
+
+            @include small{
+              line-height: 34px;
+            }
+
+            @include phone{
+              line-height: 30px;
+            }
+					}
 
           .hero-headline{
             color: #2E3A44;
@@ -236,23 +320,81 @@ body{
           }
         }
 
+				.explore-door-container{
+					bottom: 0;
+					display: block;
+					height: 105px;
+					position: absolute;
+					width: 100%;
+
+					.door-left{
+						background: white;
+						display: inline-block;
+						float: left;
+						height: 75px;
+						width: calc(50% - 75px);
+					}
+
+					.door{
+						background: rgba(21, 21, 21, 0.2);
+						display: block;
+						bottom: 30px;
+	          cursor: pointer;
+	          height: 75px;
+	          left: 50%;
+	          position: absolute;
+	          width: 150px;
+	          @include transform( translateX(-50%));
+
+						.explore-word{
+							color: white;
+							font-weight: 400;
+							font-style: italic;
+							left: 50%;
+							letter-spacing: 1px;
+							position: absolute;
+							text-align: center;
+							top: 50%;
+							@include transform( translate(-50%, -50%));
+						}
+					}
+
+					.door-right{
+						background: white;
+						display: inline-block;
+						float: right;
+						height: 75px;
+						width: calc(50% - 75px);
+					}
+
+					.door-bottom{
+						background: white;
+						clear: both;
+						display: block;
+						height: 30px;
+						width: 100%;
+					}
+				}
+
+
+
         .down-arrow{
           bottom: 30px;
           cursor: pointer;
-          display: block;
+          display: none;
           height: 36px;
           left: 50%;
           position: absolute;
           width: 60px;
           @include transform( translateX(-50%));
           @include medium{
-            bottom: 60px;
+            bottom: 45px;
           }
 
           &:before{
             content: '';
             display: block;
-            background: #e6e6e6;
+            background: white;
             height: 4px;
             left: 13.5px;
             position: absolute;
@@ -263,7 +405,7 @@ body{
           &:after{
             content: '';
             display: block;
-            background: #e6e6e6;
+            background: white;
             height: 4px;
             right: 13.5px;
             position: absolute;
