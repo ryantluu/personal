@@ -307,7 +307,7 @@ body {
             height: 75px;
             width: calc(50% - 75px); }
           body .main-container .inner-container .hero-block .explore-door-container .door {
-            background: rgba(21, 21, 21, 0.8);
+            background: rgba(21, 21, 21, 0.2);
             display: block;
             bottom: 30px;
             cursor: pointer;

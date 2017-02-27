@@ -13,8 +13,9 @@ function hideMenu() {
 
 
 //Explore Trigger
-document.getElementById("explore-trigger").onclick = function() {toggleExplore()};
+document.getElementById("explore-trigger").onclick = function() {addExplore()};
+document.getElementById("project-list").onclick = function() {addExplore()};
 
-function toggleExplore() {
-  document.getElementById("home").classList.toggle("entered");
+function addExplore() {
+  document.getElementById("home").classList.add("entered");
 };
