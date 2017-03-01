@@ -1,0 +1,120 @@
+@import 'mixins';
+@import 'variables';
+
+@font-face {
+	font-family: 'Brown';
+	src: url('../fonts/Brown-Light.eot');
+	src: url('../fonts/Brown-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Brown-Light.woff') format('woff'),
+		url('../fonts/Brown-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brown';
+	src: url('../fonts/Brown-Thin.eot');
+	src: url('../fonts/Brown-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Brown-Thin.woff') format('woff'),
+		url('../fonts/Brown-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brown';
+	src: url('../fonts/Brown-Regular.eot');
+	src: url('../fonts/Brown-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Brown-Regular.woff') format('woff'),
+		url('../fonts/Brown-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brown';
+	src: url('../fonts/Brown-Bold.eot');
+	src: url('../fonts/Brown-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Brown-Bold.woff') format('woff'),
+		url('../fonts/Brown-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    font-family: 'Brown', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin: 0;
+    letter-spacing: 0.5px;
+    padding: 0;
+}
+
+h1{ font-size: 48px; } //48px
+h2{ font-size: 34px; } //32px
+h3{ font-size: 24px; } //24px
+h4{ font-size: 18px; } //18px
+h5{ font-size: 16px; } //16px
+h6{ font-size: 15px; } //13px
+p{  font-size: 14px; }
+li{ font-size: 16px; }
+
+@include medium{
+  h1{ font-size: 46px; } //48px
+  h2{ font-size: 32px; } //32px
+  h3{ font-size: 22px; } //24px
+  h4{ font-size: 17px; } //18px
+  h5{ font-size: 15px; } //16px
+  h6{ font-size: 14px; } //13px
+  p{  font-size: 14px; }
+	li{ font-size: 15px; }
+}
+
+@include small{
+  h1{ font-size: 44px; } //48px
+  h2{ font-size: 30px; } //32px
+  h3{ font-size: 20px; } //24px
+  h4{ font-size: 16px; } //18px
+  h5{ font-size: 15px; } //16px
+  h6{ font-size: 14px; } //13px
+  p{  font-size: 14px; }
+	li{ font-size: 15px; }
+}
+
+@include phone{
+  h1{ font-size: 42px; } //48px
+  h2{ font-size: 28px; } //32px
+  h3{ font-size: 18px; } //24px
+  h4{ font-size: 15px; } //18px
+  h5{ font-size: 14px; } //16px
+  h6{ font-size: 13px; } //13px
+  p{  font-size: 13px; }
+	li{ font-size: 14px; }
+}
+
+body{
+  background: white;
+
+	.home-link{
+		display: block;
+		position: relative;
+		text-decoration: none;
+		#home-button{
+			background: url('../img/ryan_r.svg');
+			background-size: 30px;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 30px;
+			left: 32px;
+			position: absolute;
+			top: 32px;
+			width: 30px;
+			@include transition( all 0.2s);
+
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+	}
+}
