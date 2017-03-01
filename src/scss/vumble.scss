@@ -96,10 +96,11 @@
       display: block;
       margin: 20px auto 60px auto;
       position: relative;
+      pointer-events: none;
       max-width: 100%;
     }
 
-    iframe{
+    .reddit-box{
       margin: 30px 0 !important;
     }
 
