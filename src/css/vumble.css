@@ -20,6 +20,8 @@
     margin: 40px 0 40px 0;
     opacity: 0.5;
     width: 60px; }
+    .vumble-container .line-break#feedback {
+      margin: -10px 0 40px 0; }
   .vumble-container .case-info {
     text-align: left; }
     .vumble-container .case-info .role {
@@ -72,7 +74,7 @@
     max-width: 100%; }
   .vumble-container .case-footer .site-link {
     font-weight: 400;
-    margin: 60px 0 60px 0; }
+    margin: 50px 0 50px 0; }
     .vumble-container .case-footer .site-link:hover a {
       text-decoration: underline; }
     .vumble-container .case-footer .site-link a {
