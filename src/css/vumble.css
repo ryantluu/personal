@@ -1,0 +1,92 @@
+.vumble-container {
+  color: #666;
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 100px 30px 60px 30px; }
+  .vumble-container .case-intro {
+    text-align: left; }
+    .vumble-container .case-intro .title {
+      letter-spacing: 1px;
+      line-height: 3rem; }
+    .vumble-container .case-intro .description {
+      letter-spacing: 1px;
+      font-weight: 400;
+      margin-top: 10px; }
+  .vumble-container .line-break {
+    display: block;
+    background: #666;
+    height: 1px;
+    margin: 40px 0 40px 0;
+    opacity: 0.5;
+    width: 60px; }
+  .vumble-container .case-info {
+    text-align: left; }
+    .vumble-container .case-info .role {
+      font-style: italic;
+      margin-bottom: 12px; }
+    .vumble-container .case-info .positions {
+      font-weight: 400; }
+    .vumble-container .case-info .process-intro {
+      font-style: italic;
+      margin: 32px 0 12px 0; }
+    .vumble-container .case-info ul {
+      list-style-type: none; }
+      .vumble-container .case-info ul li {
+        padding: 6px 0; }
+  .vumble-container .process-block .process-title {
+    margin-bottom: 16px; }
+  .vumble-container .process-block .process-text {
+    font-size: 16px;
+    line-height: 1.75rem; }
+    @media (max-width: 974px) {
+      .vumble-container .process-block .process-text {
+        font-size: 15px; } }
+    @media (max-width: 600px) {
+      .vumble-container .process-block .process-text {
+        font-size: 15px; } }
+    @media (max-width: 425px) {
+      .vumble-container .process-block .process-text {
+        font-size: 14px; } }
+    .vumble-container .process-block .process-text span {
+      font-style: italic;
+      font-weight: bold; }
+  .vumble-container .process-block .tech-title {
+    margin: 24px 0 8px 0; }
+  .vumble-container .process-block .tech-stack {
+    list-style-type: circle;
+    margin: 0px 0 18px 18px; }
+    .vumble-container .process-block .tech-stack li {
+      padding: 6px 0; }
+  .vumble-container .process-block .tech-feature {
+    margin-top: 50px; }
+  .vumble-container .process-block .example-vid {
+    display: block;
+    margin: 20px auto 60px auto;
+    position: relative;
+    max-width: 100%; }
+  .vumble-container .process-block iframe {
+    margin: 30px 0 !important; }
+  .vumble-container .process-block img {
+    margin: 30px 0 0 0;
+    max-width: 100%; }
+  .vumble-container .case-footer .site-link {
+    font-weight: 400;
+    margin: 60px 0 60px 0; }
+    .vumble-container .case-footer .site-link:hover a {
+      text-decoration: underline; }
+    .vumble-container .case-footer .site-link a {
+      text-decoration: none; }
+  .vumble-container .case-footer .more-links {
+    font-weight: 400;
+    margin: 0 0 8px 0; }
+  .vumble-container .case-footer .more-list {
+    list-style-type: circle;
+    margin: 0px 0 18px 18px; }
+    .vumble-container .case-footer .more-list li {
+      padding: 6px 0; }
+      .vumble-container .case-footer .more-list li a {
+        display: inline-block;
+        text-decoration: none; }
+        .vumble-container .case-footer .more-list li a:hover {
+          text-decoration: underline; }
