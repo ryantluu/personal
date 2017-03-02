@@ -6,10 +6,18 @@
   display: block;
   margin: 0 auto;
   max-width: 800px;
-  padding: 100px 30px 60px 30px;
+  padding: 60px 30px 60px 30px;
+  @include medium{ padding: 100px 30px 60px 30px;}
+
+  .headline-vid{
+    display: block;
+    margin: 20px auto 40px auto;
+    position: relative;
+    max-width: 100%;
+  }
 
   .case-intro{
-    text-align: left;
+    text-align: center;
 
     .title{
       letter-spacing: 1px;
@@ -30,6 +38,10 @@
     margin: 40px 0 40px 0;
     opacity: 0.5;
     width: 60px;
+
+    &#headline-break{
+      margin: 40px auto 40px auto;
+    }
 
     &#feedback{
       margin: -10px 0 40px 0;
@@ -94,7 +106,7 @@
 
     .example-vid{
       display: block;
-      margin: 20px auto 60px auto;
+      margin: 20px auto 50px auto;
       position: relative;
       max-width: 100%;
     }

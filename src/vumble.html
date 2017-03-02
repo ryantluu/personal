@@ -57,7 +57,11 @@
       <h2 class="title">VUMBLE</h2>
       <h5 class="description">THE LEADERBOARD FOR ONLINE VIDEO</h5>
     </div>
-    <span class="line-break"></span>
+    <span class="line-break" id="headline-break"></span>
+    <video class="headline-vid" id="vumble-headline" autoplay muted loop poster="/img/vumble-headline-poster.png">
+      <source src="/img/vumble-headline.webm" type="video/webm">
+      <source src="/img/vumble-headline.mp4" type="video/mp4">
+    </video>
     <div class="case-info">
       <h5 class="role">Role:</h5>
       <h5 class="positions">Founder, Product Manager & Frontend</h5>
@@ -165,6 +169,8 @@
     document.getElementsByTagName('video')[3].setAttribute('controls', 'controls');
     document.getElementsByTagName('video')[4].removeAttribute('autoplay');
     document.getElementsByTagName('video')[4].setAttribute('controls', 'controls');
+    document.getElementsByTagName('video')[5].removeAttribute('autoplay');
+    document.getElementsByTagName('video')[5].setAttribute('controls', 'controls');
   }
   </script>
 

@@ -3,9 +3,17 @@
   display: block;
   margin: 0 auto;
   max-width: 800px;
-  padding: 100px 30px 60px 30px; }
+  padding: 60px 30px 60px 30px; }
+  @media (max-width: 974px) {
+    .vumble-container {
+      padding: 100px 30px 60px 30px; } }
+  .vumble-container .headline-vid {
+    display: block;
+    margin: 20px auto 40px auto;
+    position: relative;
+    max-width: 100%; }
   .vumble-container .case-intro {
-    text-align: left; }
+    text-align: center; }
     .vumble-container .case-intro .title {
       letter-spacing: 1px;
       line-height: 3rem; }
@@ -20,6 +28,8 @@
     margin: 40px 0 40px 0;
     opacity: 0.5;
     width: 60px; }
+    .vumble-container .line-break#headline-break {
+      margin: 40px auto 40px auto; }
     .vumble-container .line-break#feedback {
       margin: -10px 0 40px 0; }
   .vumble-container .case-info {
@@ -64,7 +74,7 @@
     margin-top: 50px; }
   .vumble-container .process-block .example-vid {
     display: block;
-    margin: 20px auto 60px auto;
+    margin: 20px auto 50px auto;
     position: relative;
     max-width: 100%; }
   .vumble-container .process-block .reddit-box {
