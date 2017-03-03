@@ -36,7 +36,7 @@
   #navbar #hamburger-menu:hover {
     opacity: 0.6; }
   #navbar #hamburger-menu span {
-    background: #1E262D;
+    background: #cccccc;
     display: block;
     height: 2px;
     left: 50%;
@@ -54,7 +54,7 @@
     -o-transition: all 0.2s;
     transition: all 0.2s; }
     #navbar #hamburger-menu span:before {
-      background: #1E262D;
+      background: #cccccc;
       content: '';
       display: block;
       height: 2px;
@@ -66,7 +66,7 @@
       -o-transition: all 0.2s;
       transition: all 0.2s; }
     #navbar #hamburger-menu span:after {
-      background: #1E262D;
+      background: #cccccc;
       content: '';
       display: block;
       height: 2px;
@@ -79,7 +79,7 @@
       transition: all 0.2s; }
 
 #navbar .sidebar {
-  background: #1E262D;
+  background: #5386E4;
   height: 100%;
   position: fixed;
   text-align: left;
@@ -92,14 +92,12 @@
   -o-transition: all 0.2s;
   transition: all 0.2s; }
   #navbar .sidebar #project-list {
-    border-top: 2px solid #33404C;
     color: white;
     display: block;
     position: relative;
     list-style: none;
     top: 96px; }
     #navbar .sidebar #project-list a {
-      border-bottom: 2px solid #33404C;
       color: white;
       display: block;
       text-decoration: none; }
@@ -202,7 +200,7 @@
     #navbar .sidebar #footer .contact-icons li {
       display: inline-block; }
       #navbar .sidebar #footer .contact-icons li a {
-        color: #ccc;
+        color: white;
         font-size: 1rem;
         padding: 4px;
         margin: 0 4px;

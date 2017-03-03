@@ -11,7 +11,7 @@
         left: 0;
         width: 100%; } }
     .home-container .inner-container .hero-block {
-      background: none;
+      background: #1c1d25;
       display: block;
       height: 100vh;
       position: relative;
@@ -29,7 +29,7 @@
         -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%); }
         .home-container .inner-container .hero-block .hero-inner .logo {
-          background: url("../img/ryanLogoDark.svg");
+          background: url("../img/ryanLogoWhite.svg");
           background-size: 500px 134px;
           background-repeat: no-repeat;
           background-position: center;
@@ -66,7 +66,7 @@
               margin: 0 auto 16px auto;
               width: 300px; } }
         .home-container .inner-container .hero-block .hero-inner .hero-headline {
-          color: #2E3A44;
+          color: white;
           font-weight: 500;
           line-height: 44px;
           margin-bottom: 2px;
@@ -91,7 +91,8 @@
               .home-container .inner-container .hero-block .hero-inner .hero-headline:before {
                 content: "Front-end dev"; } }
         .home-container .inner-container .hero-block .hero-inner .hero-description {
-          color: #B7B7B7;
+          display: none;
+          color: #EAE8E9;
           line-height: 1.75rem;
           font-weight: 400;
           -webkit-transition: all 0.2s;
@@ -120,7 +121,7 @@
                 content: 'DC.';
                 padding-left: 4px; } }
           .home-container .inner-container .hero-block .hero-inner .hero-description a {
-            color: #B7B7B7;
+            color: #EAE8E9;
             text-decoration: none; }
             .home-container .inner-container .hero-block .hero-inner .hero-description a:hover {
               text-decoration: underline; }
@@ -187,15 +188,60 @@
     .home-container .inner-container .project-block {
       background: white;
       display: block;
-      padding: 120px 0; }
+      padding: 100px 0; }
+      .home-container .inner-container .project-block#vumble {
+        background: #6290C3; }
+        .home-container .inner-container .project-block#vumble .project-intro {
+          color: white; }
+        .home-container .inner-container .project-block#vumble .line-break {
+          background: white; }
+        .home-container .inner-container .project-block#vumble .project-description {
+          color: white; }
+        .home-container .inner-container .project-block#vumble .project-button button {
+          border: 2px solid white;
+          background: none;
+          color: white; }
       .home-container .inner-container .project-block#stash {
-        background: #f5f5f5; }
+        background: #7A3DFE; }
+        .home-container .inner-container .project-block#stash .project-intro {
+          color: white; }
+        .home-container .inner-container .project-block#stash .line-break {
+          background: white; }
+        .home-container .inner-container .project-block#stash .project-description {
+          color: white; }
+        .home-container .inner-container .project-block#stash .project-button button {
+          border: 2px solid white;
+          background: none;
+          color: white; }
+      .home-container .inner-container .project-block#rainbow {
+        background: black; }
+        .home-container .inner-container .project-block#rainbow .project-intro {
+          color: white; }
+        .home-container .inner-container .project-block#rainbow .line-break {
+          background: white; }
+        .home-container .inner-container .project-block#rainbow .project-description {
+          color: white; }
+        .home-container .inner-container .project-block#rainbow .project-button button {
+          border: 2px solid white;
+          background: none;
+          color: white; }
       .home-container .inner-container .project-block#humble {
-        background: #f5f5f5; }
+        background: #DB3B2A; }
+        .home-container .inner-container .project-block#humble .project-intro {
+          color: white; }
+        .home-container .inner-container .project-block#humble .line-break {
+          background: white; }
+        .home-container .inner-container .project-block#humble .project-description {
+          color: white; }
+        .home-container .inner-container .project-block#humble .project-button button {
+          border: 2px solid white;
+          background: none;
+          color: white; }
       .home-container .inner-container .project-block .project-intro {
         color: #666;
         text-align: center; }
         .home-container .inner-container .project-block .project-intro h6 {
+          display: none;
           color: #dedede;
           letter-spacing: 1px;
           font-weight: 300;
@@ -206,7 +252,8 @@
         .home-container .inner-container .project-block .project-intro h5 {
           letter-spacing: 1px;
           line-height: 2rem;
-          font-weight: 400; }
+          font-weight: 400;
+          padding: 0 20px; }
         .home-container .inner-container .project-block .project-intro .line-break {
           display: block;
           background: #666;
@@ -253,27 +300,27 @@
           -o-transition: all 0.2s;
           transition: all 0.2s; }
           .home-container .inner-container .project-block .project-button button#v_button:hover {
-            border: 2px solid #2A2B2A;
-            background: #2A2B2A;
-            color: #F2C51F; }
+            border: 2px solid white;
+            background: white;
+            color: #6290C3; }
           .home-container .inner-container .project-block .project-button button#s_button:hover {
-            border: 2px solid #7A3DFE;
-            background: #7A3DFE;
-            color: white; }
+            border: 2px solid white;
+            background: white;
+            color: #7A3DFE; }
           .home-container .inner-container .project-block .project-button button#r_button:hover {
-            border: 2px solid black;
-            background: black;
-            color: white; }
+            border: 2px solid white;
+            background: white;
+            color: black; }
           .home-container .inner-container .project-block .project-button button#h_button:hover {
-            border: 2px solid #DB3B2A;
-            background: #DB3B2A;
-            color: white; }
+            border: 2px solid white;
+            background: white;
+            color: #DB3B2A; }
           .home-container .inner-container .project-block .project-button button#as_button:hover {
             border: 2px solid #666;
             background: #666;
             color: white; }
     .home-container .inner-container .contact-block {
-      background: #1E262D;
+      background: #1c1d25;
       height: 100vh;
       position: relative;
       text-align: center; }

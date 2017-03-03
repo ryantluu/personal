@@ -12,10 +12,16 @@ function hideMenu() {
 };
 
 
-//Explore Trigger
-document.getElementById("explore-trigger").onclick = function() {addExplore()};
-document.getElementById("project-list").onclick = function() {addExplore()};
+$(document).ready(function(){
 
-function addExplore() {
-  document.getElementById("home").classList.add("entered");
-};
+  $('.down-arrow').on('click', function(event){
+      event.preventDefault();
+
+      var vumble = $('#vumble');
+
+      $('html, body').animate({
+          scrollTop: vumble.offset().top
+      }, 700);
+  });
+
+});

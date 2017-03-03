@@ -44,7 +44,7 @@
     }
 
     span{
-      background: #1E262D;
+      background: #cccccc;
       display: block;
       height: 2px;
       left: 50%;
@@ -56,7 +56,7 @@
       @include transition( all 0.2s);
 
       &:before{
-        background: #1E262D;
+        background: #cccccc;
         content: '';
         display: block;
         height: 2px;
@@ -67,7 +67,7 @@
       }
 
       &:after{
-        background: #1E262D;
+        background: #cccccc;
         content: '';
         display: block;
         height: 2px;
@@ -80,7 +80,7 @@
   }
 
   .sidebar{
-    background: #1E262D;
+    background: #5386E4;
     height: 100%;
     position: fixed;
     text-align: left;
@@ -91,7 +91,7 @@
     @include transition( all 0.2s);
 
     #project-list{
-      border-top: 2px solid #33404C;
+      //border-top: 1px solid white;
       color: white;
       display: block;
       position: relative;
@@ -99,7 +99,7 @@
       top: 96px;
 
       a{
-        border-bottom: 2px solid #33404C;
+        //border-bottom: 1px solid white;
         color: white;
         display: block;
         text-decoration: none;
@@ -132,7 +132,7 @@
           display: inline-block;
 
           a{
-            color: #ccc;
+            color: white;
             font-size: 1rem;
             padding: 4px;
             margin: 0 4px;
