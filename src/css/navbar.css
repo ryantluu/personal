@@ -19,6 +19,9 @@
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
   #navbar.active .sidebar {
+    -moz-box-shadow: -5px 0 10px 0 rgba(28, 29, 37, 0.2);
+    -webkit-box-shadow: -5px 0 10px 0 rgba(28, 29, 37, 0.2);
+    box-shadow: -5px 0 10px 0 rgba(28, 29, 37, 0.2);
     right: 0; }
 
 #navbar #hamburger-menu {

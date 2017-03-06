@@ -55,7 +55,7 @@
               background-repeat: no-repeat;
               background-position: center;
               height: 85px;
-              margin: 0 auto 18px auto;
+              margin: 0 auto 22px auto;
               width: 320px; } }
           @media (max-width: 425px) {
             .home-container .inner-container .hero-block .hero-inner .logo {
@@ -63,11 +63,11 @@
               background-repeat: no-repeat;
               background-position: center;
               height: 80px;
-              margin: 0 auto 16px auto;
+              margin: 0 auto 24px auto;
               width: 300px; } }
         .home-container .inner-container .hero-block .hero-inner .hero-headline {
           color: white;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 44px;
           margin-bottom: 2px;
           -webkit-transition: all 0.2s;
@@ -87,9 +87,16 @@
             content: "I'm a front-end developer";
             display: inline-block;
             position: relative; }
-            @media (max-width: 600px) {
+            @media screen and (max-width: 606px) {
               .home-container .inner-container .hero-block .hero-inner .hero-headline:before {
                 content: "Front-end dev"; } }
+          .home-container .inner-container .hero-block .hero-inner .hero-headline:after {
+            content: "product manager.";
+            display: inline-block;
+            position: relative; }
+            @media screen and (max-width: 606px) {
+              .home-container .inner-container .hero-block .hero-inner .hero-headline:after {
+                content: "tech PM."; } }
         .home-container .inner-container .hero-block .hero-inner .hero-description {
           display: none;
           color: #EAE8E9;
@@ -126,13 +133,14 @@
             .home-container .inner-container .hero-block .hero-inner .hero-description a:hover {
               text-decoration: underline; }
       .home-container .inner-container .hero-block .down-arrow {
-        bottom: 30px;
+        bottom: 0px;
         cursor: pointer;
         display: inline-block;
-        height: 36px;
+        height: auto;
         left: 50%;
         position: absolute;
-        width: 60px;
+        text-align: center;
+        width: auto;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
@@ -142,107 +150,58 @@
         -moz-transition: all 0.2s;
         -o-transition: all 0.2s;
         transition: all 0.2s; }
-        @media (max-width: 974px) {
-          .home-container .inner-container .hero-block .down-arrow {
-            bottom: 45px; } }
-        .home-container .inner-container .hero-block .down-arrow:hover:before {
-          background: #999; }
-        .home-container .inner-container .hero-block .down-arrow:hover:after {
-          background: #999; }
-        .home-container .inner-container .hero-block .down-arrow:before {
-          content: '';
+        .home-container .inner-container .hero-block .down-arrow .work-intro {
+          color: white;
           display: block;
-          background: #666;
-          height: 4px;
-          left: 13.5px;
-          position: absolute;
-          top: 16px;
-          width: 20px;
-          -webkit-transform: rotate(40deg);
-          -moz-transform: rotate(40deg);
-          -ms-transform: rotate(40deg);
-          -o-transform: rotate(40deg);
-          transform: rotate(40deg);
-          -webkit-transition: all 0.2s;
-          -moz-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          transition: all 0.2s; }
-        .home-container .inner-container .hero-block .down-arrow:after {
-          content: '';
+          font-weight: 400;
+          padding: 20px 20px;
+          position: relative; }
+        .home-container .inner-container .hero-block .down-arrow .work-line {
+          background: white;
+          bottom: 0;
           display: block;
-          background: #666;
-          height: 4px;
-          right: 13.5px;
-          position: absolute;
-          top: 16px;
-          width: 20px;
-          -webkit-transform: rotate(-40deg);
-          -moz-transform: rotate(-40deg);
-          -ms-transform: rotate(-40deg);
-          -o-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-          -webkit-transition: all 0.2s;
-          -moz-transition: all 0.2s;
-          -o-transition: all 0.2s;
-          transition: all 0.2s; }
+          height: 40px;
+          margin: 0 auto;
+          position: relative;
+          width: 1px; }
     .home-container .inner-container .project-block {
       background: white;
       display: block;
       padding: 100px 0; }
       .home-container .inner-container .project-block#vumble {
         background: #6290C3; }
-        .home-container .inner-container .project-block#vumble .project-intro {
-          color: white; }
-        .home-container .inner-container .project-block#vumble .line-break {
-          background: white; }
-        .home-container .inner-container .project-block#vumble .project-description {
-          color: white; }
-        .home-container .inner-container .project-block#vumble .project-button button {
-          border: 2px solid white;
-          background: none;
-          color: white; }
+        .home-container .inner-container .project-block#vumble .project-intro .project-description {
+          max-width: 588px; }
       .home-container .inner-container .project-block#stash {
-        background: #7A3DFE; }
-        .home-container .inner-container .project-block#stash .project-intro {
-          color: white; }
-        .home-container .inner-container .project-block#stash .line-break {
-          background: white; }
-        .home-container .inner-container .project-block#stash .project-description {
-          color: white; }
-        .home-container .inner-container .project-block#stash .project-button button {
-          border: 2px solid white;
-          background: none;
-          color: white; }
+        background: #6B3BD3; }
+        .home-container .inner-container .project-block#stash .project-intro .project-description {
+          max-width: 692px; }
       .home-container .inner-container .project-block#rainbow {
         background: black; }
-        .home-container .inner-container .project-block#rainbow .project-intro {
-          color: white; }
-        .home-container .inner-container .project-block#rainbow .line-break {
-          background: white; }
-        .home-container .inner-container .project-block#rainbow .project-description {
-          color: white; }
-        .home-container .inner-container .project-block#rainbow .project-button button {
-          border: 2px solid white;
-          background: none;
-          color: white; }
+        .home-container .inner-container .project-block#rainbow .project-intro .project-description {
+          max-width: 542px; }
       .home-container .inner-container .project-block#humble {
         background: #DB3B2A; }
-        .home-container .inner-container .project-block#humble .project-intro {
-          color: white; }
-        .home-container .inner-container .project-block#humble .line-break {
-          background: white; }
-        .home-container .inner-container .project-block#humble .project-description {
-          color: white; }
-        .home-container .inner-container .project-block#humble .project-button button {
-          border: 2px solid white;
-          background: none;
-          color: white; }
+        .home-container .inner-container .project-block#humble .project-intro .project-description {
+          max-width: 664px; }
+      .home-container .inner-container .project-block#activity .project-intro {
+        color: #222222; }
+        .home-container .inner-container .project-block#activity .project-intro .project-description {
+          max-width: 614px; }
+      .home-container .inner-container .project-block#activity .line-break {
+        background: #222222; }
+      .home-container .inner-container .project-block#activity .project-description {
+        color: #222222; }
+      .home-container .inner-container .project-block#activity .project-button button {
+        border: 2px solid #222222;
+        background: none;
+        color: #222222; }
       .home-container .inner-container .project-block .project-intro {
-        color: #666;
+        color: white;
         text-align: center; }
         .home-container .inner-container .project-block .project-intro h6 {
           display: none;
-          color: #dedede;
+          color: white;
           letter-spacing: 1px;
           font-weight: 300;
           margin-bottom: 30px; }
@@ -254,15 +213,21 @@
           line-height: 2rem;
           font-weight: 400;
           padding: 0 20px; }
+          @media (max-width: 600px) {
+            .home-container .inner-container .project-block .project-intro h5 {
+              display: block;
+              margin: 0 auto;
+              max-width: 320px;
+              padding: 0 30px; } }
         .home-container .inner-container .project-block .project-intro .line-break {
           display: block;
-          background: #666;
+          background: white;
           height: 1px;
           margin: 22px auto 30px auto;
           opacity: 0.5;
           width: 60px; }
       .home-container .inner-container .project-block .project-description {
-        color: #666;
+        color: white;
         font-weight: 400;
         line-height: 1.375rem;
         margin: 0 auto 30px auto;
@@ -289,8 +254,8 @@
         transform: translateX(-50%); }
         .home-container .inner-container .project-block .project-button button {
           background: transparent;
-          border: 2px solid #666;
-          color: #666;
+          border: 2px solid white;
+          color: white;
           cursor: pointer;
           font-size: 1rem;
           outline: none;
@@ -306,7 +271,7 @@
           .home-container .inner-container .project-block .project-button button#s_button:hover {
             border: 2px solid white;
             background: white;
-            color: #7A3DFE; }
+            color: #A968FE; }
           .home-container .inner-container .project-block .project-button button#r_button:hover {
             border: 2px solid white;
             background: white;
@@ -316,8 +281,8 @@
             background: white;
             color: #DB3B2A; }
           .home-container .inner-container .project-block .project-button button#as_button:hover {
-            border: 2px solid #666;
-            background: #666;
+            border: 2px solid #222222;
+            background: #222222;
             color: white; }
     .home-container .inner-container .contact-block {
       background: #1c1d25;

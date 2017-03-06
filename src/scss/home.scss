@@ -56,7 +56,7 @@
             background-repeat: no-repeat;
             background-position: center;
             height: 85px;
-            margin: 0 auto 18px auto;
+            margin: 0 auto 22px auto;
             width: 320px;
           }
 
@@ -65,14 +65,14 @@
             background-repeat: no-repeat;
             background-position: center;
             height: 80px;
-            margin: 0 auto 16px auto;
+            margin: 0 auto 24px auto;
             width: 300px;
           }
         }
 
         .hero-headline{
           color: white;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 44px;
           margin-bottom: 2px;
           @include transition( all 0.2s);
@@ -94,8 +94,18 @@
             display: inline-block;
             position: relative;
 
-            @include small{
+            @media screen and (max-width: 606px) {
               content: "Front-end dev";
+            }
+          }
+
+          &:after{
+            content: "product manager.";
+            display: inline-block;
+            position: relative;
+
+            @media screen and (max-width: 606px) {
+              content: "tech PM.";
             }
           }
         }
@@ -147,51 +157,33 @@
       }
 
       .down-arrow{
-        bottom: 30px;
+        bottom: 0px;
         cursor: pointer;
         display: inline-block;
-        height: 36px;
+        height: auto;
         left: 50%;
         position: absolute;
-        width: 60px;
+        text-align: center;
+        width: auto;
         @include transform( translateX(-50%));
         @include transition( all 0.2s);
-        @include medium{
-          bottom: 45px;
+
+        .work-intro{
+          color: white;
+          display: block;
+          font-weight: 400;
+          padding: 20px 20px;
+          position: relative;
         }
 
-        &:hover{
-          &:before{
-            background: #999;
-          }
-          &:after{
-            background: #999;
-          }
-        }
-
-        &:before{
-          content: '';
+        .work-line{
+          background: white;
+          bottom: 0;
           display: block;
-          background: #666;
-          height: 4px;
-          left: 13.5px;
-          position: absolute;
-          top: 16px;
-          width: 20px;
-          @include transform( rotate(40deg));
-          @include transition( all 0.2s);
-        }
-        &:after{
-          content: '';
-          display: block;
-          background: #666;
-          height: 4px;
-          right: 13.5px;
-          position: absolute;
-          top: 16px;
-          width: 20px;
-          @include transform( rotate(-40deg));
-          @include transition( all 0.2s);
+          height: 40px;
+          margin: 0 auto;
+          position: relative;;
+          width: 1px;
         }
       }
     }
@@ -204,105 +196,71 @@
       &#vumble{
         background: #6290C3;
         .project-intro{
-          color: white;
-        }
-
-        .line-break{
-          background: white;
-        }
-
-        .project-description{
-          color: white;
-        }
-
-        .project-button{
-          button{
-            border: 2px solid white;
-            background: none;
-            color: white;
+          .project-description{
+            max-width: 588px;
           }
         }
       }
 
       &#stash{
-        background: #7A3DFE;
-
+        background: #6B3BD3;
         .project-intro{
-          color: white;
-        }
-
-        .line-break{
-          background: white;
-        }
-
-        .project-description{
-          color: white;
-        }
-
-        .project-button{
-          button{
-            border: 2px solid white;
-            background: none;
-            color: white;
+          .project-description{
+            max-width: 692px;
           }
         }
       }
 
       &#rainbow{
         background: black;
-
         .project-intro{
-          color: white;
-        }
-
-        .line-break{
-          background: white;
-        }
-
-        .project-description{
-          color: white;
-        }
-
-        .project-button{
-          button{
-            border: 2px solid white;
-            background: none;
-            color: white;
+          .project-description{
+            max-width: 542px;
           }
         }
       }
 
       &#humble{
         background: #DB3B2A;
-
         .project-intro{
-          color: white;
+          .project-description{
+            max-width: 664px;
+          }
+        }
+      }
+
+      &#activity{
+        .project-intro{
+          color: #222222;
+          .project-description{
+            max-width: 614px;
+          }
         }
 
         .line-break{
-          background: white;
+          background: #222222;
         }
 
         .project-description{
-          color: white;
+          color: #222222;
         }
 
         .project-button{
           button{
-            border: 2px solid white;
+            border: 2px solid #222222;
             background: none;
-            color: white;
+            color: #222222;
           }
         }
       }
 
       .project-intro{
-        color: #666;
+        color: white;
         text-align: center;
 
         h6{
           display: none;
-          color: #dedede;
+          color: white;
           letter-spacing: 1px;
           font-weight: 300;
           margin-bottom: 30px
@@ -318,11 +276,18 @@
           line-height: 2rem;
           font-weight: 400;
           padding: 0 20px;
+
+          @include small{
+            display: block;
+            margin: 0 auto;
+            max-width: 320px;
+            padding: 0 30px;
+          }
         }
 
         .line-break{
           display: block;
-          background: #666;
+          background: white;
           height: 1px;
           margin: 22px auto 30px auto;
           opacity: 0.5;
@@ -331,7 +296,7 @@
       }
 
       .project-description{
-        color: #666;
+        color: white;
         font-weight: 400;
         line-height: 1.375rem;
         margin: 0 auto 30px auto;
@@ -359,8 +324,8 @@
 
         button{
           background: transparent;
-          border: 2px solid #666;
-          color: #666;
+          border: 2px solid white;
+          color: white;
           cursor: pointer;
           font-size: 1rem;
           outline: none;
@@ -378,7 +343,7 @@
             &:hover{
               border: 2px solid white;
               background: white;
-              color: #7A3DFE;
+              color: #A968FE;
             }
           }
           &#r_button{
@@ -397,8 +362,8 @@
           }
           &#as_button{
             &:hover{
-              border: 2px solid #666;
-              background: #666;
+              border: 2px solid #222222;
+              background: #222222;
               color: white;
             }
           }

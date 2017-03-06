@@ -52,7 +52,7 @@ dl, dd, ol, ul, figure {
 }
 
 h1{ font-size: 48px; } //48px
-h2{ font-size: 34px; } //32px
+h2{ font-size: 26px; } //32px
 h3{ font-size: 24px; } //24px
 h4{ font-size: 18px; } //18px
 h5{ font-size: 16px; } //16px
@@ -62,10 +62,10 @@ li{ font-size: 16px; }
 
 @include medium{
   h1{ font-size: 46px; } //48px
-  h2{ font-size: 32px; } //32px
-  h3{ font-size: 22px; } //24px
+  h2{ font-size: 24px; } //32px
+  h3{ font-size: 24px; } //24px
   h4{ font-size: 17px; } //18px
-  h5{ font-size: 15px; } //16px
+  h5{ font-size: 16px; } //16px
   h6{ font-size: 14px; } //13px
   p{  font-size: 14px; }
 	li{ font-size: 15px; }
@@ -73,8 +73,8 @@ li{ font-size: 16px; }
 
 @include small{
   h1{ font-size: 44px; } //48px
-  h2{ font-size: 30px; } //32px
-  h3{ font-size: 20px; } //24px
+  h2{ font-size: 22px; } //32px
+  h3{ font-size: 22px; } //24px
   h4{ font-size: 16px; } //18px
   h5{ font-size: 15px; } //16px
   h6{ font-size: 14px; } //13px
@@ -84,12 +84,12 @@ li{ font-size: 16px; }
 
 @include phone{
   h1{ font-size: 42px; } //48px
-  h2{ font-size: 28px; } //32px
-  h3{ font-size: 18px; } //24px
+  h2{ font-size: 20px; } //32px
+  h3{ font-size: 22px; } //24px
   h4{ font-size: 15px; } //18px
-  h5{ font-size: 14px; } //16px
-  h6{ font-size: 13px; } //13px
-  p{  font-size: 13px; }
+  h5{ font-size: 15px; } //16px
+  h6{ font-size: 14px; } //13px
+  p{  font-size: 14px; }
 	li{ font-size: 14px; }
 }
 
