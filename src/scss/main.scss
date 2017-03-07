@@ -51,6 +51,11 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+a{
+	text-decoration: none;
+	outline: none;
+}
+
 h1{ font-size: 48px; } //48px
 h2{ font-size: 26px; } //32px
 h3{ font-size: 24px; } //24px
@@ -68,7 +73,6 @@ li{ font-size: 16px; }
   h5{ font-size: 16px; } //16px
   h6{ font-size: 14px; } //13px
   p{  font-size: 14px; }
-	li{ font-size: 15px; }
 }
 
 @include small{
@@ -79,7 +83,6 @@ li{ font-size: 16px; }
   h5{ font-size: 15px; } //16px
   h6{ font-size: 14px; } //13px
   p{  font-size: 14px; }
-	li{ font-size: 15px; }
 }
 
 @include phone{
@@ -90,7 +93,6 @@ li{ font-size: 16px; }
   h5{ font-size: 15px; } //16px
   h6{ font-size: 14px; } //13px
   p{  font-size: 14px; }
-	li{ font-size: 14px; }
 }
 
 body{
@@ -114,6 +116,143 @@ body{
 
 			&:hover{
 				opacity: 0.6;
+			}
+		}
+	}
+
+	.footer{
+		background: #1c1d25;
+		height: auto;
+		position: relative;
+		padding: 8% 0;
+		text-align: center;
+		@include medium{
+			padding: 75px 0;
+		}
+		@include small{
+			padding: 60px 0;
+		}
+
+		.footer-top{
+			display: inline-block;
+			position: relative;
+			text-decoration: none;
+			@include transition( all 0.2s);
+
+			#footer-logo{
+				background: url('../img/ryan_r.svg');
+				background-size: 70px;
+				background-position: center;
+				background-repeat: no-repeat;
+				height: 70px;
+				position: relative;
+				width: 70px;
+				@include transition( all 0.2s);
+				-webkit-filter: brightness(0) invert(1);
+				filter: brightness(0) invert(1);
+				@include small{
+					background-size: 50px;
+					height: 50px;
+					width: 50px;
+				}
+				&:hover{
+					opacity: 0.6;
+				}
+			}
+		}
+
+		.social-box{
+			left: 50%;
+			position: relative;
+			@include transform( translateX(-50%));
+
+			.social-words{
+				margin: 50px 0;
+				@include small{
+					display: none;
+				}
+				li{
+					display: inline-block;
+					margin: 0 20px;
+					@include medium{
+						margin: 0 15px;
+					}
+					a{
+						color: white;
+						font-size: 18px;
+						font-weight: 600;
+						padding: 15px 10px;
+						text-decoration: none;
+						@include transition( all 0.2s );
+						&:hover{
+							opacity: 0.6;
+						}
+					}
+				}
+			}
+
+			.social-icons{
+				display: none;
+				margin: 36px 0;
+				white-space: nowrap;
+				@include small{
+					display: block;
+				}
+				li{
+					display: inline-block;
+
+					a{
+						color: white;
+						font-size: 1.2rem;
+						padding: 8px;
+						margin: 0 8px;
+						@include transition( all 0.2s );
+
+						&:hover{
+							opacity: 0.6;
+						}
+
+						i{
+							.fa{
+								display: inline-block;
+								position: relative;
+								&.fa-envelope-o{
+									&:before{
+										content: '\f003';
+									}
+								}
+								&.fa-twitter{
+									&:before{
+										content: '\f099';
+
+									}
+								}
+								&.fa-linkedin{
+									&:before{
+										content: '\f0e1';
+									}
+								}
+								&.fa-github{
+									&:before{
+										content: '\f09b';
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.copyright{
+			display: block;
+			color: #dedede;
+			font-size: 14px;
+			font-weight: 300;
+			margin: 0 auto;
+			position: relative;
+			@include small{
+				font-size: 13px;
 			}
 		}
 	}

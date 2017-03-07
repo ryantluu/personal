@@ -6,7 +6,7 @@
   padding: 60px 30px 60px 30px; }
   @media (max-width: 974px) {
     .vumble-container {
-      padding: 100px 30px 60px 30px; } }
+      padding: 100px 30px 40px 30px; } }
   .vumble-container .headline-vid {
     -webkit-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
     -moz-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
@@ -25,6 +25,11 @@
       font-weight: 400;
       line-height: 2rem;
       margin-top: 10px; }
+      @media (max-width: 600px) {
+        .vumble-container .case-intro .description#stash-description {
+          display: block;
+          margin: 0 auto;
+          max-width: 330px; } }
   .vumble-container .line-break {
     display: block;
     background: #666;
@@ -67,6 +72,10 @@
     .vumble-container .process-block .process-text span {
       font-style: italic;
       font-weight: bold; }
+    .vumble-container .process-block .process-text a {
+      text-decoration: none; }
+      .vumble-container .process-block .process-text a:hover {
+        text-decoration: underline; }
   .vumble-container .process-block .tech-title {
     margin: 24px 0 8px 0; }
   .vumble-container .process-block .tech-stack {
@@ -107,10 +116,10 @@
   .vumble-container .case-footer .site-link {
     font-weight: 400;
     margin: 50px 0 50px 0; }
-    .vumble-container .case-footer .site-link:hover a {
-      text-decoration: underline; }
     .vumble-container .case-footer .site-link a {
       text-decoration: none; }
+      .vumble-container .case-footer .site-link a:hover {
+        text-decoration: underline; }
   .vumble-container .case-footer .more-links {
     font-weight: 400;
     margin: 0 0 8px 0; }

@@ -26,8 +26,6 @@
 <!-- endbuild -->
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-
 
 </head>
 
@@ -37,20 +35,36 @@
     <div id="home-button"></div>
   </a>
 
-  <nav id="navbar">
+  <nav id="navigation">
+    <a class="nav-home-link" href="/">
+      <div id="nav-home-button"></div>
+    </a>
     <div id="hamburger-menu">
       <span></span>
     </div>
-    <div class="sidebar">
-      <div class="personal-name"><a href="#top"><div class='logo'></div></a></div>
-      <ul id="project-list">
-        <a href="vumble.html"><li class="list-item d1">VUMBLE</li></a>
-        <a href="stash.html"><li class="list-item d2">STASH</li></a>
-        <a href="/#rainbow"><li class="list-item d3">RAINBOW</li></a>
-        <a href="/#humble"><li class="list-item d4">HUMBLE VENTURES</li></a>
-        <a href="/#activity"><li class="list-item d5">ACTIVITY SHEET</li></a>
-      </ul>
-      <div id="footer">
+    <div class="nav-menu">
+      <div class="nav-inner">
+        <div class="nav-group">
+          <h2 class="nav-title">WORK</h2>
+          <ul class="nav-list" id="work-list">
+            <li class="list-item d1"><a href="vumble.html">VUMBLE</a></li>
+            <li class="list-item d2"><a href="stash.html">STASH</a></li>
+            <li class="list-item d3"><a href="/#rainbow">RAINBOW</a></li>
+            <li class="list-item d4"><a href="/#humble">HUMBLE VENTURES</a></li>
+            <li class="list-item d5"><a href="/#activity">ACTIVITY SHEET</a></li>
+          </ul>
+        </div>
+        <div class="nav-group" id="contact-group">
+          <h2 class="nav-title">CONTACT</h2>
+          <ul class="nav-list" id="contact-list">
+            <li><a href="mailto:ryan@vumble.com">RYAN@VUMBLE.COM</a></li>
+            <li><a href="http://twitter.com/rtluu" target="_blank">TWITTER.COM/RTLUU</i></a></li>
+            <li><a href="http://linkedin.com/in/ryanluu" target="_blank">LINKEDIN.COM/RYANLUU</i></a></li>
+            <li><a href="http://github.com/rtluu" target="_blank">GITHUB.COM/RTLUU</i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-contact">
         <ul class="contact-icons">
           <li><a href="mailto:ryan@vumble.com"><i class="fa fa-envelope-o"></i></a></li>
           <li><a href="http://twitter.com/rtluu" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -59,6 +73,7 @@
         </ul>
       </div>
     </div>
+    <div id="nav-close"></div>
   </nav>
 
   <div class="vumble-container">
@@ -73,7 +88,7 @@
     </video>
     <div class="case-info">
       <h5 class="role">Role:</h5>
-      <h5 class="positions">Founder, Product Manager & Frontend</h5>
+      <h5 class="positions">Founder, Lead Frontend & Product Manager</h5>
       <h5 class="process-intro">Process:</h5>
       <ul>
         <li>1. Problem</li>
@@ -158,6 +173,27 @@
       </ul>
     </div>
   </div>
+  <div class="footer">
+    <a class="footer-top" href="/">
+      <div id="footer-logo"></div>
+    </a>
+    <div class="social-box">
+      <ul class="social-words">
+        <li><a href="mailto:ryan@vumble.com">Email</a></li>
+        <li><a href="http://twitter.com/rtluu">Twitter</a></li>
+        <li><a href="http://linkedin.com/in/ryanluu">LinkedIn</a></li>
+        <li><a href="http://github.com/rtluu">Github</a></li>
+      </ul>
+      <ul class="social-icons">
+        <li><a href="mailto:ryan@vumble.com"><i class="fa fa-envelope-o"></i></a></li>
+        <li><a href="http://twitter.com/rtluu"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://linkedin.com/in/ryanluu"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="http://github.com/rtluu"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+
+    <p class="copyright">© Ryan Luu 2017</p>
+  </div>
 
   <!--Don't Autoplay on Mobile -->
   <script>
@@ -183,6 +219,6 @@
   }
   </script>
 
-<script src="js/main.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>

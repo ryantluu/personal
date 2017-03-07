@@ -84,7 +84,7 @@
             .home-container .inner-container .hero-block .hero-inner .hero-headline {
               line-height: 30px; } }
           .home-container .inner-container .hero-block .hero-inner .hero-headline:before {
-            content: "I'm a front-end developer";
+            content: "Front-end developer";
             display: inline-block;
             position: relative; }
             @media screen and (max-width: 606px) {
@@ -132,7 +132,7 @@
             text-decoration: none; }
             .home-container .inner-container .hero-block .hero-inner .hero-description a:hover {
               text-decoration: underline; }
-      .home-container .inner-container .hero-block .down-arrow {
+      .home-container .inner-container .hero-block .work-trigger {
         bottom: 0px;
         cursor: pointer;
         display: inline-block;
@@ -140,6 +140,7 @@
         left: 50%;
         position: absolute;
         text-align: center;
+        text-decoration: none;
         width: auto;
         -webkit-transform: translateX(-50%);
         -moz-transform: translateX(-50%);
@@ -150,13 +151,13 @@
         -moz-transition: all 0.2s;
         -o-transition: all 0.2s;
         transition: all 0.2s; }
-        .home-container .inner-container .hero-block .down-arrow .work-intro {
+        .home-container .inner-container .hero-block .work-trigger .work-intro {
           color: white;
           display: block;
           font-weight: 400;
           padding: 20px 20px;
           position: relative; }
-        .home-container .inner-container .hero-block .down-arrow .work-line {
+        .home-container .inner-container .hero-block .work-trigger .work-line {
           background: white;
           bottom: 0;
           display: block;
@@ -271,7 +272,7 @@
           .home-container .inner-container .project-block .project-button button#s_button:hover {
             border: 2px solid white;
             background: white;
-            color: #A968FE; }
+            color: #6B3BD3; }
           .home-container .inner-container .project-block .project-button button#r_button:hover {
             border: 2px solid white;
             background: white;
@@ -284,76 +285,3 @@
             border: 2px solid #222222;
             background: #222222;
             color: white; }
-    .home-container .inner-container .contact-block {
-      background: #1c1d25;
-      height: 100vh;
-      position: relative;
-      text-align: center; }
-      .home-container .inner-container .contact-block h3 {
-        padding: 120px 0 0 0;
-        color: white; }
-      .home-container .inner-container .contact-block .social-box {
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
-        .home-container .inner-container .contact-block .social-box .email-button {
-          margin: 0px 0 50px 0;
-          cursor: pointer;
-          display: inline-block;
-          position: relative; }
-          .home-container .inner-container .contact-block .social-box .email-button button {
-            background: transparent;
-            border: 2px solid white;
-            color: white;
-            cursor: pointer;
-            outline: none;
-            font-size: 1rem;
-            padding: 15px 30px;
-            -webkit-transition: all 0.2s;
-            -moz-transition: all 0.2s;
-            -o-transition: all 0.2s;
-            transition: all 0.2s; }
-            .home-container .inner-container .contact-block .social-box .email-button button:hover {
-              background: white;
-              border: 2px solid white;
-              color: #1E262D; }
-        .home-container .inner-container .contact-block .social-box .social-icons li {
-          display: inline-block; }
-          .home-container .inner-container .contact-block .social-box .social-icons li a {
-            color: white;
-            font-size: 1.5rem;
-            padding: 8px;
-            margin: 0 8px;
-            -webkit-transition: all 0.2s;
-            -moz-transition: all 0.2s;
-            -o-transition: all 0.2s;
-            transition: all 0.2s; }
-            .home-container .inner-container .contact-block .social-box .social-icons li a:hover {
-              opacity: 0.6; }
-            .home-container .inner-container .contact-block .social-box .social-icons li a i .fa.fa-twitter:before {
-              content: '\f099';
-              display: inline-block;
-              position: relative; }
-            .home-container .inner-container .contact-block .social-box .social-icons li a i .fa.fa-linkedin:before {
-              content: '\f0e1';
-              display: inline-block;
-              position: relative; }
-            .home-container .inner-container .contact-block .social-box .social-icons li a i .fa.fa-github:before {
-              content: '\f09b';
-              display: inline-block;
-              position: relative; }
-      .home-container .inner-container .contact-block .copyright {
-        bottom: 60px;
-        color: #dedede;
-        left: 50%;
-        position: absolute;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%); }

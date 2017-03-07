@@ -90,7 +90,7 @@
           }
 
           &:before{
-            content: "I'm a front-end developer";
+            content: "Front-end developer";
             display: inline-block;
             position: relative;
 
@@ -156,7 +156,7 @@
         }
       }
 
-      .down-arrow{
+      .work-trigger{
         bottom: 0px;
         cursor: pointer;
         display: inline-block;
@@ -164,6 +164,7 @@
         left: 50%;
         position: absolute;
         text-align: center;
+        text-decoration: none;
         width: auto;
         @include transform( translateX(-50%));
         @include transition( all 0.2s);
@@ -343,7 +344,7 @@
             &:hover{
               border: 2px solid white;
               background: white;
-              color: #A968FE;
+              color: #6B3BD3;
             }
           }
           &#r_button{
@@ -368,101 +369,6 @@
             }
           }
         }
-      }
-    }
-
-    .contact-block{
-      background: #1c1d25;
-      height: 100vh;
-      position: relative;
-      text-align: center;
-
-      h3{
-        padding: 120px 0 0 0;
-        color: white;
-      }
-
-      .social-box{
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        @include transform( translate(-50%, -50%));
-
-        .email-button{
-          margin: 0px 0 50px 0;
-          cursor: pointer;
-          display: inline-block;
-          position: relative;
-
-          button{
-            background: transparent;
-            border: 2px solid white;
-            color: white;
-            cursor: pointer;
-            outline: none;
-            font-size: 1rem;
-            padding: 15px 30px;
-            @include transition( all 0.2s );
-
-            &:hover{
-              background: white;
-              border: 2px solid white;
-              color: #1E262D;
-            }
-          }
-        }
-
-        .social-icons{
-          li{
-            display: inline-block;
-
-            a{
-              color: white;
-              font-size: 1.5rem;
-              padding: 8px;
-              margin: 0 8px;
-              @include transition( all 0.2s );
-
-              &:hover{
-                opacity: 0.6;
-              }
-
-              i{
-                .fa{
-                  &.fa-twitter{
-                    &:before{
-                      content: '\f099';
-                      display: inline-block;
-                      position: relative;
-                    }
-                  }
-                  &.fa-linkedin{
-                    &:before{
-                      content: '\f0e1';
-                      display: inline-block;
-                      position: relative;
-                    }
-                  }
-                  &.fa-github{
-                    &:before{
-                      content: '\f09b';
-                      display: inline-block;
-                      position: relative;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .copyright{
-        bottom: 60px;
-        color: #dedede;
-        left: 50%;
-        position: absolute;
-        @include transform( translateX(-50%));
       }
     }
   }

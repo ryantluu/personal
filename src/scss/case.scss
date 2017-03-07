@@ -7,7 +7,7 @@
   margin: 0 auto;
   max-width: 800px;
   padding: 60px 30px 60px 30px;
-  @include medium{ padding: 100px 30px 60px 30px;}
+  @include medium{ padding: 100px 30px 40px 30px;}
 
   .headline-vid{
     -webkit-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
@@ -32,6 +32,14 @@
       font-weight: 400;
       line-height: 2rem;
       margin-top: 10px;
+
+      &#stash-description{
+        @include small{
+          display: block;
+          margin: 0 auto;
+          max-width: 330px;
+        }
+      }
     }
   }
 
@@ -89,6 +97,12 @@
       span{
         font-style: italic;
         font-weight: bold;
+      }
+      a{
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
 
@@ -154,14 +168,11 @@
     .site-link{
       font-weight: 400;
       margin: 50px 0 50px 0;
-
-      &:hover{
-        a{
-          text-decoration: underline;
-        }
-      }
       a{
         text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
 
