@@ -169,15 +169,25 @@
       background: white;
       display: block;
       padding: 100px 0; }
+      .home-container .inner-container .project-block#eego {
+        background: white; }
+        .home-container .inner-container .project-block#eego .project-intro {
+          color: black; }
+          .home-container .inner-container .project-block#eego .project-intro .line-break {
+            background: black; }
+          .home-container .inner-container .project-block#eego .project-intro .project-description {
+            color: black;
+            max-width: 692px; }
+          .home-container .inner-container .project-block#eego .project-intro .project-button button {
+            border: 2px solid black;
+            background: none;
+            color: black; }
       .home-container .inner-container .project-block#vumble {
         background: #6290C3; }
         .home-container .inner-container .project-block#vumble .project-intro .project-description {
           max-width: 588px; }
-      .home-container .inner-container .project-block#stash {
-        background: #6B3BD3; }
-        .home-container .inner-container .project-block#stash .project-intro .project-description {
-          max-width: 692px; }
       .home-container .inner-container .project-block#rainbow {
+        display: none;
         background: black; }
         .home-container .inner-container .project-block#rainbow .project-intro .project-description {
           max-width: 542px; }
@@ -269,10 +279,13 @@
             border: 2px solid white;
             background: white;
             color: #6290C3; }
-          .home-container .inner-container .project-block .project-button button#s_button:hover {
-            border: 2px solid white;
-            background: white;
-            color: #6B3BD3; }
+          .home-container .inner-container .project-block .project-button button#e_button {
+            border: 2px solid black;
+            color: black; }
+            .home-container .inner-container .project-block .project-button button#e_button:hover {
+              border: 2px solid black;
+              background: black;
+              color: white; }
           .home-container .inner-container .project-block .project-button button#r_button:hover {
             border: 2px solid white;
             background: white;

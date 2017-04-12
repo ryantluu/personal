@@ -194,6 +194,30 @@
       display: block;
       padding: 100px 0;
 
+      &#eego{
+        background: white;
+        .project-intro{
+          color: black;
+          .line-break{
+            background: black;
+          }
+
+          .project-description{
+            color: black;
+            max-width: 692px;
+          }
+
+          .project-button{
+            button{
+              border: 2px solid black;
+              background: none;
+              color: black;
+            }
+          }
+
+        }
+      }
+
       &#vumble{
         background: #6290C3;
         .project-intro{
@@ -203,16 +227,8 @@
         }
       }
 
-      &#stash{
-        background: #6B3BD3;
-        .project-intro{
-          .project-description{
-            max-width: 692px;
-          }
-        }
-      }
-
       &#rainbow{
+        display: none;
         background: black;
         .project-intro{
           .project-description{
@@ -340,11 +356,13 @@
               color: #6290C3;
             }
           }
-          &#s_button{
+          &#e_button{
+            border: 2px solid black;
+            color: black;
             &:hover{
-              border: 2px solid white;
-              background: white;
-              color: #6B3BD3;
+              border: 2px solid black;
+              background: black;
+              color: white;
             }
           }
           &#r_button{
