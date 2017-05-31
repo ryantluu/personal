@@ -56,7 +56,11 @@
       .vumble-container .case-info ul li {
         padding: 6px 0; }
   .vumble-container .process-block .process-title {
-    margin-bottom: 16px; }
+    margin-bottom: 24px; }
+  .vumble-container .process-block .research-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 24px 0 16px 0; }
   .vumble-container .process-block .process-text {
     font-size: 16px;
     line-height: 1.75rem; }
@@ -69,6 +73,13 @@
     @media (max-width: 425px) {
       .vumble-container .process-block .process-text {
         font-size: 14px; } }
+    .vumble-container .process-block .process-text.research {
+      margin: 12px; }
+      .vumble-container .process-block .process-text.research:nth-child(3) {
+        margin-bottom: 48px; }
+      .vumble-container .process-block .process-text.research span {
+        text-decoration: underline;
+        font-style: normal; }
     .vumble-container .process-block .process-text span {
       font-style: italic;
       font-weight: bold; }

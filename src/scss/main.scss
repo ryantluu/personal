@@ -57,8 +57,8 @@ a{
 }
 
 h1{ font-size: 48px; } //48px
-h2{ font-size: 26px; } //32px
-h3{ font-size: 24px; } //24px
+h2{ font-size: 30px; } //32px
+h3{ font-size: 26px; } //24px
 h4{ font-size: 18px; } //18px
 h5{ font-size: 16px; } //16px
 h6{ font-size: 15px; } //13px
@@ -67,7 +67,7 @@ li{ font-size: 16px; }
 
 @include medium{
   h1{ font-size: 46px; } //48px
-  h2{ font-size: 24px; } //32px
+  h2{ font-size: 25px; } //32px
   h3{ font-size: 24px; } //24px
   h4{ font-size: 17px; } //18px
   h5{ font-size: 16px; } //16px

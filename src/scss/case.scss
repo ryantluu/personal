@@ -85,7 +85,13 @@
   }
   .process-block{
     .process-title{
-      margin-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    .research-title{
+      font-weight: 600;
+      font-size: 18px;
+      margin: 24px 0 16px 0;
     }
     .process-text{
       font-size: 16px;
@@ -93,6 +99,19 @@
       @include medium{ font-size: 15px;}
       @include small{ font-size: 15px;}
       @include phone{ font-size: 14px;}
+
+      &.research{
+        margin: 12px;
+
+        &:nth-child(3){
+          margin-bottom: 48px;
+        }
+
+        span{
+          text-decoration: underline;
+          font-style: normal;
+        }
+      }
 
       span{
         font-style: italic;
