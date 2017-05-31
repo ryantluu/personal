@@ -48,8 +48,8 @@
         <div class="nav-group">
           <h2 class="nav-title">WORK</h2>
           <ul class="nav-list" id="work-list">
-            <li class="list-item d1"><a href="vumble.html">VUMBLE</a></li>
             <li class="list-item d2"><a href="eego.html">EEGO</a></li>
+            <li class="list-item d1"><a href="vumble.html">VUMBLE</a></li>
             <li class="list-item d4"><a href="/#humble">HUMBLE VENTURES</a></li>
             <li class="list-item d5"><a href="/#activity">ACTIVITY SHEET</a></li>
           </ul>
@@ -92,7 +92,7 @@
       <h5 class="process-intro">Process:</h5>
       <ul>
         <li>1. Problem</li>
-        <li>2. Research</li>
+        <li>2. Early Iterations & Research</li>
         <li>3. Solution</li>
         <li>4. Development</li>
         <li>5. Feedback</li>
@@ -101,31 +101,25 @@
     <span class="line-break"></span>
     <div class="process-block">
       <h3 class="process-title">1. Problem</h3>
-      <p class="process-text">Digital creators have a difficult time collecting and revisting their valuable web content. They're forced to use different tools to save different types of content and tend to lose track of where things are saved.</p>
+      <p class="process-text">Designers have a difficult time organizing digital inspiration and resources for their workflow.<br><br>They're forced to use different tools to save different types of content and tend to lose track of where things are saved because of a lack of visuals.</p>
     </div>
     <span class="line-break"></span>
     <div class="process-block">
-      <h3 class="process-title">2. Research</h3>
-      <p class="process-text">Solutions people use to solve this problem are bookmarks, Tumblr, and Pinterest.<br><br>Bookmarks aren’t visual and because they’re text heavy they quickly become cluttered. Additionally, bookmarks are stuck in your browser and can’t be shared with others.<br><br>Tumblr's search is ineffective. It doesn't query metadata making it difficult for users to revisit previously collected content.<br><br>Users can't collect all forms of content on Pinterest. It's great for images, but inefficient for collecting articles, webpages, music, etc. Pinterest also lacks customization; all pinterest boards look the same.</p>
+      <h3 class="process-title">2. Early Iterations & Research</h3>
+      <p class="process-text">We went out and interviewed product designers, graphic designers and visuals artists and asked them what tools they used to organize their digital resources. We frequently heard bookmarks, Pinterest and Slack.<br><br>Bookmarks aren’t visual and because they’re text heavy they quickly become cluttered. Additionally, bookmarks are stuck in your browser and can’t be shared with collaborators.<br><br>Users can't collect all forms of content on Pinterest. It's great for images, but inefficient for collecting articles, webpages, styleguides, etc.<br><br>Resources and links often get lost in Slack conversations because of its chat format.</p>
+
+      <h4 class="iteration-title">Userflow</h4>
+      <img class="case-image" src="/img/stash-userflow.png">
+      <h4 class="iteration-title">Wireframes</h4>
+      <img class="case-image" src="/img/stash-web-grid-wireframe.png">
+      <img class="case-image" src="/img/stash-web-list-wireframe.png">
+      <img class="mobile-view" id="first" src="/img/stash-mobile-wireframe.png">
+      <img class="mobile-view" src="/img/stash-mobile-login-wireframe.png">
     </div>
     <span class="line-break"></span>
     <div class="process-block">
       <h3 class="process-title">3. Solution</h3>
-      <p class="process-text">A web and mobile application that helps people create visual collections of web content through dynamic embeds.<br><br><span>Previous:</span> A web and mobile application that helps people save content from across the web in different boards called eegoes. (View experience <a href="http://staging.muststash.io">here</a>).</p>
-    </div>
-    <span class="line-break"></span>
-    <div class="process-block">
-      <h3 class="process-title">4. Development</h3>
-      <p class="process-text">Our team is running week long agile sprints, managing our code on Github and deploying to Digital Ocean servers.</p>
-      <h4 class="tech-title">Tech Stack</h4>
-      <ul class=tech-stack>
-        <li>React</li>
-        <li>Redux</li>
-        <li>MySql</li>
-        <li>Sass</li>
-        <li>Jsx</li>
-      </ul>
-      <p class="process-text">We’ve started by making it super simple for users to collect any type of content through links. You can even start saving without logging in!</p>
+      <p class="process-text">A web and mobile application that helps designers collect, organize and share digital resources during their workflow.</p>
       <h4 class="tech-feature">Add a link</h4>
       <video class="example-vid" id="add-link" autoplay muted loop poster="/img/add-link-poster.png">
         <source src="/img/add-link.webm" type="video/webm">
@@ -143,11 +137,27 @@
       <h4 class="tech-feature">Mobile friendly</h4>
       <img class="mobile-view" id="first" src="/img/mobile-feed.png">
       <img class="mobile-view" src="/img/mobile-overlay.png">
+      <h4 class="tech-feature">Chrome extension</h4>
+      <img class="case-image" src="/img/stash-extension.png">
+    </div>
+    <span class="line-break"></span>
+    <div class="process-block">
+      <h3 class="process-title">4. Development</h3>
+      <p class="process-text">Our team is running week long agile sprints in Asana, managing our code on Github and deploying to AWS servers.</p>
+      <h4 class="tech-title">Tech Stack</h4>
+      <ul class=tech-stack>
+        <li>React</li>
+        <li>Redux</li>
+        <li>MySql</li>
+        <li>Sass</li>
+        <li>Jsx</li>
+      </ul>
+      <p class="process-text">Eego's offers designers unique value through it's ability to embed any type of content from everywhere.</p>
     </div>
     <span class="line-break"></span>
     <div class="process-block">
       <h3 class="process-title">5. Feedback</h3>
-      <p class="process-text">We're been gathering feedback from early adopters and have learned a lot.<br><br>Users have mentioned adding new ways to organize (multiple collections, tags, etc.) as well as different ways to personalize their collections. Sharing is also in high demand so we're creating unique urls for sharing collections.<br><br>If you have any feedback, I'd love to hear it. <a href="mailto:ryan@vumble.com">Hit me up!</a></p>
+      <p class="process-text">We're still early in development but have been gathering feedback from early adopters at companies like Tumblr, Trello, and Etsy.<br><br>Users continue to mention the importance of having multiple collections and having the ability to personalize their collections. Sharing collections has also been requested frequently and we're looking to implement unique urls to enable this feature.</p>
     </div>
     <span class="line-break"></span>
     <div class="case-footer">

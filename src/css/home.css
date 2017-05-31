@@ -185,7 +185,7 @@
       .home-container .inner-container .project-block#vumble {
         background: #6290C3; }
         .home-container .inner-container .project-block#vumble .project-intro .project-description {
-          max-width: 588px; }
+          max-width: 622px; }
       .home-container .inner-container .project-block#rainbow {
         display: none;
         background: black; }
@@ -298,5 +298,3 @@
             border: 2px solid #222222;
             background: #222222;
             color: white; }
-
-/*# sourceMappingURL=home.css.map */

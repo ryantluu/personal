@@ -106,6 +106,17 @@
       }
     }
 
+    .imgur-vid{
+      display: block;
+      margin: 20px auto 60px auto;
+      position: relative;
+      width: 100%;
+    }
+
+    .iteration-title{
+      margin-top: 50px;
+    }
+
     .tech-title{
       margin: 24px 0 8px 0;
     }
@@ -141,7 +152,7 @@
 
     img{
       display: block;
-      margin: 30px 0 0 0;
+      margin: 30px 0 30px 0;
       max-width: 100%;
       position: relative;
       -webkit-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);

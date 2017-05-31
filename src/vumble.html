@@ -47,8 +47,8 @@
         <div class="nav-group">
           <h2 class="nav-title">WORK</h2>
           <ul class="nav-list" id="work-list">
+            <li class="list-item d2"><a href="eego.html">EEGO</a></li>
             <li class="list-item d1"><a href="vumble.html">VUMBLE</a></li>
-            <li class="list-item d2"><a href="stash.html">EEGO</a></li>
             <li class="list-item d4"><a href="/#humble">HUMBLE VENTURES</a></li>
             <li class="list-item d5"><a href="/#activity">ACTIVITY SHEET</a></li>
           </ul>
@@ -91,40 +91,52 @@
       <h5 class="process-intro">Process:</h5>
       <ul>
         <li>1. Problem</li>
-        <li>2. Research</li>
+        <li>2. Early Iterations & Research</li>
         <li>3. Solution</li>
         <li>4. Development</li>
-        <li>5. Feedback</li>
+        <li>5. Feedback & Results</li>
       </ul>
     </div>
     <span class="line-break"></span>
     <div class="process-block">
       <h3 class="process-title">1. Problem</h3>
-      <p class="process-text">It’s difficult to quickly discover videos that are worth watching on YouTube. Titles and thumbnails are often misleading (clickbait) and YouTube’s recommendations are narrow because they’re based on the things that you’ve already clicked.</p>
+      <p class="process-text">Redditors don't have an easy way to discover & experience all of the best videos from across Reddit.<br><br>It started with a frustration when trying to discover videos worth watching on YouTube. Titles and thumbnails are often misleading (clickbait) and YouTube’s recommendations only suggest clips that a similar to what you've already watched.</p>
     </div>
     <span class="line-break"></span>
     <div class="process-block">
-      <h3 class="process-title">2. Research</h3>
-      <p class="process-text">Solutions people use to solve this problem are Wimp and Reddit Videos. Wimp curates YouTube videos that are submitted by the public, but there are no community engagements (likes, comments, etc.). Viewers are left in an isolated experience with very little context as to why a video is worth viewing.<br><br>Reddit videos is a community on Reddit where users shares videos and vote to determine which ones are worth watching. The voting surfaces quality content with engaging conversation, but their viewing experience is fragmented with users leaving the site to view videos and a separate url to view comments.<br><br>How can we make it easier for people to discover videos that are worth watching?</p>
+      <h3 class="process-title">2. Early Iterations & Research</h3>
+      <p class="process-text">Our assumption was that short previews would help viewers quickly determine which videos were worth watching.<!--Solutions people use to solve this problem are Wimp and Reddit Videos. Wimp curates YouTube videos that are submitted by the public, but there are no community engagements (likes, comments, etc.). Viewers are left in an isolated experience with very little context as to why a video is worth viewing.<br><br>Reddit videos is a community on Reddit where users shares videos and vote to determine which ones are worth watching. The voting surfaces quality content with engaging conversation, but their viewing experience is fragmented with users leaving the site to view videos and a separate url to view comments.<br><br>How can we make it easier for people to discover videos that are worth watching?--></p>
+
+      <h4 class="iteration-title">Powerpoint prototype</h4>
+      <video class="imgur-vid" autoplay muted loop>
+        <source src="http://i.imgur.com/rTZQs1r.mp4" type="video/mp4">
+      </video>
+
+
+      <h4 class="iteration-title">First working iteration</h4>
+      <video class="imgur-vid" autoplay muted loop>
+        <source src="http://i.imgur.com/1ao798C.mp4" type="video/mp4">
+      </video>
+
+      <h4 class="iteration-title">Revised viewing experience</h4>
+      <video class="imgur-vid" autoplay muted loop>
+        <source src="http://i.imgur.com/Wjfwh3p.mp4" type="video/mp4">
+      </video>
+
+      <h4 class="iteration-title">Reddit Research</h4>
+      <video class="imgur-vid" autoplay muted loop>
+        <source src="http://i.imgur.com/xSPqD1o.mp4" type="video/mp4">
+      </video>
+
+      <p class="process-text">We posted on Reddit and asked the community what they used to discover videos from across Reddit. The general consensus was Reddit.tv (shutdown 1/4/16), but users complained that the service didn't have voting, comments or video submissions. They also spoke about how cumbersome it was to jump between videos and comments on Reddit's primary experience and how they wanted a way to autoplay from clip to clip for a more laid back viewing experience</p>
+
+
     </div>
     <span class="line-break"></span>
     <div class="process-block">
       <h3 class="process-title">3. Solution</h3>
-      <p class="process-text">A web and mobile application that pulls the best videos from across reddit and displays them in a feed that enables instant discovery.<br><br><span>Previous:</span> A web and mobile application that displays 6 second previews before videos to help users decide what to watch.</p>
-    </div>
-    <span class="line-break"></span>
-    <div class="process-block">
-      <h3 class="process-title">4. Development</h3>
-      <p class="process-text">I led my team through weekly agile sprints in Waffle.io. We managed our code on Github and deployed to Digital Ocean servers.</p>
-      <h4 class="tech-title">Tech Stack</h4>
-      <ul class=tech-stack>
-        <li>Ruby on Rails</li>
-        <li>Video.js</li>
-        <li>Custom Javascript</li>
-        <li>Sass</li>
-        <li>Haml/Erb</li>
-      </ul>
-      <p class="process-text">Vumble's unique value is its seamless video viewing experience, so reducing friction through front end interactions was key to our success.</p>
+      <p class="process-text">A web and mobile web experience that displays all the best videos from across Reddit in an instantly discoverable feed.</p>
+
       <h4 class="tech-feature">Hover to play</h4>
       <video class="example-vid" id="hover-to-play" autoplay muted loop poster="/img/hover-to-play-poster.png">
         <source src="/img/hover-to-play.webm" type="video/webm">
@@ -135,7 +147,7 @@
         <source src="/img/click-to-open.webm" type="video/webm">
         <source src="/img/click-to-open.mp4" type="video/mp4">
       </video>
-      <h4 class="tech-feature">Left/Right arrows</h4>
+      <h4 class="tech-feature">Left/Right arrows & autoplay</h4>
       <video class="example-vid" id="left-right-arrows" autoplay muted loop poster="/img/left-right-arrows-poster.png">
         <source src="/img/left-right-arrows.webm" type="video/webm">
         <source src="/img/left-right-arrows.mp4" type="video/mp4">
@@ -151,15 +163,31 @@
         <source src="/img/mobile-proto.mp4" type="video/mp4">
       </video>
     </div>
-    <span class="line-break" id="feedback"></span>
+    <span class="line-break"></span>
     <div class="process-block">
-      <h3 class="process-title">5. Feedback</h3>
-      <p class="process-text">Reddit is a natural audience for Vumble’s experience so we turned to them for feedback. We were inundated with positive remarks and feature suggestions.</p>
+      <h3 class="process-title">4. Development</h3>
+      <p class="process-text">I led my team through weekly agile sprints in Waffle.io. We managed our code on Github and deployed to Digital Ocean servers.</p>
+      <h4 class="tech-title">Tech Stack</h4>
+      <ul class=tech-stack>
+        <li>Ruby on Rails</li>
+        <li>Video.js</li>
+        <li>Custom Javascript</li>
+        <li>Sass</li>
+        <li>Haml/Erb</li>
+      </ul>
+      <p class="process-text">Vumble's unique value is its seamless video viewing experience, so reducing friction through front end interactions was key to our success.</p>
+    </div>
+    <span class="line-break"></span>
+    <div class="process-block">
+      <h3 class="process-title">5. Feedback & Results</h3>
+      <p class="process-text">We posted Vumble on Reddit and were inundated with positive remarks. The users continued to suggest features which we used to prioritize our development.</p>
       <div class="reddit-box">
         <div class="reddit-embed" data-embed-media="www.redditmedia.com" data-embed-parent="false" data-embed-live="false" data-embed-uuid="4d23b8f3-7f4c-419c-993f-b446585f325e" data-embed-created="2017-03-01T01:38:13.395Z"><a href="https://www.reddit.com/r/Entrepreneur/comments/3savcn/we_revamped_reddittv_and_its_just_the_beginning/cwvlcyk/">Comment</a> from discussion <a href="https://www.reddit.com/r/Entrepreneur/comments/3savcn/we_revamped_reddittv_and_its_just_the_beginning/">We revamped RedditTV and it’s just the beginning</a>.</div><script async src="https://www.redditstatic.com/comment-embed.js"></script>
       </div>
       <p class="process-text">One redditor even posted us on Product Hunt shortly after our launch.</p>
       <img src="http://i.imgur.com/BAmWxDF.png?1"/>
+
+      <p class="process-text">Vumble has received over 150,000 users during its existence with about 1,000 daily active users. It maintains an average session duration above 10 minutes with returning users averaging over 15 minutes per visit.</p>
     </div>
     <span class="line-break"></span>
     <div class="case-footer">
@@ -168,7 +196,7 @@
       <ul class=more-list>
         <li><a href="http://imgur.com/a/bgzFy">The story behind Vumble</a></li>
         <li><a href="https://www.youtube.com/watch?v=YFgvAKNbJRo">Marketing Video – Humans Explore</a></li>
-        <li><a href="https://www.youtube.com/watch?v=vbyj9DzMpCQ">Demo Day & the transition to Stash</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vbyj9DzMpCQ">Demo Day & the transition to Eego</a></li>
       </ul>
     </div>
   </div>
