@@ -1,42 +1,40 @@
-@import "mixins";
-@import "variables";
+@import 'mixins';
+@import 'variables';
 
-.vumble-container {
+.vumble-container{
   color: #666;
   display: block;
   margin: 0 auto;
   max-width: 800px;
   padding: 60px 30px 60px 30px;
-  @include medium {
-    padding: 100px 30px 40px 30px;
-  }
+  @include medium{ padding: 100px 30px 40px 30px;}
 
-  .headline-vid {
-    -webkit-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
-    -moz-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
-    box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
+  .headline-vid{
+    -webkit-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+    -moz-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+    box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
     display: block;
     margin: 20px auto 40px auto;
     position: relative;
     max-width: 100%;
   }
 
-  .case-intro {
+  .case-intro{
     text-align: center;
 
-    .title {
+    .title{
       letter-spacing: 1px;
       line-height: 2.5rem;
     }
 
-    .description {
+    .description{
       letter-spacing: 1px;
       font-weight: 400;
       line-height: 2rem;
       margin-top: 4px;
 
-      &#neat-description {
-        @include small {
+      &#eego-description{
+        @include small{
           display: block;
           margin: 0 auto;
           max-width: 330px;
@@ -45,7 +43,7 @@
     }
   }
 
-  .line-break {
+  .line-break{
     display: block;
     background: #666;
     height: 1px;
@@ -53,182 +51,177 @@
     opacity: 0.5;
     width: 60px;
 
-    &#headline-break {
+    &#headline-break{
       margin: 25px auto 40px auto;
     }
 
-    &#feedback {
+    &#feedback{
       margin: -10px 0 40px 0;
     }
   }
 
-  .case-info {
+  .case-info{
     text-align: left;
 
-    .role {
+    .role{
       font-style: italic;
       margin-bottom: 12px;
     }
-    .positions {
+    .positions{
       font-weight: 400;
     }
 
-    .process-intro {
+    .process-intro{
       font-style: italic;
       margin: 32px 0 12px 0;
     }
 
-    ul {
+    ul{
       list-style-type: none;
-      li {
+      li{
         padding: 6px 0;
       }
     }
   }
-  .process-block {
-    .process-title {
+  .process-block{
+    .process-title{
       margin-bottom: 24px;
     }
 
-    .research-title {
+    .research-title{
       font-weight: 600;
       font-size: 18px;
       margin: 24px 0 16px 0;
     }
-    .process-text {
+    .process-text{
       font-size: 16px;
       line-height: 1.75rem;
-      @include medium {
-        font-size: 15px;
-      }
-      @include small {
-        font-size: 15px;
-      }
-      @include phone {
-        font-size: 14px;
-      }
+      @include medium{ font-size: 15px;}
+      @include small{ font-size: 15px;}
+      @include phone{ font-size: 14px;}
 
-      &.research {
+      &.research{
         margin: 12px;
 
-        &:nth-child(3) {
+        &:nth-child(3){
           margin-bottom: 48px;
         }
 
-        span {
+        span{
           text-decoration: underline;
           font-style: normal;
         }
       }
 
-      span {
+      span{
         font-style: italic;
         font-weight: bold;
       }
-      a {
+      a{
         text-decoration: none;
-        &:hover {
+        &:hover{
           text-decoration: underline;
         }
       }
     }
 
-    .imgur-vid {
+    .imgur-vid{
       display: block;
       margin: 20px auto 60px auto;
       position: relative;
       width: 100%;
     }
 
-    .iteration-title {
+    .iteration-title{
       margin-top: 50px;
     }
 
-    .tech-title {
+    .tech-title{
       margin: 24px 0 8px 0;
     }
 
-    .tech-stack {
+    .tech-stack{
       list-style-type: circle;
       margin: 0px 0 18px 18px;
-      li {
+      li{
         padding: 6px 0;
       }
     }
 
-    .tech-feature {
+    .tech-feature{
       margin-top: 50px;
     }
 
-    .example-vid {
-      -webkit-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
-      -moz-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
-      box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
+    .example-vid{
+      -webkit-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+      -moz-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+      box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
       display: block;
       margin: 20px auto 60px auto;
       position: relative;
       max-width: 100%;
     }
 
-    .reddit-box {
+    .reddit-box{
       margin: 30px 0 !important;
-      -webkit-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
-      -moz-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
-      box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
+      -webkit-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+      -moz-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+      box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
     }
 
-    img {
+    img{
       display: block;
       margin: 30px 0 30px 0;
       max-width: 100%;
       position: relative;
-      -webkit-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
-      -moz-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
-      box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
+      -webkit-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+      -moz-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+      box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
 
-      &.case-image {
+      &.case-image{
         margin: 20px auto 60px auto;
       }
 
-      &.mobile-view {
+      &.mobile-view{
         display: inline-block;
         max-width: 40%;
 
-        &#first {
+        &#first{
           margin-right: 15%;
         }
       }
     }
   }
 
-  .case-footer {
-    .site-link {
+  .case-footer{
+
+    .site-link{
       font-weight: 400;
       margin: 50px 0 50px 0;
-      a {
+      a{
         text-decoration: none;
-        &:hover {
+        &:hover{
           text-decoration: underline;
         }
       }
     }
 
-    .more-links {
+    .more-links{
       font-weight: 400;
       margin: 0 0 8px 0;
     }
 
-    .more-list {
+    .more-list{
       list-style-type: circle;
       margin: 0px 0 18px 18px;
 
-      li {
+      li{
         padding: 6px 0;
 
-        a {
+        a{
           display: inline-block;
           text-decoration: none;
-          &:hover {
+          &:hover{
             text-decoration: underline;
           }
         }
