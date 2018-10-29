@@ -17,7 +17,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
-  <title>Vumble | Ryan Luu</title>
+  <title>Neat | Ryan Luu</title>
 
 
   <!-- build:css css/app.min.css -->
@@ -27,6 +27,7 @@
   <!-- endbuild -->
 
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -116,136 +117,92 @@
 
   <div class="vumble-container">
     <div class="case-intro">
-      <h2 class="title">VUMBLE</h2>
-      <h5 class="description">THE LEADERBOARD FOR ONLINE VIDEO</h5>
+      <h2 class="title">NEAT</h2>
+      <h5 class="description" id="neat-description">VISUAL COLLECTIONS OF MULTIMEDIA & RESOURCES</h5>
     </div>
     <span class="line-break" id="headline-break"></span>
-    <video class="headline-vid" id="vumble-headline" autoplay muted loop poster="/img/vumble-headline-poster.png">
-      <source src="/img/vumble-headline.webm" type="video/webm">
-      <source src="/img/vumble-headline.mp4" type="video/mp4">
+    <video class="headline-vid" id="neat-headline" autoplay muted loop poster="/img/stash-headline-poster.png">
+      <source src="/img/stash-headline.webm" type="video/webm">
+      <source src="/img/stash-headline.mp4" type="video/mp4">
     </video>
     <div class="case-info">
       <h5 class="role">Role:</h5>
-      <h5 class="positions">Founder & Frontend</h5>
+      <h5 class="positions">Frontend</h5>
       <h5 class="process-intro">Process:</h5>
       <ul>
-        <li>1. Problem</li>
-        <li>2. Research & Iteration</li>
-        <li>3. Development</li>
-        <li>4. Launch & Feedback</li>
+        <li>1. Problem Hypothesis</li>
+        <li>2. Research</li>
+        <li>3. Design</li>
+        <li>4. Development</li>
       </ul>
     </div>
     <span class="line-break"></span>
     <div class="process-block">
-      <h3 class="process-title">1. Problem Statement</h3>
-      <p class="process-text">Back before Facebook & Twitter had autoplaying video, discovering quality videos quicky was difficult. Thumbnails were
-        extremly misleading and users would waste tons of time trying to navigate to videos worth watching.</p>
+      <h3 class="process-title">1. Problem Hypothesis</h3>
+      <p class="process-text">Designers' digital inspiration and resources are scattered across different services making it difficult to keep track
+        of and access when needed.
+      </p>
     </div>
     <span class="line-break"></span>
     <div class="process-block">
-      <h3 class="process-title">2. Research & Iteration</h3>
-      <p class="process-text">
-        Our hypothesis was that short previews would help viewers quickly determine which videos were worth watching.
-        <!--Solutions people use to solve this problem are Wimp and Reddit Videos. Wimp curates YouTube videos that are submitted by the public, but there are no community engagements (likes, comments, etc.). Viewers are left in an isolated experience with very little context as to why a video is worth viewing.<br><br>Reddit videos is a community on Reddit where users shares videos and vote to determine which ones are worth watching. The voting surfaces quality content with engaging conversation, but their viewing experience is fragmented with users leaving the site to view videos and a separate url to view comments.<br><br>How can we make it easier for people to discover videos that are worth watching?-->
-      </p>
-
-      <h4 class="iteration-title">Powerpoint prototype</h4>
-      <video class="imgur-vid" autoplay muted loop>
-        <source src="http://i.imgur.com/rTZQs1r.mp4" type="video/mp4">
-      </video>
-
-
-      <h4 class="iteration-title">First working iteration</h4>
-      <video class="imgur-vid" autoplay muted loop>
-        <source src="http://i.imgur.com/1ao798C.mp4" type="video/mp4">
-      </video>
-
-      <h4 class="iteration-title">Revised viewing experience</h4>
-      <video class="imgur-vid" autoplay muted loop>
-        <source src="http://i.imgur.com/Wjfwh3p.mp4" type="video/mp4">
-      </video>
-
-      <h4 class="iteration-title">Reddit Research</h4>
-      <p class="process-text">
-        <br>We posted on Reddit and asked the community how they discovered videos. Many of them complained about the outdated
-        experience on Reddit.</p>
-
-      <video class="imgur-vid" autoplay muted loop>
-        <source src="http://i.imgur.com/xSPqD1o.mp4" type="video/mp4">
-      </video>
-
-      <p class="process-text">We tapped into this insight and used it as an opportunity to create a simpler, faster viewing experience for Reddit
-        users.
-      </p>
-
-
+      <h3 class="process-title">2. Research</h3>
+      <h6 class="research-title">Customer Interviews</h6>
+      <p class="process-text research">We went out and interviewed product designers, graphic designers and visual artists asking them what tools they used
+        to organize their digital resources. The primary responses were bookmarks, Pinterest and Slack.
+        <h6 class="research-title">Competitive Gaps</h6>
+        <ul>
+          <p class="process-text research">
+            <span>Bookmarks</span> are texy heavy making them difficult to navigate for visual learners like designers. They are
+            also stuck in the browser making them incapable of being shared with collaborators.</p>
+          <p class="process-text research">
+            <span>Pinterest</span>'s target market isn't the workplace. Users are unable to collect certain forms of content such
+            as articles, webpages and VR experiences that designers utilize in their workflow.</p>
+          <p class="process-text research">
+            <span>Slack</span> is a productive tool for sharing resources, but content often get lost in Slack conversations because
+            of its chat format.</p>
+          <ul>
     </div>
     <span class="line-break"></span>
     <div class="process-block">
-      <h3 class="process-title">3. Development</h3>
+      <h3 class="process-title">3. Design</h3>
+      <h4 class="iteration-title">Userflow</h4>
+      <img class="case-image" src="/img/stash-userflow.png">
+      <h4 class="iteration-title">Wireframes</h4>
+      <img class="case-image" src="/img/stash-web-grid-wireframe.png">
+      <img class="case-image" src="/img/stash-web-list-wireframe.png">
+      <img class="mobile-view" id="first" src="/img/stash-mobile-wireframe.png">
+      <img class="mobile-view" src="/img/stash-mobile-login-wireframe.png">
+      <h4 class="tech-feature">Collage view</h4>
+      <img class="case-image" src="/img/collage-view.png">
+      <h4 class="tech-feature">List view</h4>
+      <img class="case-image" src="/img/list-view.png">
+      <h4 class="tech-feature">Mobile friendly</h4>
+      <img class="mobile-view" id="first" src="/img/mobile-feed.png">
+      <img class="mobile-view" src="/img/mobile-overlay.png">
+    </div>
+    <span class="line-break"></span>
+    <div class="process-block">
+      <h3 class="process-title">4. Development</h3>
       <h4 class="tech-title">Tech Stack</h4>
       <ul class=tech-stack>
-        <li>Ruby on Rails</li>
-        <li>Video.js</li>
-        <li>Custom Javascript</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>MySql</li>
         <li>Sass</li>
-        <li>Haml/Erb</li>
+        <li>Jsx</li>
       </ul>
-      <h4 class="tech-feature">Hover to play</h4>
-      <video class="example-vid" id="hover-to-play" autoplay muted loop poster="/img/hover-to-play-poster.png">
-        <source src="/img/hover-to-play.webm" type="video/webm">
-        <source src="/img/hover-to-play.mp4" type="video/mp4">
+      <h4 class="tech-feature">Add a link</h4>
+      <video class="example-vid" id="add-link" autoplay muted loop poster="/img/add-link-poster.png">
+        <source src="/img/add-link.webm" type="video/webm">
+        <source src="/img/add-link.mp4" type="video/mp4">
       </video>
-      <h4 class="tech-feature">Click to expand with comments</h4>
-      <video class="example-vid" id="click-to-open" autoplay muted loop poster="/img/click-to-open-poster.png">
-        <source src="/img/click-to-open.webm" type="video/webm">
-        <source src="/img/click-to-open.mp4" type="video/mp4">
-      </video>
-      <h4 class="tech-feature">Left/Right arrows & autoplay</h4>
-      <video class="example-vid" id="left-right-arrows" autoplay muted loop poster="/img/left-right-arrows-poster.png">
-        <source src="/img/left-right-arrows.webm" type="video/webm">
-        <source src="/img/left-right-arrows.mp4" type="video/mp4">
-      </video>
-      <h4 class="tech-feature">Trim and submit videos</h4>
-      <video class="example-vid" id="trim-video" autoplay muted loop poster="/img/trim-video-poster.png">
-        <source src="/img/trim-video.webm" type="video/webm">
-        <source src="/img/trim-video.mp4" type="video/mp4">
-      </video>
-      <h4 class="tech-feature">Mobile Native (demo)</h4>
-      <video class="example-vid" id="mobile-proto" autoplay muted loop poster="/img/mobile-proto-poster.png">
-        <source src="/img/mobile-proto.webm" type="video/webm">
-        <source src="/img/mobile-proto.mp4" type="video/mp4">
+      <h4 class="tech-feature">Embed anything</h4>
+      <video class="example-vid" id="embed anything" autoplay muted loop poster="/img/embed-anything.png">
+        <source src="/img/embed-anything.webm" type="video/webm">
+        <source src="/img/embed-anything.mp4" type="video/mp4">
       </video>
     </div>
-    <span class="line-break"></span>
-    <div class="process-block">
-      <h3 class="process-title">4. Launch & Feedback </h3>
-      <p class="process-text">We launched Vumble on Reddit and received both encouraging words and feature suggestions that we leveraged for prioritizing
-        further development.
-      </p>
-      <div class="reddit-box">
-        <div class="reddit-embed" data-embed-media="www.redditmedia.com" data-embed-parent="false" data-embed-live="false" data-embed-uuid="4d23b8f3-7f4c-419c-993f-b446585f325e"
-          data-embed-created="2017-03-01T01:38:13.395Z">
-          <a href="https://www.reddit.com/r/Entrepreneur/comments/3savcn/we_revamped_reddittv_and_its_just_the_beginning/cwvmrws">Comment</a> from discussion
-          <a href="https://www.reddit.com/r/Entrepreneur/comments/3savcn/we_revamped_reddittv_and_its_just_the_beginning/">We revamped RedditTV and it’s just the beginning</a>.</div>
-        <script async src="https://www.redditstatic.com/comment-embed.js"></script>
-      </div>
-      <p class="process-text">Product Hunt post</p>
-      <img src="http://i.imgur.com/BAmWxDF.png?1" />
-
-      <p class="process-text">Vumble received over 500,000 users during its existence with an average session duration of ten minutes.</p>
-    </div>
-    <span class="line-break"></span>
     <div class="case-footer">
-      <h5 class="more-links">Links</h5>
-      <ul class=more-list>
-        <li>
-          <a href="http://imgur.com/a/bgzFy">The story behind Vumble</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=YFgvAKNbJRo">Marketing Video – Humans Explore</a>
-        </li>
-      </ul>
     </div>
   </div>
   <div class="footer">
@@ -309,12 +266,6 @@
       document.getElementsByTagName('video')[1].setAttribute('controls', 'controls');
       document.getElementsByTagName('video')[2].removeAttribute('autoplay');
       document.getElementsByTagName('video')[2].setAttribute('controls', 'controls');
-      document.getElementsByTagName('video')[3].removeAttribute('autoplay');
-      document.getElementsByTagName('video')[3].setAttribute('controls', 'controls');
-      document.getElementsByTagName('video')[4].removeAttribute('autoplay');
-      document.getElementsByTagName('video')[4].setAttribute('controls', 'controls');
-      document.getElementsByTagName('video')[5].removeAttribute('autoplay');
-      document.getElementsByTagName('video')[5].setAttribute('controls', 'controls');
     }
   </script>
 

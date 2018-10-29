@@ -1,85 +1,84 @@
-@import 'mixins';
+@import "mixins";
 
-#navigation{
-
-  &.active{
-
-    .nav-home-link{
+#navigation {
+  &.active {
+    .nav-home-link {
       opacity: 1;
       pointer-events: all;
     }
 
-    #hamburger-menu{
+    #hamburger-menu {
       width: 28px;
 
-      span{
+      span {
         background: none;
         width: 20px;
 
-        &:before{
+        &:before {
           background: white;
           right: auto;
           width: 20px;
           top: 1px;
-          @include transform( rotate(45deg));
+          @include transform(rotate(45deg));
         }
 
-        &:after{
+        &:after {
           background: white;
           right: auto;
+          height: 3px;
           width: 20px;
           top: -2px;
-          @include transform( rotate(-45deg));
+          @include transform(rotate(-45deg));
         }
       }
     }
 
-    .nav-menu{
+    .nav-menu {
       opacity: 1;
       pointer-events: all;
       visibility: visible;
       top: 0;
     }
 
-    #nav-close{
+    #nav-close {
       display: block;
-      @include small{
+      @include small {
         display: none;
       }
     }
   }
 
-  .nav-home-link{
-		display: block;
+  .nav-home-link {
+    display: block;
     opacity: 0;
     pointer-events: none;
-		position: fixed;
-		text-decoration: none;
+    position: fixed;
+    text-decoration: none;
     z-index: 3;
-    @include transition( all 0.2s);
+    @include transition(all 0.2s);
 
-		#nav-home-button{
-			background: url('../img/ryan_r.svg');
-			background-size: 30px;
-			background-position: center;
-			background-repeat: no-repeat;
-			height: 30px;
-			left: 32px;
-			position: absolute;
-			top: 32px;
-			width: 30px;
-			@include transition( all 0.2s);
+    #nav-home-button {
+      background: url("../img/ryan_r.svg");
+      background-size: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 30px;
+      left: 32px;
+      position: absolute;
+      top: 32px;
+      width: 30px;
+      @include transition(all 0.2s);
 
       -webkit-filter: brightness(0) invert(1);
       filter: brightness(0) invert(1);
 
-			&:hover{
-				opacity: 0.6;
-			}
-		}
-	}
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
 
-  #hamburger-menu{
+  #hamburger-menu {
     cursor: pointer;
     height: 32px;
     position: fixed;
@@ -87,13 +86,13 @@
     top: 31px;
     width: 40px;
     z-index: 3;
-    @include transition( all 0.2s);
+    @include transition(all 0.2s);
 
-    &:hover{
+    &:hover {
       opacity: 0.6;
     }
 
-    span{
+    span {
       background: #cccccc;
       display: block;
       height: 3px;
@@ -101,40 +100,40 @@
       right: 0;
       top: 50%;
       width: 24px;
-      @include transform( translateY(-50%));
-      @include transition( all 0.2s);
+      @include transform(translateY(-50%));
+      @include transition(all 0.2s);
 
-      &:before{
+      &:before {
         background: #cccccc;
-        content: '';
+        content: "";
         display: block;
         height: 3px;
         position: relative;
         right: 8px;
         top: -8px;
         width: 32px;
-        @include transition( all 0.2s);
+        @include transition(all 0.2s);
       }
 
-      &:after{
+      &:after {
         background: #cccccc;
-        content: '';
+        content: "";
         display: block;
-        height: 3px;
+        height: 2px;
         position: relative;
         right: -8px;
         top: 5px;
         width: 16px;
-        @include transition( all 0.2s);
+        @include transition(all 0.2s);
       }
     }
   }
 
-  .nav-menu{
-    background: #C4C4C4;
-    -webkit-box-shadow: 0px 4px 20px 0px rgba(69,69,69,0.45);
-    -moz-box-shadow: 0px 4px 20px 0px rgba(69,69,69,0.45);
-    box-shadow: 0px 4px 20px 0px rgba(69,69,69,0.45);
+  .nav-menu {
+    background: rgb(80, 80, 80);
+    -webkit-box-shadow: 0px 4px 20px 0px rgba(69, 69, 69, 0.45);
+    -moz-box-shadow: 0px 4px 20px 0px rgba(69, 69, 69, 0.45);
+    box-shadow: 0px 4px 20px 0px rgba(69, 69, 69, 0.45);
     height: auto;
     opacity: 0;
     position: fixed;
@@ -144,41 +143,41 @@
     visibility: hidden;
     width: 100%;
     z-index: 2;
-    @include transition( all 0.4s);
-    @include small{
+    @include transition(all 0.4s);
+    @include small {
       height: 100%;
     }
 
-    .nav-inner{
+    .nav-inner {
       position: relative;
       margin: 110px 0 90px 0;
 
-      @include small{
+      @include small {
         margin: 100px 0 0 0;
       }
 
-      .nav-group{
+      .nav-group {
         display: inline-block;
         margin: 0 32px;
         vertical-align: top;
-        @include small{
+        @include small {
           display: block;
           margin: 0 auto;
         }
 
-        &#contact-group{
-          @include small{
+        &#contact-group {
+          @include small {
             display: none;
           }
         }
 
-        .nav-title{
+        .nav-title {
           color: white;
           font-size: 48px;
           margin-bottom: 28px;
           text-align: left;
           text-indent: 13px;
-          @include small{
+          @include small {
             font-size: 36px;
             margin-bottom: 24px;
             text-align: center;
@@ -186,35 +185,35 @@
           }
         }
 
-        .nav-list{
+        .nav-list {
           list-style-type: none;
           text-align: left;
 
-          &#work-list{
-            li{
+          &#work-list {
+            li {
               min-width: 200px;
-              @include small{
+              @include small {
                 min-width: none;
                 text-align: center;
               }
             }
           }
 
-          &#contact-list{
-            li{
+          &#contact-list {
+            li {
               min-width: 260px;
             }
           }
 
-          li{
+          li {
             position: relative;
             padding-bottom: 0.5em;
             text-indent: 14px;
-            @include small{
+            @include small {
               text-indent: 0;
             }
 
-            a{
+            a {
               display: block;
               color: white;
               font-size: 14px;
@@ -223,14 +222,14 @@
               letter-spacing: 0.1em;
               line-height: 36px;
               text-decoration: none;
-              @include small{
+              @include small {
                 font-size: 16px;
                 height: 40px;
                 line-height: 40px;
               }
 
-              &:hover{
-                background: #999999;
+              &:hover {
+                background: rgb(120, 120, 120);
               }
             }
           }
@@ -238,58 +237,58 @@
       }
     }
 
-    .nav-contact{
+    .nav-contact {
       display: none;
       bottom: 36px;
       left: 50%;
       position: absolute;
-      @include transform( translateX(-50%));
-      @include small{
+      @include transform(translateX(-50%));
+      @include small {
         display: block;
       }
 
-      .contact-icons{
+      .contact-icons {
         white-space: nowrap;
-        li{
+        li {
           display: inline-block;
 
-          a{
+          a {
             color: white;
             font-size: 1.2rem;
             padding: 8px;
             margin: 0 4px;
-            @include transition( ease-in-out 0.2s );
+            @include transition(ease-in-out 0.2s);
 
-            &:hover{
+            &:hover {
               opacity: 0.6;
             }
 
-            i{
-              .fa{
+            i {
+              .fa {
                 display: inline-block;
                 position: relative;
-                &:before{
+                &:before {
                   display: inline-block;
                   position: relative;
                 }
-                &.fa-envelope-o{
-                  &:before{
-                    content: '\f003';
+                &.fa-envelope-o {
+                  &:before {
+                    content: "\f003";
                   }
                 }
-                &.fa-twitter{
-                  &:before{
-                    content: '\f099';
+                &.fa-twitter {
+                  &:before {
+                    content: "\f099";
                   }
                 }
-                &.fa-linkedin{
-                  &:before{
-                    content: '\f0e1';
+                &.fa-linkedin {
+                  &:before {
+                    content: "\f0e1";
                   }
                 }
-                &.fa-github{
-                  &:before{
-                    content: '\f09b';
+                &.fa-github {
+                  &:before {
+                    content: "\f09b";
                   }
                 }
               }
@@ -300,7 +299,7 @@
     }
   }
 
-  #nav-close{
+  #nav-close {
     bottom: 0;
     display: none;
     left: 0;

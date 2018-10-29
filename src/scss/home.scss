@@ -1,38 +1,38 @@
-@import 'mixins';
-@import 'variables';
+@import "mixins";
+@import "variables";
 
-.home-container{
+.home-container {
   right: 0px;
   position: absolute;
   width: calc(100%);
 
-  .inner-container{
+  .inner-container {
     position: absolute;
     top: 0;
     width: 100%;
-    @include medium{
+    @include medium {
       left: 0;
       width: 100%;
     }
 
-    .hero-block{
+    .hero-block {
       background: #1c1d25;
       display: block;
       height: 100vh;
       position: relative;
       text-align: center;
 
-      .hero-inner{
+      .hero-inner {
         display: block;
         max-width: 650px;
         left: 50%;
         position: absolute;
         top: calc(50% - 30px);
         width: 90%;
-        @include transform(translate(-50%,-50%));
+        @include transform(translate(-50%, -50%));
 
-        .logo{
-          background: url('../img/ryanLogoWhite.svg');
+        .logo {
+          background: url("../img/ryanLogoWhite.svg");
           background-size: 500px 134px;
           background-repeat: no-repeat;
           background-position: center;
@@ -40,9 +40,9 @@
           height: 134px;
           margin: 0 auto 22px auto;
           width: 500px;
-          @include transition( all 0.2s);
+          @include transition(all 0.2s);
 
-          @include medium{
+          @include medium {
             background-size: 420px 112px;
             background-repeat: no-repeat;
             background-position: center;
@@ -51,7 +51,7 @@
             width: 420px;
           }
 
-          @include small{
+          @include small {
             background-size: 320px 85px;
             background-repeat: no-repeat;
             background-position: center;
@@ -60,7 +60,7 @@
             width: 320px;
           }
 
-          @include phone{
+          @include phone {
             background-size: 300px 80px;
             background-repeat: no-repeat;
             background-position: center;
@@ -70,93 +70,93 @@
           }
         }
 
-        .hero-headline{
+        .hero-headline {
           color: white;
           font-weight: 400;
           line-height: 44px;
           margin-bottom: 2px;
-          @include transition( all 0.2s);
+          @include transition(all 0.2s);
 
-          @include medium{
+          @include medium {
             line-height: 38px;
           }
 
-          @include small{
+          @include small {
             line-height: 34px;
           }
 
-          @include phone{
+          @include phone {
             line-height: 30px;
           }
 
-          &:before{
-            content: "Front-end developer";
+          &:before {
+            content: "Product Manager";
             display: inline-block;
             position: relative;
 
             @media screen and (max-width: 606px) {
-              content: "Front-end dev";
+              content: "PM";
             }
           }
 
-          &:after{
-            content: "product manager.";
+          &:after {
+            content: "Frontend Dev";
             display: inline-block;
             position: relative;
 
             @media screen and (max-width: 606px) {
-              content: "tech PM.";
+              content: "Frontend";
             }
           }
         }
 
-        .hero-description{
+        .hero-description {
           display: none;
-          color: #EAE8E9;
+          color: #eae8e9;
           line-height: 1.75rem;
           font-weight: 400;
-          @include transition( all 0.2s);
+          @include transition(all 0.2s);
 
-          &:before{
-            content: 'Currently b';
+          &:before {
+            content: "Currently b";
             display: inline-block;
             position: relative;
 
-            @include small{
-              content: 'B';
+            @include small {
+              content: "B";
               padding-left: 5px;
             }
           }
 
-          &:after{
-            content: 'Washington, DC.';
+          &:after {
+            content: "Washington, DC.";
             display: inline-block;
             position: relative;
             padding-left: 7px;
 
-            @include small{
-              content: 'DC.';
+            @include small {
+              content: "DC.";
               padding-left: 5px;
             }
 
-            @include small{
-              content: 'DC.';
+            @include small {
+              content: "DC.";
               padding-left: 4px;
             }
           }
 
-          a{
-            color: #EAE8E9;
+          a {
+            color: #eae8e9;
             text-decoration: none;
 
-            &:hover{
+            &:hover {
               text-decoration: underline;
             }
           }
         }
       }
 
-      .work-trigger{
+      .work-trigger {
         bottom: 0px;
         cursor: pointer;
         display: inline-block;
@@ -166,10 +166,10 @@
         text-align: center;
         text-decoration: none;
         width: auto;
-        @include transform( translateX(-50%));
-        @include transition( all 0.2s);
+        @include transform(translateX(-50%));
+        @include transition(all 0.2s);
 
-        .work-intro{
+        .work-intro {
           color: white;
           display: block;
           font-weight: 400;
@@ -177,124 +177,131 @@
           position: relative;
         }
 
-        .work-line{
+        .work-line {
           background: white;
           bottom: 0;
           display: block;
           height: 40px;
           margin: 0 auto;
-          position: relative;;
+          position: relative;
           width: 1px;
         }
       }
     }
 
-    .project-block{
+    .project-block {
       background: white;
       display: block;
       padding: 100px 0;
 
-      &#eego{
-        background: white;
-        .project-intro{
-          color: black;
-          .line-break{
-            background: black;
-          }
-
-          .project-description{
-            color: black;
-            max-width: 692px;
-          }
-
-          .project-button{
-            button{
-              border: 2px solid black;
-              background: none;
-              color: black;
-            }
-          }
-
+      &#openrecord {
+        background: #9c4d9d;
+        .description-link {
+          color: white;
         }
       }
 
-      &#vumble{
-        background: #6290C3;
-        .project-intro{
-          .project-description{
+      &#neat {
+        background: white;
+        .project-intro {
+          color: #222222;
+          .line-break {
+            background: #222222;
+          }
+
+          .project-description {
+            color: #222222;
+            max-width: 692px;
+          }
+
+          .project-button {
+            button {
+              border: 2px solid #222222;
+              background: none;
+              color: #222222;
+            }
+          }
+        }
+      }
+
+      &#vumble {
+        background: #6290c3;
+        .project-intro {
+          .project-description {
             max-width: 622px;
           }
         }
       }
 
-      &#rainbow{
+      &#rainbow {
         display: none;
         background: black;
-        .project-intro{
-          .project-description{
+        .project-intro {
+          .project-description {
             max-width: 542px;
           }
         }
       }
 
-      &#humble{
-        background: #DB3B2A;
-        .project-intro{
-          .project-description{
+      &#humble {
+        background: #db3b2a;
+        .project-intro {
+          .project-description {
             max-width: 664px;
           }
         }
       }
 
-      &#activity{
-        .project-intro{
-          color: #222222;
-          .project-description{
+      &#fastrope {
+        background: #ffc600;
+        .project-intro {
+          color: black;
+          .project-description {
             max-width: 614px;
           }
         }
 
-        .line-break{
-          background: #222222;
+        .line-break {
+          background: black;
         }
 
-        .project-description{
-          color: #222222;
+        .project-description {
+          color: black;
         }
 
-        .project-button{
-          button{
-            border: 2px solid #222222;
+        .project-button {
+          button {
+            border: 2px solid black;
             background: none;
-            color: #222222;
+            color: black;
           }
         }
       }
 
-      .project-intro{
+      .project-intro {
         color: white;
         text-align: center;
 
-        h6{
+        h6 {
           display: none;
           color: white;
           letter-spacing: 1px;
           font-weight: 300;
-          margin-bottom: 30px
+          margin-bottom: 30px;
         }
 
-        h3{
+        h3 {
           letter-spacing: 1px;
           line-height: 2.375rem;
         }
 
-        h5{
+        h5 {
           letter-spacing: 1px;
           line-height: 2rem;
           font-weight: 400;
           padding: 0 20px;
 
-          @include small{
+          @include small {
             display: block;
             margin: 0 auto;
             max-width: 320px;
@@ -302,7 +309,7 @@
           }
         }
 
-        .line-break{
+        .line-break {
           display: block;
           background: white;
           height: 1px;
@@ -312,7 +319,7 @@
         }
       }
 
-      .project-description{
+      .project-description {
         color: white;
         font-weight: 400;
         line-height: 1.375rem;
@@ -321,10 +328,10 @@
         max-width: 664px;
       }
 
-      .project-image{
-        -webkit-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
-        -moz-box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
-        box-shadow: 0px 4px 18px 0px rgba(33,33,33,0.45);
+      .project-image {
+        -webkit-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
+        -moz-box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
+        box-shadow: 0px 4px 18px 0px rgba(33, 33, 33, 0.45);
         display: block;
         height: auto;
         margin: 50px auto;
@@ -332,14 +339,14 @@
         width: 90%;
       }
 
-      .project-button{
+      .project-button {
         cursor: pointer;
         display: inline-block;
         left: 50%;
         position: relative;
-        @include transform( translateX(-50%));
+        @include transform(translateX(-50%));
 
-        button{
+        button {
           background: transparent;
           border: 2px solid white;
           color: white;
@@ -347,43 +354,50 @@
           font-size: 1rem;
           outline: none;
           padding: 15px 30px;
-          @include transition( all 0.2s );
+          @include transition(all 0.2s);
 
-          &#v_button{
-            &:hover{
+          &#o_button {
+            &:hover {
               border: 2px solid white;
               background: white;
-              color: #6290C3;
+              color: #9c4d9d;
             }
           }
-          &#e_button{
-            border: 2px solid black;
-            color: black;
-            &:hover{
-              border: 2px solid black;
-              background: black;
+          &#v_button {
+            &:hover {
+              border: 2px solid white;
+              background: white;
+              color: #6290c3;
+            }
+          }
+          &#e_button {
+            border: 2px solid #222222;
+            color: #222222;
+            &:hover {
+              border: 2px solid #222222;
+              background: #222222;
               color: white;
             }
           }
-          &#r_button{
-            &:hover{
+          &#r_button {
+            &:hover {
               border: 2px solid white;
               background: white;
               color: black;
             }
           }
-          &#h_button{
-            &:hover{
-              border: 2px solid white;
-              background: white;
-              color: #DB3B2A;
+          &#f_button {
+            &:hover {
+              border: 2px solid black;
+              background: black;
+              color: #ffc600;
             }
           }
-          &#as_button{
-            &:hover{
-              border: 2px solid #222222;
-              background: #222222;
-              color: white;
+          &#h_button {
+            &:hover {
+              border: 2px solid white;
+              background: white;
+              color: #db3b2a;
             }
           }
         }
