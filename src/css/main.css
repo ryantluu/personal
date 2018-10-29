@@ -1,42 +1,54 @@
 @font-face {
-  font-family: 'Brown';
+  font-family: "Brown";
   src: url("../fonts/Brown-Light.eot");
   src: url("../fonts/Brown-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Brown-Light.woff") format("woff"), url("../fonts/Brown-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Brown';
+  font-family: "Brown";
   src: url("../fonts/Brown-Thin.eot");
   src: url("../fonts/Brown-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Brown-Thin.woff") format("woff"), url("../fonts/Brown-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Brown';
+  font-family: "Brown";
   src: url("../fonts/Brown-Regular.eot");
   src: url("../fonts/Brown-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Brown-Regular.woff") format("woff"), url("../fonts/Brown-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Brown';
+  font-family: "Brown";
   src: url("../fonts/Brown-Bold.eot");
   src: url("../fonts/Brown-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Brown-Bold.woff") format("woff"), url("../fonts/Brown-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  font-family: 'Brown', Helvetica, Arial, sans-serif;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  font-family: "Brown", Helvetica, Arial, sans-serif;
   font-style: normal;
   margin: 0;
   letter-spacing: 0.5px;
   padding: 0; }
 
 a {
-  text-decoration: none;
   outline: none; }
 
 h1 {
@@ -229,13 +241,13 @@ body {
               display: inline-block;
               position: relative; }
               body .footer .social-box .social-icons li a i .fa.fa-envelope-o:before {
-                content: '\f003'; }
+                content: "\f003"; }
               body .footer .social-box .social-icons li a i .fa.fa-twitter:before {
-                content: '\f099'; }
+                content: "\f099"; }
               body .footer .social-box .social-icons li a i .fa.fa-linkedin:before {
-                content: '\f0e1'; }
+                content: "\f0e1"; }
               body .footer .social-box .social-icons li a i .fa.fa-github:before {
-                content: '\f09b'; }
+                content: "\f09b"; }
     body .footer .copyright {
       display: block;
       color: #dedede;
@@ -246,3 +258,5 @@ body {
       @media (max-width: 600px) {
         body .footer .copyright {
           font-size: 13px; } }
+
+/*# sourceMappingURL=main.css.map */

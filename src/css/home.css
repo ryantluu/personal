@@ -84,22 +84,22 @@
             .home-container .inner-container .hero-block .hero-inner .hero-headline {
               line-height: 30px; } }
           .home-container .inner-container .hero-block .hero-inner .hero-headline:before {
-            content: "Front-end developer";
+            content: "Product Manager";
             display: inline-block;
             position: relative; }
             @media screen and (max-width: 606px) {
               .home-container .inner-container .hero-block .hero-inner .hero-headline:before {
-                content: "Front-end dev"; } }
+                content: "PM"; } }
           .home-container .inner-container .hero-block .hero-inner .hero-headline:after {
-            content: "product manager.";
+            content: "Frontend Dev";
             display: inline-block;
             position: relative; }
             @media screen and (max-width: 606px) {
               .home-container .inner-container .hero-block .hero-inner .hero-headline:after {
-                content: "tech PM."; } }
+                content: "Frontend"; } }
         .home-container .inner-container .hero-block .hero-inner .hero-description {
           display: none;
-          color: #EAE8E9;
+          color: #eae8e9;
           line-height: 1.75rem;
           font-weight: 400;
           -webkit-transition: all 0.2s;
@@ -107,28 +107,28 @@
           -o-transition: all 0.2s;
           transition: all 0.2s; }
           .home-container .inner-container .hero-block .hero-inner .hero-description:before {
-            content: 'Currently b';
+            content: "Currently b";
             display: inline-block;
             position: relative; }
             @media (max-width: 600px) {
               .home-container .inner-container .hero-block .hero-inner .hero-description:before {
-                content: 'B';
+                content: "B";
                 padding-left: 5px; } }
           .home-container .inner-container .hero-block .hero-inner .hero-description:after {
-            content: 'Washington, DC.';
+            content: "Washington, DC.";
             display: inline-block;
             position: relative;
             padding-left: 7px; }
             @media (max-width: 600px) {
               .home-container .inner-container .hero-block .hero-inner .hero-description:after {
-                content: 'DC.';
+                content: "DC.";
                 padding-left: 5px; } }
             @media (max-width: 600px) {
               .home-container .inner-container .hero-block .hero-inner .hero-description:after {
-                content: 'DC.';
+                content: "DC.";
                 padding-left: 4px; } }
           .home-container .inner-container .hero-block .hero-inner .hero-description a {
-            color: #EAE8E9;
+            color: #eae8e9;
             text-decoration: none; }
             .home-container .inner-container .hero-block .hero-inner .hero-description a:hover {
               text-decoration: underline; }
@@ -169,21 +169,25 @@
       background: white;
       display: block;
       padding: 100px 0; }
-      .home-container .inner-container .project-block#eego {
+      .home-container .inner-container .project-block#openrecord {
+        background: #9c4d9d; }
+        .home-container .inner-container .project-block#openrecord .description-link {
+          color: white; }
+      .home-container .inner-container .project-block#neat {
         background: white; }
-        .home-container .inner-container .project-block#eego .project-intro {
-          color: black; }
-          .home-container .inner-container .project-block#eego .project-intro .line-break {
-            background: black; }
-          .home-container .inner-container .project-block#eego .project-intro .project-description {
-            color: black;
+        .home-container .inner-container .project-block#neat .project-intro {
+          color: #222222; }
+          .home-container .inner-container .project-block#neat .project-intro .line-break {
+            background: #222222; }
+          .home-container .inner-container .project-block#neat .project-intro .project-description {
+            color: #222222;
             max-width: 692px; }
-          .home-container .inner-container .project-block#eego .project-intro .project-button button {
-            border: 2px solid black;
+          .home-container .inner-container .project-block#neat .project-intro .project-button button {
+            border: 2px solid #222222;
             background: none;
-            color: black; }
+            color: #222222; }
       .home-container .inner-container .project-block#vumble {
-        background: #6290C3; }
+        background: #6290c3; }
         .home-container .inner-container .project-block#vumble .project-intro .project-description {
           max-width: 622px; }
       .home-container .inner-container .project-block#rainbow {
@@ -192,21 +196,23 @@
         .home-container .inner-container .project-block#rainbow .project-intro .project-description {
           max-width: 542px; }
       .home-container .inner-container .project-block#humble {
-        background: #DB3B2A; }
+        background: #db3b2a; }
         .home-container .inner-container .project-block#humble .project-intro .project-description {
           max-width: 664px; }
-      .home-container .inner-container .project-block#activity .project-intro {
-        color: #222222; }
-        .home-container .inner-container .project-block#activity .project-intro .project-description {
-          max-width: 614px; }
-      .home-container .inner-container .project-block#activity .line-break {
-        background: #222222; }
-      .home-container .inner-container .project-block#activity .project-description {
-        color: #222222; }
-      .home-container .inner-container .project-block#activity .project-button button {
-        border: 2px solid #222222;
-        background: none;
-        color: #222222; }
+      .home-container .inner-container .project-block#fastrope {
+        background: #ffc600; }
+        .home-container .inner-container .project-block#fastrope .project-intro {
+          color: black; }
+          .home-container .inner-container .project-block#fastrope .project-intro .project-description {
+            max-width: 614px; }
+        .home-container .inner-container .project-block#fastrope .line-break {
+          background: black; }
+        .home-container .inner-container .project-block#fastrope .project-description {
+          color: black; }
+        .home-container .inner-container .project-block#fastrope .project-button button {
+          border: 2px solid black;
+          background: none;
+          color: black; }
       .home-container .inner-container .project-block .project-intro {
         color: white;
         text-align: center; }
@@ -275,26 +281,32 @@
           -moz-transition: all 0.2s;
           -o-transition: all 0.2s;
           transition: all 0.2s; }
+          .home-container .inner-container .project-block .project-button button#o_button:hover {
+            border: 2px solid white;
+            background: white;
+            color: #9c4d9d; }
           .home-container .inner-container .project-block .project-button button#v_button:hover {
             border: 2px solid white;
             background: white;
-            color: #6290C3; }
+            color: #6290c3; }
           .home-container .inner-container .project-block .project-button button#e_button {
-            border: 2px solid black;
-            color: black; }
+            border: 2px solid #222222;
+            color: #222222; }
             .home-container .inner-container .project-block .project-button button#e_button:hover {
-              border: 2px solid black;
-              background: black;
+              border: 2px solid #222222;
+              background: #222222;
               color: white; }
           .home-container .inner-container .project-block .project-button button#r_button:hover {
             border: 2px solid white;
             background: white;
             color: black; }
+          .home-container .inner-container .project-block .project-button button#f_button:hover {
+            border: 2px solid black;
+            background: black;
+            color: #ffc600; }
           .home-container .inner-container .project-block .project-button button#h_button:hover {
             border: 2px solid white;
             background: white;
-            color: #DB3B2A; }
-          .home-container .inner-container .project-block .project-button button#as_button:hover {
-            border: 2px solid #222222;
-            background: #222222;
-            color: white; }
+            color: #db3b2a; }
+
+/*# sourceMappingURL=home.css.map */
